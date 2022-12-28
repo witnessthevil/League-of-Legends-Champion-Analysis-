@@ -1,0 +1,37 @@
+[2022-12-17T10:00:29.989+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: Can_I_change_name_to_this.task_11 scheduled__2022-12-16T10:00:00+00:00 [queued]>
+[2022-12-17T10:00:30.199+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: Can_I_change_name_to_this.task_11 scheduled__2022-12-16T10:00:00+00:00 [queued]>
+[2022-12-17T10:00:30.217+0000] {taskinstance.py:1283} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-17T10:00:30.231+0000] {taskinstance.py:1284} INFO - Starting attempt 1 of 1
+[2022-12-17T10:00:30.248+0000] {taskinstance.py:1285} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-17T10:00:31.936+0000] {taskinstance.py:1304} INFO - Executing <Task(BashOperator): task_11> on 2022-12-16 10:00:00+00:00
+[2022-12-17T10:00:32.016+0000] {standard_task_runner.py:55} INFO - Started process 2141 to run task
+[2022-12-17T10:00:32.353+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'Can_I_change_name_to_this', 'task_11', 'scheduled__2022-12-16T10:00:00+00:00', '--job-id', '120', '--raw', '--subdir', 'DAGS_FOLDER/dags.py', '--cfg-path', '/tmp/tmpawi5du7q']
+[2022-12-17T10:00:32.448+0000] {standard_task_runner.py:83} INFO - Job 120: Subtask task_11
+[2022-12-17T10:00:33.496+0000] {task_command.py:389} INFO - Running <TaskInstance: Can_I_change_name_to_this.task_11 scheduled__2022-12-16T10:00:00+00:00 [running]> on host 502390ac5559
+[2022-12-17T10:00:34.704+0000] {taskinstance.py:1513} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=Can_I_change_name_to_this
+AIRFLOW_CTX_TASK_ID=task_11
+AIRFLOW_CTX_EXECUTION_DATE=2022-12-16T10:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-12-16T10:00:00+00:00
+[2022-12-17T10:00:35.172+0000] {subprocess.py:63} INFO - Tmp dir root location: 
+ /tmp
+[2022-12-17T10:00:35.472+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'python /opt/***/tasks/redshift/basic_load_to_redshift.py']
+[2022-12-17T10:00:35.622+0000] {subprocess.py:86} INFO - Output:
+[2022-12-17T10:00:37.735+0000] {subprocess.py:93} INFO - Traceback (most recent call last):
+[2022-12-17T10:00:37.749+0000] {subprocess.py:93} INFO -   File "/opt/***/tasks/redshift/basic_load_to_redshift.py", line 10, in <module>
+[2022-12-17T10:00:37.753+0000] {subprocess.py:93} INFO -     from logger.Logger import Log
+[2022-12-17T10:00:37.759+0000] {subprocess.py:93} INFO - ModuleNotFoundError: No module named 'logger'
+[2022-12-17T10:00:37.926+0000] {subprocess.py:97} INFO - Command exited with return code 1
+[2022-12-17T10:00:39.825+0000] {taskinstance.py:1772} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py", line 197, in execute
+    f"Bash command failed. The command returned a non-zero exit code {result.exit_code}."
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2022-12-17T10:00:40.335+0000] {taskinstance.py:1327} INFO - Marking task as FAILED. dag_id=Can_I_change_name_to_this, task_id=task_11, execution_date=20221216T100000, start_date=20221217T100030, end_date=20221217T100040
+[2022-12-17T10:00:40.908+0000] {standard_task_runner.py:105} ERROR - Failed to execute job 120 for task task_11 (Bash command failed. The command returned a non-zero exit code 1.; 2141)
+[2022-12-17T10:00:47.820+0000] {local_task_job.py:159} INFO - Task exited with return code 1
+[2022-12-17T10:00:48.881+0000] {taskinstance.py:2582} INFO - 0 downstream tasks scheduled from follow-on schedule check

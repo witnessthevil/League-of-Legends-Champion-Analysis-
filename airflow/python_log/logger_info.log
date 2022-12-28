@@ -1,0 +1,332 @@
+{"message": "now scraping the champ basic stat", "time": "2022-12-17T09:54:13.072276"}
+{"message": "now scraping the champ counter stat", "time": "2022-12-17T09:54:13.179653"}
+{"message": "successfully scrape champ basic stat", "time": "2022-12-17T09:54:17.311848"}
+{"message": "scrapying champ stat have used 4.236325042998942s", "time": "2022-12-17T09:54:17.313658"}
+{"message": "scrapying champ stat have used cpu scpustats(ctx_switches=58723113, interrupts=45093077, soft_interrupts=19750242, syscalls=0)% and disk sdiskusage(total=245107195904, used=228652478464, free=16454717440, percent=93.3)%", "time": "2022-12-17T09:54:17.318341"}
+{"message": "successfully scrape champ counter stat", "time": "2022-12-17T09:55:12.957099"}
+{"message": "scrapying champ counter stat have used 60.03566065199993s", "time": "2022-12-17T09:55:12.959523"}
+{"message": "scrapying champ counter stat have used cpu scpustats(ctx_switches=59068757, interrupts=45369157, soft_interrupts=19870212, syscalls=0)% and disk sdiskusage(total=245107195904, used=228655628288, free=16451567616, percent=93.3)%", "time": "2022-12-17T09:55:12.974671"}
+{"message": "now putting raw file to s3", "time": "2022-12-17T09:55:37.813188"}
+{"message": "now putting /opt/airflow/zone1/lol_basic_stat.json to raw_zone", "time": "2022-12-17T09:55:37.858461"}
+{"message": "now putting /opt/airflow/zone1/lol_counter_stat.json to raw_zone", "time": "2022-12-17T09:55:37.865776"}
+{"message": "now perform data cleansing on lol_basic_stat", "time": "2022-12-17T09:55:39.921753"}
+{"message": "successfully perform data cleansing on lol_basic_stat", "time": "2022-12-17T09:55:39.937547"}
+{"message": "Now putting dataframe into pg and redshift", "time": "2022-12-17T09:55:39.940059"}
+{"message": "successfully put lol_basic_stat to pg and redshift", "time": "2022-12-17T09:55:40.647450"}
+{"message": "put lol_basic_stat to pg and redshift have used 1.0312794170022244s", "time": "2022-12-17T09:55:40.701909"}
+{"message": "successfully putting /opt/airflow/zone1/lol_basic_stat.json to raw_zone", "time": "2022-12-17T09:55:41.097333"}
+{"message": "successfully put lol_basic_stat to pg and redshift", "time": "2022-12-17T09:55:42.421705"}
+{"message": "put lol_basic_stat to pg and file have used 2.8435530009992362s", "time": "2022-12-17T09:55:42.425369"}
+{"message": "successfully putting /opt/airflow/zone1/lol_counter_stat.json to raw_zone", "time": "2022-12-17T09:55:43.296775"}
+{"message": "successfully put raw file to s3", "time": "2022-12-17T09:55:43.595526"}
+{"message": "put raw file to s3 have used 5.782309253001586s", "time": "2022-12-17T09:55:43.601044"}
+{"message": "now putting clean file to s3", "time": "2022-12-17T09:55:52.792961"}
+{"message": "now putting /opt/airflow/processed_zone/lol_clean_basic_stat.json to clean_zone", "time": "2022-12-17T09:55:52.802253"}
+{"message": "now putting /opt/airflow/processed_zone/lol_clean_counter_stat.json to clean_zone", "time": "2022-12-17T09:55:52.804243"}
+{"message": "successfully putting /opt/airflow/processed_zone/lol_clean_basic_stat.json to raw_zone", "time": "2022-12-17T09:55:56.388032"}
+{"message": "successfully putting /opt/airflow/processed_zone/lol_clean_counter_stat.json to raw_zone", "time": "2022-12-17T09:56:01.026135"}
+{"message": "successfully put clean file to s3", "time": "2022-12-17T09:56:01.030062"}
+{"message": "put clean file to s3 have used 8.238681587001338s", "time": "2022-12-17T09:56:01.033367"}
+{"message": "now scraping the champ basic stat", "time": "2022-12-17T10:00:57.392026"}
+{"message": "now scraping the champ counter stat", "time": "2022-12-17T10:00:57.723498"}
+{"message": "successfully scrape champ basic stat", "time": "2022-12-17T10:01:04.523688"}
+{"message": "scrapying champ stat have used 7.1276149620025535s", "time": "2022-12-17T10:01:04.526463"}
+{"message": "scrapying champ stat have used cpu scpustats(ctx_switches=60723289, interrupts=46723176, soft_interrupts=20474904, syscalls=0)% and disk sdiskusage(total=245107195904, used=228712796160, free=16394399744, percent=93.3)%", "time": "2022-12-17T10:01:04.552320"}
+{"message": "successfully scrape champ counter stat", "time": "2022-12-17T10:04:38.460445"}
+{"message": "scrapying champ counter stat have used 174.3012052069971s", "time": "2022-12-17T10:04:38.462366"}
+{"message": "scrapying champ counter stat have used cpu scpustats(ctx_switches=61644238, interrupts=47453034, soft_interrupts=20791435, syscalls=0)% and disk sdiskusage(total=245107195904, used=229861072896, free=15246123008, percent=93.8)%", "time": "2022-12-17T10:04:38.468545"}
+{"message": "now putting raw file to s3", "time": "2022-12-17T10:04:59.101621"}
+{"message": "now putting /opt/airflow/zone1/lol_basic_stat.json to raw_zone", "time": "2022-12-17T10:04:59.573547"}
+{"message": "now putting /opt/airflow/zone1/lol_counter_stat.json to raw_zone", "time": "2022-12-17T10:04:59.581642"}
+{"message": "now perform data cleansing on lol_basic_stat", "time": "2022-12-17T10:05:19.958442"}
+{"message": "successfully perform data cleansing on lol_basic_stat", "time": "2022-12-17T10:05:20.490736"}
+{"message": "Now putting dataframe into pg and redshift", "time": "2022-12-17T10:05:20.535250"}
+{"message": "successfully put lol_basic_stat to pg and redshift", "time": "2022-12-17T10:05:27.570198"}
+{"message": "successfully put lol_basic_stat to pg and redshift", "time": "2022-12-17T10:05:27.826937"}
+{"message": "put lol_basic_stat to pg and file have used 18.027694758999132s", "time": "2022-12-17T10:05:27.831922"}
+{"message": "put lol_basic_stat to pg and redshift have used 16.16955021600006s", "time": "2022-12-17T10:05:27.837431"}
+{"message": "now scraping the champ counter stat", "time": "2022-12-18T10:00:37.373147"}
+{"message": "now scraping the champ basic stat", "time": "2022-12-18T10:00:37.373616"}
+{"message": "successfully scrape champ basic stat", "time": "2022-12-18T10:00:41.237402"}
+{"message": "scrapying champ stat have used 3.8938342519995786s", "time": "2022-12-18T10:00:41.273958"}
+{"message": "scrapying champ stat have used cpu scpustats(ctx_switches=31307527, interrupts=25776300, soft_interrupts=8859364, syscalls=0)% and disk sdiskusage(total=245107195904, used=229519699968, free=15587495936, percent=93.6)%", "time": "2022-12-18T10:00:41.289152"}
+{"message": "successfully scrape champ counter stat", "time": "2022-12-18T10:01:46.736350"}
+{"message": "scrapying champ counter stat have used 69.33445803199902s", "time": "2022-12-18T10:01:46.737748"}
+{"message": "scrapying champ counter stat have used cpu scpustats(ctx_switches=31689683, interrupts=26079859, soft_interrupts=8984319, syscalls=0)% and disk sdiskusage(total=245107195904, used=230590078976, free=14517116928, percent=94.1)%", "time": "2022-12-18T10:01:46.741729"}
+{"message": "now scraping the champ basic stat", "time": "2022-12-18T10:17:11.198744"}
+{"message": "now scraping the champ counter stat", "time": "2022-12-18T10:17:11.203711"}
+{"message": "successfully scrape champ basic stat", "time": "2022-12-18T10:17:12.661084"}
+{"message": "scrapying champ stat have used 1.4607904180011246s", "time": "2022-12-18T10:17:12.661939"}
+{"message": "scrapying champ stat have used cpu scpustats(ctx_switches=35980342, interrupts=29504567, soft_interrupts=10473601, syscalls=0)% and disk sdiskusage(total=245107195904, used=229558108160, free=15549087744, percent=93.7)%", "time": "2022-12-18T10:17:12.668300"}
+{"message": "successfully scrape champ counter stat", "time": "2022-12-18T10:17:46.571574"}
+{"message": "scrapying champ counter stat have used 35.10448797499885s", "time": "2022-12-18T10:17:46.573133"}
+{"message": "scrapying champ counter stat have used cpu scpustats(ctx_switches=36230973, interrupts=29689489, soft_interrupts=10554674, syscalls=0)% and disk sdiskusage(total=245107195904, used=229555916800, free=15551279104, percent=93.7)%", "time": "2022-12-18T10:17:46.578556"}
+{"message": "now putting raw file to s3", "time": "2022-12-18T10:18:00.536564"}
+{"message": "now putting /opt/airflow/zone1/lol_basic_stat.json to raw_zone", "time": "2022-12-18T10:18:00.560899"}
+{"message": "now putting /opt/airflow/zone1/lol_counter_stat.json to raw_zone", "time": "2022-12-18T10:18:00.564993"}
+{"message": "successfully putting /opt/airflow/zone1/lol_basic_stat.json to raw_zone", "time": "2022-12-18T10:18:04.990068"}
+{"message": "successfully putting /opt/airflow/zone1/lol_counter_stat.json to raw_zone", "time": "2022-12-18T10:18:06.592046"}
+{"message": "successfully put raw file to s3", "time": "2022-12-18T10:18:06.596904"}
+{"message": "put raw file to s3 have used 6.060314960999676s", "time": "2022-12-18T10:18:06.599756"}
+{"message": "now perform data cleansing on lol_basic_stat", "time": "2022-12-18T10:18:08.651163"}
+{"message": "successfully perform data cleansing on lol_basic_stat", "time": "2022-12-18T10:18:08.670534"}
+{"message": "Now putting dataframe into pg and redshift", "time": "2022-12-18T10:18:08.675849"}
+{"message": "successfully put lol_basic_stat to pg and redshift", "time": "2022-12-18T10:18:10.909761"}
+{"message": "put lol_basic_stat to pg and redshift have used 3.2655970020005043s", "time": "2022-12-18T10:18:11.000829"}
+{"message": "successfully put lol_basic_stat to pg and redshift", "time": "2022-12-18T10:18:13.350572"}
+{"message": "put lol_basic_stat to pg and file have used 5.426842419999957s", "time": "2022-12-18T10:18:13.352750"}
+{"message": "now putting clean file to s3", "time": "2022-12-18T10:18:26.360675"}
+{"message": "now putting /opt/airflow/processed_zone/lol_clean_basic_stat.json to clean_zone", "time": "2022-12-18T10:18:26.412851"}
+{"message": "now putting /opt/airflow/processed_zone/lol_clean_counter_stat.json to clean_zone", "time": "2022-12-18T10:18:26.420619"}
+{"message": "successfully putting /opt/airflow/processed_zone/lol_clean_basic_stat.json to raw_zone", "time": "2022-12-18T10:18:29.807626"}
+{"message": "successfully putting /opt/airflow/processed_zone/lol_clean_counter_stat.json to raw_zone", "time": "2022-12-18T10:18:34.641463"}
+{"message": "successfully put clean file to s3", "time": "2022-12-18T10:18:34.644883"}
+{"message": "put clean file to s3 have used 8.284411919999911s", "time": "2022-12-18T10:18:34.646583"}
+{"message": "successfully put basic lol stat to redshift", "time": "2022-12-18T10:22:39.134135"}
+{"message": "put s3 basic lol stat to redshift have used 1.3785261670000182s", "time": "2022-12-18T10:22:39.142566"}
+{"message": "successfully put s3 basic lol stat to redshift", "time": "2022-12-18T10:23:01.289158"}
+{"message": "put s3 basic lol stat to redshift have used 4.581334751999748s", "time": "2022-12-18T10:23:01.294891"}
+{"message": "now scraping the champ counter stat", "time": "2022-12-19T15:08:28.220419"}
+{"message": "now scraping the champ basic stat", "time": "2022-12-19T15:08:28.222908"}
+{"message": "successfully scrape champ basic stat", "time": "2022-12-19T15:08:32.697688"}
+{"message": "scrapying champ stat have used 4.612153543000005s", "time": "2022-12-19T15:08:32.713923"}
+{"message": "scrapying champ stat have used cpu scpustats(ctx_switches=670355, interrupts=424959, soft_interrupts=177274, syscalls=0)% and disk sdiskusage(total=245107195904, used=234636713984, free=10470481920, percent=95.7)%", "time": "2022-12-19T15:08:32.742505"}
+{"message": "successfully scrape champ counter stat", "time": "2022-12-19T15:09:38.164302"}
+{"message": "scrapying champ counter stat have used 69.52658674s", "time": "2022-12-19T15:09:38.171166"}
+{"message": "scrapying champ counter stat have used cpu scpustats(ctx_switches=1059419, interrupts=716843, soft_interrupts=307487, syscalls=0)% and disk sdiskusage(total=245107195904, used=234636693504, free=10470502400, percent=95.7)%", "time": "2022-12-19T15:09:38.233497"}
+{"message": "now putting raw file to s3", "time": "2022-12-19T15:09:57.155715"}
+{"message": "now putting /opt/airflow/zone1/lol_basic_stat.json to raw_zone", "time": "2022-12-19T15:09:57.233297"}
+{"message": "now putting /opt/airflow/zone1/lol_counter_stat.json to raw_zone", "time": "2022-12-19T15:09:57.246221"}
+{"message": "now perform data cleansing on lol_basic_stat", "time": "2022-12-19T15:10:04.755291"}
+{"message": "successfully perform data cleansing on lol_basic_stat", "time": "2022-12-19T15:10:04.787598"}
+{"message": "Now putting dataframe into pg and redshift", "time": "2022-12-19T15:10:04.793423"}
+{"message": "successfully putting /opt/airflow/zone1/lol_basic_stat.json to raw_zone", "time": "2022-12-19T15:10:05.733011"}
+{"message": "successfully putting /opt/airflow/zone1/lol_counter_stat.json to raw_zone", "time": "2022-12-19T15:10:06.467845"}
+{"message": "successfully put raw file to s3", "time": "2022-12-19T15:10:06.471877"}
+{"message": "put raw file to s3 have used 9.872012087999991s", "time": "2022-12-19T15:10:06.473488"}
+{"message": "successfully put lol_basic_stat to pg and redshift", "time": "2022-12-19T15:10:07.083070"}
+{"message": "put lol_basic_stat to pg and redshift have used 12.776693256000016s", "time": "2022-12-19T15:10:07.207059"}
+{"message": "successfully put lol_basic_stat to pg and redshift", "time": "2022-12-19T15:10:07.903542"}
+{"message": "put lol_basic_stat to pg and file have used 11.754421087999987s", "time": "2022-12-19T15:10:07.904206"}
+{"message": "now putting clean file to s3", "time": "2022-12-19T15:10:24.484264"}
+{"message": "now putting /opt/airflow/processed_zone/lol_clean_basic_stat.json to clean_zone", "time": "2022-12-19T15:10:26.274969"}
+{"message": "now putting /opt/airflow/processed_zone/lol_clean_counter_stat.json to clean_zone", "time": "2022-12-19T15:10:26.355400"}
+{"message": "successfully putting /opt/airflow/processed_zone/lol_clean_basic_stat.json to raw_zone", "time": "2022-12-19T15:10:29.793843"}
+{"message": "successfully putting /opt/airflow/processed_zone/lol_clean_counter_stat.json to raw_zone", "time": "2022-12-19T15:10:30.175309"}
+{"message": "successfully put clean file to s3", "time": "2022-12-19T15:10:30.178003"}
+{"message": "put clean file to s3 have used 5.6931515439999885s", "time": "2022-12-19T15:10:30.178998"}
+{"message": "successfully put s3 basic lol stat to redshift", "time": "2022-12-19T15:10:40.620462"}
+{"message": "put s3 basic lol stat to redshift have used 4.950813169000014s", "time": "2022-12-19T15:10:40.715613"}
+{"message": "successfully put basic lol stat to redshift", "time": "2022-12-19T15:12:38.879142"}
+{"message": "put s3 basic lol stat to redshift have used 121.42019059699999s", "time": "2022-12-19T15:12:38.915343"}
+{"message": "now scraping the champ counter stat", "time": "2022-12-20T10:00:24.317644"}
+{"message": "now scraping the champ basic stat", "time": "2022-12-20T10:00:24.325035"}
+{"message": "successfully scrape champ basic stat", "time": "2022-12-20T10:00:26.644007"}
+{"message": "scrapying champ stat have used 2.321169585000007s", "time": "2022-12-20T10:00:26.648410"}
+{"message": "scrapying champ stat have used cpu scpustats(ctx_switches=13933261, interrupts=10934184, soft_interrupts=4748066, syscalls=0)% and disk sdiskusage(total=245107195904, used=233538871296, free=11568324608, percent=95.3)%", "time": "2022-12-20T10:00:26.665030"}
+{"message": "successfully scrape champ counter stat", "time": "2022-12-20T10:01:22.686739"}
+{"message": "scrapying champ counter stat have used 58.373953442999664s", "time": "2022-12-20T10:01:22.689555"}
+{"message": "scrapying champ counter stat have used cpu scpustats(ctx_switches=14256681, interrupts=11179432, soft_interrupts=4854183, syscalls=0)% and disk sdiskusage(total=245107195904, used=233542377472, free=11564818432, percent=95.3)%", "time": "2022-12-20T10:01:22.698459"}
+{"message": "now putting raw file to s3", "time": "2022-12-20T10:02:07.288346"}
+{"message": "now putting /opt/airflow/zone1/lol_basic_stat.json to raw_zone", "time": "2022-12-20T10:02:07.304147"}
+{"message": "now putting /opt/airflow/zone1/lol_counter_stat.json to raw_zone", "time": "2022-12-20T10:02:07.306104"}
+{"message": "successfully put lol_basic_stat to pg and redshift", "time": "2022-12-20T10:02:10.051508"}
+{"message": "put lol_basic_stat to pg and file have used 5.821529460999955s", "time": "2022-12-20T10:02:10.054881"}
+{"message": "successfully putting /opt/airflow/zone1/lol_basic_stat.json to raw_zone", "time": "2022-12-20T10:02:10.355423"}
+{"message": "successfully putting /opt/airflow/zone1/lol_counter_stat.json to raw_zone", "time": "2022-12-20T10:02:12.949572"}
+{"message": "successfully put raw file to s3", "time": "2022-12-20T10:02:12.970572"}
+{"message": "put raw file to s3 have used 5.623481627000274s", "time": "2022-12-20T10:02:12.972964"}
+{"message": "now scraping the champ basic stat", "time": "2022-12-20T10:07:59.812291"}
+{"message": "now scraping the champ counter stat", "time": "2022-12-20T10:07:59.823631"}
+{"message": "successfully scrape champ basic stat", "time": "2022-12-20T10:08:01.817405"}
+{"message": "scrapying champ stat have used 2.017221834999873s", "time": "2022-12-20T10:08:01.836765"}
+{"message": "scrapying champ stat have used cpu scpustats(ctx_switches=15943214, interrupts=12521723, soft_interrupts=5457978, syscalls=0)% and disk sdiskusage(total=245107195904, used=233581617152, free=11525578752, percent=95.3)%", "time": "2022-12-20T10:08:01.887780"}
+{"message": "successfully scrape champ counter stat", "time": "2022-12-20T10:08:23.607765"}
+{"message": "scrapying champ counter stat have used 23.769896969s", "time": "2022-12-20T10:08:23.608741"}
+{"message": "scrapying champ counter stat have used cpu scpustats(ctx_switches=16134641, interrupts=12660144, soft_interrupts=5514415, syscalls=0)% and disk sdiskusage(total=245107195904, used=233572003840, free=11535192064, percent=95.3)%", "time": "2022-12-20T10:08:23.622704"}
+{"message": "now putting raw file to s3", "time": "2022-12-20T10:08:32.164906"}
+{"message": "now putting /opt/airflow/zone1/lol_basic_stat.json to raw_zone", "time": "2022-12-20T10:08:32.234320"}
+{"message": "now putting /opt/airflow/zone1/lol_counter_stat.json to raw_zone", "time": "2022-12-20T10:08:32.240710"}
+{"message": "successfully putting /opt/airflow/zone1/lol_basic_stat.json to raw_zone", "time": "2022-12-20T10:08:35.754416"}
+{"message": "successfully putting /opt/airflow/zone1/lol_counter_stat.json to raw_zone", "time": "2022-12-20T10:08:37.415376"}
+{"message": "successfully put raw file to s3", "time": "2022-12-20T10:08:37.418015"}
+{"message": "put raw file to s3 have used 5.253285003000201s", "time": "2022-12-20T10:08:37.419497"}
+{"message": "now perform data cleansing on lol_basic_stat", "time": "2022-12-20T10:08:39.204215"}
+{"message": "successfully perform data cleansing on lol_basic_stat", "time": "2022-12-20T10:08:39.236619"}
+{"message": "Now putting dataframe into pg and redshift", "time": "2022-12-20T10:08:39.253093"}
+{"message": "successfully put lol_basic_stat to pg and redshift", "time": "2022-12-20T10:08:40.157572"}
+{"message": "put lol_basic_stat to pg and redshift have used 2.262873251000201s", "time": "2022-12-20T10:08:40.285428"}
+{"message": "successfully put lol_basic_stat to pg and redshift", "time": "2022-12-20T10:08:41.963528"}
+{"message": "put lol_basic_stat to pg and file have used 3.08024266800021s", "time": "2022-12-20T10:08:41.966679"}
+{"message": "now putting clean file to s3", "time": "2022-12-20T10:08:54.167645"}
+{"message": "now putting /opt/airflow/processed_zone/lol_clean_basic_stat.json to clean_zone", "time": "2022-12-20T10:08:54.184717"}
+{"message": "now putting /opt/airflow/processed_zone/lol_clean_counter_stat.json to clean_zone", "time": "2022-12-20T10:08:54.187828"}
+{"message": "successfully putting /opt/airflow/processed_zone/lol_clean_basic_stat.json to raw_zone", "time": "2022-12-20T10:08:57.404236"}
+{"message": "successfully putting /opt/airflow/processed_zone/lol_clean_counter_stat.json to raw_zone", "time": "2022-12-20T10:09:02.983763"}
+{"message": "successfully put clean file to s3", "time": "2022-12-20T10:09:02.998423"}
+{"message": "put clean file to s3 have used 8.830796963000012s", "time": "2022-12-20T10:09:03.000917"}
+{"message": "successfully put s3 basic lol stat to redshift", "time": "2022-12-20T10:09:17.323511"}
+{"message": "put s3 basic lol stat to redshift have used 3.4521407510001154s", "time": "2022-12-20T10:09:17.330303"}
+{"message": "successfully put basic lol stat to redshift", "time": "2022-12-20T10:09:17.532247"}
+{"message": "put s3 basic lol stat to redshift have used 1.3002714590002142s", "time": "2022-12-20T10:09:17.536537"}
+{"message": "now scraping the champ basic stat", "time": "2022-12-21T11:01:00.281671"}
+{"message": "now scraping the champ counter stat", "time": "2022-12-21T11:01:00.300574"}
+{"message": "successfully scrape champ basic stat", "time": "2022-12-21T11:01:02.403861"}
+{"message": "scrapying champ stat have used 2.1098333339996316s", "time": "2022-12-21T11:01:02.405757"}
+{"message": "scrapying champ stat have used cpu scpustats(ctx_switches=7985609, interrupts=5397779, soft_interrupts=1621122, syscalls=0)% and disk sdiskusage(total=245107195904, used=231150710784, free=13956485120, percent=94.3)%", "time": "2022-12-21T11:01:02.409815"}
+{"message": "successfully scrape champ counter stat", "time": "2022-12-21T11:01:55.562976"}
+{"message": "scrapying champ counter stat have used 55.35403581599894s", "time": "2022-12-21T11:01:55.584051"}
+{"message": "scrapying champ counter stat have used cpu scpustats(ctx_switches=8343060, interrupts=5681325, soft_interrupts=1747136, syscalls=0)% and disk sdiskusage(total=245107195904, used=231148187648, free=13959008256, percent=94.3)%", "time": "2022-12-21T11:01:55.608124"}
+{"message": "now putting raw file to s3", "time": "2022-12-21T11:02:27.605069"}
+{"message": "now putting /opt/airflow/zone1/lol_basic_stat.json to raw_zone", "time": "2022-12-21T11:02:27.643294"}
+{"message": "now putting /opt/airflow/zone1/lol_counter_stat.json to raw_zone", "time": "2022-12-21T11:02:27.646319"}
+{"message": "successfully putting /opt/airflow/zone1/lol_basic_stat.json to raw_zone", "time": "2022-12-21T11:02:30.787695"}
+{"message": "now perform data cleansing on lol_basic_stat", "time": "2022-12-21T11:02:31.122456"}
+{"message": "successfully perform data cleansing on lol_basic_stat", "time": "2022-12-21T11:02:31.129678"}
+{"message": "Now putting dataframe into pg and redshift", "time": "2022-12-21T11:02:31.132586"}
+{"message": "successfully put lol_basic_stat to pg and redshift", "time": "2022-12-21T11:02:31.432624"}
+{"message": "put lol_basic_stat to pg and redshift have used 0.6599988759990083s", "time": "2022-12-21T11:02:31.444085"}
+{"message": "successfully put lol_basic_stat to pg and redshift", "time": "2022-12-21T11:02:31.666634"}
+{"message": "put lol_basic_stat to pg and file have used 1.6947879180006566s", "time": "2022-12-21T11:02:31.668550"}
+{"message": "successfully putting /opt/airflow/zone1/lol_counter_stat.json to raw_zone", "time": "2022-12-21T11:02:33.360079"}
+{"message": "successfully put raw file to s3", "time": "2022-12-21T11:02:33.364632"}
+{"message": "put raw file to s3 have used 5.75887300300019s", "time": "2022-12-21T11:02:33.367749"}
+{"message": "now putting clean file to s3", "time": "2022-12-21T11:03:01.780501"}
+{"message": "now putting /opt/airflow/processed_zone/lol_clean_basic_stat.json to clean_zone", "time": "2022-12-21T11:03:01.837300"}
+{"message": "now putting /opt/airflow/processed_zone/lol_clean_counter_stat.json to clean_zone", "time": "2022-12-21T11:03:01.841085"}
+{"message": "successfully putting /opt/airflow/processed_zone/lol_clean_basic_stat.json to raw_zone", "time": "2022-12-21T11:03:05.233859"}
+{"message": "successfully putting /opt/airflow/processed_zone/lol_clean_counter_stat.json to raw_zone", "time": "2022-12-21T11:03:12.081532"}
+{"message": "successfully put clean file to s3", "time": "2022-12-21T11:03:12.988584"}
+{"message": "put clean file to s3 have used 11.16309471400018s", "time": "2022-12-21T11:03:13.069649"}
+{"message": "successfully put basic lol stat to redshift", "time": "2022-12-21T11:09:11.235185"}
+{"message": "put s3 basic lol stat to redshift have used 1.2812220420000813s", "time": "2022-12-21T11:09:11.240142"}
+{"message": "successfully put s3 basic lol stat to redshift", "time": "2022-12-21T11:09:27.425255"}
+{"message": "put s3 basic lol stat to redshift have used 2.894364167999811s", "time": "2022-12-21T11:09:27.428423"}
+{"message": "now scraping the champ counter stat", "time": "2022-12-22T12:56:08.459844"}
+{"message": "now scraping the champ basic stat", "time": "2022-12-22T12:56:08.599518"}
+{"message": "successfully scrape champ basic stat", "time": "2022-12-22T12:57:13.836508"}
+{"message": "scrapying champ stat have used 65.23206119600002s", "time": "2022-12-22T12:57:13.847398"}
+{"message": "scrapying champ stat have used cpu scpustats(ctx_switches=1512398, interrupts=1209683, soft_interrupts=421922, syscalls=0)% and disk sdiskusage(total=245107195904, used=237942341632, free=7164854272, percent=97.1)%", "time": "2022-12-22T12:57:14.226381"}
+{"message": "now scraping the champ basic stat", "time": "2022-12-22T13:30:28.577648"}
+{"message": "now scraping the champ counter stat", "time": "2022-12-22T13:30:28.581678"}
+{"message": "successfully scrape champ basic stat", "time": "2022-12-22T13:30:29.776033"}
+{"message": "scrapying champ stat have used 1.1915824170000064s", "time": "2022-12-22T13:30:29.777237"}
+{"message": "scrapying champ stat have used cpu scpustats(ctx_switches=892862, interrupts=701854, soft_interrupts=358381, syscalls=0)% and disk sdiskusage(total=245107195904, used=230153764864, free=14953431040, percent=93.9)%", "time": "2022-12-22T13:30:29.784379"}
+{"message": "successfully scrape champ counter stat", "time": "2022-12-22T13:30:59.026007"}
+{"message": "scrapying champ counter stat have used 30.440972180000003s", "time": "2022-12-22T13:30:59.027030"}
+{"message": "scrapying champ counter stat have used cpu scpustats(ctx_switches=1155915, interrupts=900894, soft_interrupts=448426, syscalls=0)% and disk sdiskusage(total=245107195904, used=229082718208, free=16024477696, percent=93.5)%", "time": "2022-12-22T13:30:59.032485"}
+{"message": "now putting raw file to s3", "time": "2022-12-22T13:31:06.096003"}
+{"message": "now putting /opt/airflow/zone1/lol_basic_stat.json to raw_zone", "time": "2022-12-22T13:31:06.106551"}
+{"message": "now putting /opt/airflow/zone1/lol_counter_stat.json to raw_zone", "time": "2022-12-22T13:31:06.108422"}
+{"message": "now perform data cleansing on lol_basic_stat", "time": "2022-12-22T13:31:06.782136"}
+{"message": "successfully perform data cleansing on lol_basic_stat", "time": "2022-12-22T13:31:06.789975"}
+{"message": "Now putting dataframe into pg and redshift", "time": "2022-12-22T13:31:06.791380"}
+{"message": "successfully put lol_basic_stat to pg and redshift", "time": "2022-12-22T13:31:06.941596"}
+{"message": "put lol_basic_stat to pg and redshift have used 0.534694834000021s", "time": "2022-12-22T13:31:06.960738"}
+{"message": "successfully put lol_basic_stat to pg and redshift", "time": "2022-12-22T13:31:07.929150"}
+{"message": "put lol_basic_stat to pg and file have used 0.7816132089999996s", "time": "2022-12-22T13:31:07.930353"}
+{"message": "successfully putting /opt/airflow/zone1/lol_basic_stat.json to raw_zone", "time": "2022-12-22T13:31:09.241137"}
+{"message": "successfully putting /opt/airflow/zone1/lol_counter_stat.json to raw_zone", "time": "2022-12-22T13:31:11.592293"}
+{"message": "successfully put raw file to s3", "time": "2022-12-22T13:31:11.594670"}
+{"message": "put raw file to s3 have used 5.499964293999994s", "time": "2022-12-22T13:31:11.596803"}
+{"message": "now putting clean file to s3", "time": "2022-12-22T13:31:15.300381"}
+{"message": "now putting /opt/airflow/processed_zone/lol_clean_basic_stat.json to clean_zone", "time": "2022-12-22T13:31:15.310316"}
+{"message": "now putting /opt/airflow/processed_zone/lol_clean_counter_stat.json to clean_zone", "time": "2022-12-22T13:31:15.312422"}
+{"message": "successfully putting /opt/airflow/processed_zone/lol_clean_basic_stat.json to raw_zone", "time": "2022-12-22T13:31:18.258782"}
+{"message": "successfully putting /opt/airflow/processed_zone/lol_clean_counter_stat.json to raw_zone", "time": "2022-12-22T13:31:23.069346"}
+{"message": "successfully put clean file to s3", "time": "2022-12-22T13:31:23.072976"}
+{"message": "put clean file to s3 have used 7.772548212000004s", "time": "2022-12-22T13:31:23.074349"}
+{"message": "successfully put s3 basic lol stat to redshift", "time": "2022-12-22T13:31:30.643865"}
+{"message": "put s3 basic lol stat to redshift have used 2.828157959000009s", "time": "2022-12-22T13:31:30.646108"}
+{"message": "successfully put basic lol stat to redshift", "time": "2022-12-22T13:31:31.845305"}
+{"message": "put s3 basic lol stat to redshift have used 1.7138823759999866s", "time": "2022-12-22T13:31:31.856505"}
+{"message": "now scraping the champ basic stat", "time": "2022-12-23T10:00:24.458903"}
+{"message": "now scraping the champ counter stat", "time": "2022-12-23T10:00:24.466051"}
+{"message": "successfully scrape champ basic stat", "time": "2022-12-23T10:00:29.184764"}
+{"message": "scrapying champ stat have used 4.809245377000025s", "time": "2022-12-23T10:00:29.274932"}
+{"message": "scrapying champ stat have used cpu scpustats(ctx_switches=5571328, interrupts=4550395, soft_interrupts=2167501, syscalls=0)% and disk sdiskusage(total=245107195904, used=232835682304, free=12271513600, percent=95.0)%", "time": "2022-12-23T10:00:29.300147"}
+{"message": "successfully scrape champ counter stat", "time": "2022-12-23T10:02:26.426240"}
+{"message": "scrapying champ counter stat have used 121.94956647200001s", "time": "2022-12-23T10:02:26.429910"}
+{"message": "scrapying champ counter stat have used cpu scpustats(ctx_switches=6233417, interrupts=5129948, soft_interrupts=2424143, syscalls=0)% and disk sdiskusage(total=245107195904, used=232845021184, free=12262174720, percent=95.0)%", "time": "2022-12-23T10:02:26.450172"}
+{"message": "now putting raw file to s3", "time": "2022-12-23T10:02:55.236699"}
+{"message": "now putting /opt/airflow/zone1/lol_basic_stat.json to raw_zone", "time": "2022-12-23T10:02:55.281072"}
+{"message": "now putting /opt/airflow/zone1/lol_counter_stat.json to raw_zone", "time": "2022-12-23T10:02:55.285963"}
+{"message": "successfully putting /opt/airflow/zone1/lol_basic_stat.json to raw_zone", "time": "2022-12-23T10:02:58.544216"}
+{"message": "successfully putting /opt/airflow/zone1/lol_counter_stat.json to raw_zone", "time": "2022-12-23T10:03:00.944070"}
+{"message": "successfully put raw file to s3", "time": "2022-12-23T10:03:00.994040"}
+{"message": "put raw file to s3 have used 5.758076335999931s", "time": "2022-12-23T10:03:00.997704"}
+{"message": "now perform data cleansing on lol_basic_stat", "time": "2022-12-23T10:03:07.471550"}
+{"message": "successfully perform data cleansing on lol_basic_stat", "time": "2022-12-23T10:03:07.528896"}
+{"message": "Now putting dataframe into pg and redshift", "time": "2022-12-23T10:03:07.534116"}
+{"message": "successfully put lol_basic_stat to pg and redshift", "time": "2022-12-23T10:03:08.835229"}
+{"message": "put lol_basic_stat to pg and redshift have used 4.7684137940000255s", "time": "2022-12-23T10:03:09.083629"}
+{"message": "successfully put lol_basic_stat to pg and redshift", "time": "2022-12-23T10:03:09.699847"}
+{"message": "put lol_basic_stat to pg and file have used 8.834983170999976s", "time": "2022-12-23T10:03:09.735030"}
+{"message": "now putting clean file to s3", "time": "2022-12-23T10:03:17.872479"}
+{"message": "now putting /opt/airflow/processed_zone/lol_clean_basic_stat.json to clean_zone", "time": "2022-12-23T10:03:17.883469"}
+{"message": "now putting /opt/airflow/processed_zone/lol_clean_counter_stat.json to clean_zone", "time": "2022-12-23T10:03:17.886620"}
+{"message": "successfully putting /opt/airflow/processed_zone/lol_clean_basic_stat.json to raw_zone", "time": "2022-12-23T10:03:21.030714"}
+{"message": "successfully putting /opt/airflow/processed_zone/lol_clean_counter_stat.json to raw_zone", "time": "2022-12-23T10:03:26.356433"}
+{"message": "successfully put clean file to s3", "time": "2022-12-23T10:03:26.365367"}
+{"message": "put clean file to s3 have used 8.49242558800006s", "time": "2022-12-23T10:03:26.367872"}
+{"message": "successfully put s3 basic lol stat to redshift", "time": "2022-12-23T10:03:45.042686"}
+{"message": "put s3 basic lol stat to redshift have used 3.0274469180001233s", "time": "2022-12-23T10:03:45.048268"}
+{"message": "successfully put basic lol stat to redshift", "time": "2022-12-23T10:03:45.249680"}
+{"message": "put s3 basic lol stat to redshift have used 1.2286719180001455s", "time": "2022-12-23T10:03:45.262803"}
+{"message": "now scraping the champ counter stat", "time": "2022-12-26T09:46:16.786171"}
+{"message": "now scraping the champ basic stat", "time": "2022-12-26T09:46:16.839820"}
+{"message": "successfully scrape champ basic stat", "time": "2022-12-26T09:46:19.974630"}
+{"message": "scrapying champ stat have used 3.132689751000001s", "time": "2022-12-26T09:46:19.977932"}
+{"message": "scrapying champ stat have used cpu scpustats(ctx_switches=429472, interrupts=319282, soft_interrupts=145147, syscalls=0)% and disk sdiskusage(total=245107195904, used=242212200448, free=2894995456, percent=98.8)%", "time": "2022-12-26T09:46:20.042770"}
+{"message": "successfully scrape champ counter stat", "time": "2022-12-26T09:48:14.062769"}
+{"message": "scrapying champ counter stat have used 117.30918713699998s", "time": "2022-12-26T09:48:14.064734"}
+{"message": "scrapying champ counter stat have used cpu scpustats(ctx_switches=1029713, interrupts=797914, soft_interrupts=363811, syscalls=0)% and disk sdiskusage(total=245107195904, used=242236235776, free=2870960128, percent=98.8)%", "time": "2022-12-26T09:48:14.082715"}
+{"message": "now putting raw file to s3", "time": "2022-12-26T09:48:36.802762"}
+{"message": "now putting /opt/airflow/zone1/lol_basic_stat.json to raw_zone", "time": "2022-12-26T09:48:37.024882"}
+{"message": "now putting /opt/airflow/zone1/lol_counter_stat.json to raw_zone", "time": "2022-12-26T09:48:37.041514"}
+{"message": "successfully putting /opt/airflow/zone1/lol_basic_stat.json to raw_zone", "time": "2022-12-26T09:48:41.814418"}
+{"message": "successfully putting /opt/airflow/zone1/lol_counter_stat.json to raw_zone", "time": "2022-12-26T09:48:42.215057"}
+{"message": "successfully put raw file to s3", "time": "2022-12-26T09:48:42.259642"}
+{"message": "put raw file to s3 have used 5.468481045000004s", "time": "2022-12-26T09:48:42.273351"}
+{"message": "now scraping the champ counter stat", "time": "2022-12-26T10:01:26.517404"}
+{"message": "now scraping the champ basic stat", "time": "2022-12-26T10:01:26.517476"}
+{"message": "successfully scrape champ basic stat", "time": "2022-12-26T10:01:27.820354"}
+{"message": "scrapying champ stat have used 1.3020893340000157s", "time": "2022-12-26T10:01:27.822097"}
+{"message": "scrapying champ stat have used cpu scpustats(ctx_switches=4684239, interrupts=3546223, soft_interrupts=1193470, syscalls=0)% and disk sdiskusage(total=245107195904, used=239677104128, free=5430091776, percent=97.8)%", "time": "2022-12-26T10:01:27.839931"}
+{"message": "successfully scrape champ counter stat", "time": "2022-12-26T10:02:07.182882"}
+{"message": "scrapying champ counter stat have used 40.68404389400007s", "time": "2022-12-26T10:02:07.184970"}
+{"message": "scrapying champ counter stat have used cpu scpustats(ctx_switches=4962293, interrupts=3761229, soft_interrupts=1278070, syscalls=0)% and disk sdiskusage(total=245107195904, used=239673335808, free=5433860096, percent=97.8)%", "time": "2022-12-26T10:02:07.188757"}
+{"message": "now putting raw file to s3", "time": "2022-12-26T10:02:25.258608"}
+{"message": "now scraping the champ counter stat", "time": "2022-12-26T10:04:27.623998"}
+{"message": "now scraping the champ basic stat", "time": "2022-12-26T10:04:27.651751"}
+{"message": "successfully scrape champ basic stat", "time": "2022-12-26T10:04:29.109640"}
+{"message": "scrapying champ stat have used 1.4611367509999127s", "time": "2022-12-26T10:04:29.115177"}
+{"message": "scrapying champ stat have used cpu scpustats(ctx_switches=5721893, interrupts=4345403, soft_interrupts=1564598, syscalls=0)% and disk sdiskusage(total=245107195904, used=239709097984, free=5398097920, percent=97.8)%", "time": "2022-12-26T10:04:29.126109"}
+{"message": "successfully scrape champ counter stat", "time": "2022-12-26T10:04:47.955976"}
+{"message": "scrapying champ counter stat have used 20.32925788500006s", "time": "2022-12-26T10:04:47.957564"}
+{"message": "scrapying champ counter stat have used cpu scpustats(ctx_switches=5904931, interrupts=4486786, soft_interrupts=1619124, syscalls=0)% and disk sdiskusage(total=245107195904, used=240778985472, free=4328210432, percent=98.2)%", "time": "2022-12-26T10:04:47.961361"}
+{"message": "now putting raw file to s3", "time": "2022-12-26T10:05:07.458269"}
+{"message": "now putting /opt/airflow/zone1/lol_basic_stat.json to raw_zone", "time": "2022-12-26T10:05:07.593711"}
+{"message": "now putting /opt/airflow/zone1/lol_counter_stat.json to raw_zone", "time": "2022-12-26T10:05:07.601068"}
+{"message": "now perform data cleansing on lol_basic_stat", "time": "2022-12-26T10:05:10.047832"}
+{"message": "successfully perform data cleansing on lol_basic_stat", "time": "2022-12-26T10:05:10.077776"}
+{"message": "Now putting dataframe into pg and redshift", "time": "2022-12-26T10:05:10.080174"}
+{"message": "successfully putting /opt/airflow/zone1/lol_basic_stat.json to raw_zone", "time": "2022-12-26T10:05:11.167732"}
+{"message": "successfully put lol_basic_stat to pg and redshift", "time": "2022-12-26T10:05:12.211447"}
+{"message": "put lol_basic_stat to pg and redshift have used 3.474730167999951s", "time": "2022-12-26T10:05:12.410291"}
+{"message": "successfully putting /opt/airflow/zone1/lol_counter_stat.json to raw_zone", "time": "2022-12-26T10:05:12.669627"}
+{"message": "successfully put raw file to s3", "time": "2022-12-26T10:05:12.671937"}
+{"message": "put raw file to s3 have used 5.237875086000031s", "time": "2022-12-26T10:05:12.674199"}
+{"message": "successfully put lol_basic_stat to pg and redshift", "time": "2022-12-26T10:05:14.583057"}
+{"message": "put lol_basic_stat to pg and file have used 5.434365211000113s", "time": "2022-12-26T10:05:14.584662"}
+{"message": "now putting clean file to s3", "time": "2022-12-26T10:05:23.534150"}
+{"message": "now putting /opt/airflow/processed_zone/lol_clean_basic_stat.json to clean_zone", "time": "2022-12-26T10:05:23.545802"}
+{"message": "now putting /opt/airflow/processed_zone/lol_clean_counter_stat.json to clean_zone", "time": "2022-12-26T10:05:23.549045"}
+{"message": "successfully putting /opt/airflow/processed_zone/lol_clean_basic_stat.json to raw_zone", "time": "2022-12-26T10:05:26.482339"}
+{"message": "successfully putting /opt/airflow/processed_zone/lol_clean_counter_stat.json to raw_zone", "time": "2022-12-26T10:05:31.241639"}
+{"message": "successfully put clean file to s3", "time": "2022-12-26T10:05:31.276905"}
+{"message": "put clean file to s3 have used 7.7390430869998s", "time": "2022-12-26T10:05:31.281365"}
+{"message": "successfully put s3 basic lol stat to redshift", "time": "2022-12-26T10:05:46.732215"}
+{"message": "put s3 basic lol stat to redshift have used 3.2728970430000572s", "time": "2022-12-26T10:05:46.750299"}
+{"message": "successfully put basic lol stat to redshift", "time": "2022-12-26T10:05:46.883144"}
+{"message": "put s3 basic lol stat to redshift have used 1.327654541999891s", "time": "2022-12-26T10:05:46.885502"}

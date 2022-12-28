@@ -1,0 +1,32 @@
+[2022-11-29T05:28:43.181+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: Can_I_change_name_to_this.task_6 manual__2022-11-29T05:28:12.931793+00:00 [queued]>
+[2022-11-29T05:28:43.193+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: Can_I_change_name_to_this.task_6 manual__2022-11-29T05:28:12.931793+00:00 [queued]>
+[2022-11-29T05:28:43.194+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-29T05:28:43.196+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 1
+[2022-11-29T05:28:43.198+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-29T05:28:43.213+0000] {taskinstance.py:1383} INFO - Executing <Task(BashOperator): task_6> on 2022-11-29 05:28:12.931793+00:00
+[2022-11-29T05:28:43.221+0000] {standard_task_runner.py:55} INFO - Started process 527 to run task
+[2022-11-29T05:28:43.225+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'Can_I_change_name_to_this', 'task_6', 'manual__2022-11-29T05:28:12.931793+00:00', '--job-id', '27', '--raw', '--subdir', 'DAGS_FOLDER/dags.py', '--cfg-path', '/tmp/tmp4yb99p47']
+[2022-11-29T05:28:43.227+0000] {standard_task_runner.py:83} INFO - Job 27: Subtask task_6
+[2022-11-29T05:28:43.325+0000] {task_command.py:376} INFO - Running <TaskInstance: Can_I_change_name_to_this.task_6 manual__2022-11-29T05:28:12.931793+00:00 [running]> on host 68e922a5ec23
+[2022-11-29T05:28:43.405+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=Can_I_change_name_to_this
+AIRFLOW_CTX_TASK_ID=task_6
+AIRFLOW_CTX_EXECUTION_DATE=2022-11-29T05:28:12.931793+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-11-29T05:28:12.931793+00:00
+[2022-11-29T05:28:43.408+0000] {subprocess.py:63} INFO - Tmp dir root location: 
+ /tmp
+[2022-11-29T05:28:43.409+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'python /opt/***/tasks/data_cleansing_basic_stat.py']
+[2022-11-29T05:28:43.420+0000] {subprocess.py:86} INFO - Output:
+[2022-11-29T05:28:45.692+0000] {subprocess.py:93} INFO - 2022-11-29 05:28:45,683 | __main__ |data_cleansing_basic_stat.py | INFO | now perform data cleansing on lol_basic_stat
+[2022-11-29T05:28:45.702+0000] {subprocess.py:93} INFO - 2022-11-29 05:28:45,701 | __main__ |data_cleansing_basic_stat.py | INFO | successfully perform data cleansing on lol_basic_stat
+[2022-11-29T05:28:45.707+0000] {subprocess.py:93} INFO - 2022-11-29 05:28:45,703 | __main__ |data_cleansing_basic_stat.py | INFO | Now putting dataframe into pg and redshift
+[2022-11-29T05:28:46.625+0000] {subprocess.py:93} INFO - 2022-11-29 05:28:46,618 | __main__ |data_cleansing_basic_stat.py | INFO | successfully put lol_basic_stat to pg and redshift
+[2022-11-29T05:28:46.643+0000] {subprocess.py:93} INFO - 2022-11-29 05:28:46,640 | __main__ |data_cleansing_basic_stat.py | INFO | this task have used 1.1443158340007358s
+[2022-11-29T05:28:47.104+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2022-11-29T05:28:47.302+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=Can_I_change_name_to_this, task_id=task_6, execution_date=20221129T052812, start_date=20221129T052843, end_date=20221129T052847
+[2022-11-29T05:28:47.541+0000] {local_task_job.py:159} INFO - Task exited with return code 0
+[2022-11-29T05:28:47.720+0000] {taskinstance.py:2623} INFO - 0 downstream tasks scheduled from follow-on schedule check

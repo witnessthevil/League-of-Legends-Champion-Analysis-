@@ -1,0 +1,101 @@
+[2022-12-18T10:00:29.806+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: Can_I_change_name_to_this.scrape_basic scheduled__2022-12-17T10:00:00+00:00 [queued]>
+[2022-12-18T10:00:29.890+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: Can_I_change_name_to_this.scrape_basic scheduled__2022-12-17T10:00:00+00:00 [queued]>
+[2022-12-18T10:00:29.893+0000] {taskinstance.py:1283} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-18T10:00:29.897+0000] {taskinstance.py:1284} INFO - Starting attempt 1 of 1
+[2022-12-18T10:00:29.899+0000] {taskinstance.py:1285} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-18T10:00:29.985+0000] {taskinstance.py:1304} INFO - Executing <Task(BashOperator): scrape_basic> on 2022-12-17 10:00:00+00:00
+[2022-12-18T10:00:30.028+0000] {standard_task_runner.py:55} INFO - Started process 2910 to run task
+[2022-12-18T10:00:30.038+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'Can_I_change_name_to_this', 'scrape_basic', 'scheduled__2022-12-17T10:00:00+00:00', '--job-id', '130', '--raw', '--subdir', 'DAGS_FOLDER/dags.py', '--cfg-path', '/tmp/tmpoz38jdni']
+[2022-12-18T10:00:30.047+0000] {standard_task_runner.py:83} INFO - Job 130: Subtask scrape_basic
+[2022-12-18T10:00:33.809+0000] {task_command.py:389} INFO - Running <TaskInstance: Can_I_change_name_to_this.scrape_basic scheduled__2022-12-17T10:00:00+00:00 [running]> on host 502390ac5559
+[2022-12-18T10:00:34.179+0000] {taskinstance.py:1513} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=Can_I_change_name_to_this
+AIRFLOW_CTX_TASK_ID=scrape_basic
+AIRFLOW_CTX_EXECUTION_DATE=2022-12-17T10:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-12-17T10:00:00+00:00
+[2022-12-18T10:00:34.221+0000] {subprocess.py:63} INFO - Tmp dir root location: 
+ /tmp
+[2022-12-18T10:00:34.240+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'python /opt/***/tasks/lol_champ_basic_stat.py ']
+[2022-12-18T10:00:34.280+0000] {subprocess.py:86} INFO - Output:
+[2022-12-18T10:00:37.378+0000] {subprocess.py:93} INFO - {"message": "now scraping the champ basic stat", "time": "2022-12-18T10:00:37.373511"}
+[2022-12-18T10:00:37.419+0000] {subprocess.py:93} INFO - 2022-12-18 10:00:37 [scrapy.utils.log] INFO: Scrapy 2.7.1 started (bot: scrapybot)
+[2022-12-18T10:00:37.459+0000] {subprocess.py:93} INFO - 2022-12-18 10:00:37 [scrapy.utils.log] INFO: Versions: lxml 4.9.1.0, libxml2 2.9.14, cssselect 1.2.0, parsel 1.7.0, w3lib 2.1.1, Twisted 22.10.0, Python 3.7.15 (default, Nov 15 2022, 10:39:17) - [GCC 10.2.1 20210110], pyOpenSSL 22.0.0 (OpenSSL 1.1.1n  15 Mar 2022), cryptography 36.0.2, Platform Linux-5.10.124-linuxkit-aarch64-with-debian-11.5
+[2022-12-18T10:00:37.465+0000] {subprocess.py:93} INFO - 2022-12-18 10:00:37 [scrapy.crawler] INFO: Overridden settings:
+[2022-12-18T10:00:37.470+0000] {subprocess.py:93} INFO - {}
+[2022-12-18T10:00:37.485+0000] {subprocess.py:93} INFO - 2022-12-18 10:00:37 [py.warnings] WARNING: /home/***/.local/lib/python3.7/site-packages/scrapy/utils/request.py:231: ScrapyDeprecationWarning: '2.6' is a deprecated value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting.
+[2022-12-18T10:00:37.497+0000] {subprocess.py:93} INFO - 
+[2022-12-18T10:00:37.502+0000] {subprocess.py:93} INFO - It is also the default value. In other words, it is normal to get this warning if you have not defined a value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting. This is so for backward compatibility reasons, but it will change in a future version of Scrapy.
+[2022-12-18T10:00:37.504+0000] {subprocess.py:93} INFO - 
+[2022-12-18T10:00:37.505+0000] {subprocess.py:93} INFO - See the documentation of the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting for information on how to handle this deprecation.
+[2022-12-18T10:00:37.511+0000] {subprocess.py:93} INFO -   return cls(crawler)
+[2022-12-18T10:00:37.512+0000] {subprocess.py:93} INFO - 
+[2022-12-18T10:00:37.519+0000] {subprocess.py:93} INFO - 2022-12-18 10:00:37 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.epollreactor.EPollReactor
+[2022-12-18T10:00:37.621+0000] {subprocess.py:93} INFO - 2022-12-18 10:00:37 [scrapy.extensions.telnet] INFO: Telnet Password: 15dec82e498c7977
+[2022-12-18T10:00:37.741+0000] {subprocess.py:93} INFO - 2022-12-18 10:00:37 [scrapy.middleware] INFO: Enabled extensions:
+[2022-12-18T10:00:37.747+0000] {subprocess.py:93} INFO - ['scrapy.extensions.corestats.CoreStats',
+[2022-12-18T10:00:37.749+0000] {subprocess.py:93} INFO -  'scrapy.extensions.telnet.TelnetConsole',
+[2022-12-18T10:00:37.753+0000] {subprocess.py:93} INFO -  'scrapy.extensions.memusage.MemoryUsage',
+[2022-12-18T10:00:37.758+0000] {subprocess.py:93} INFO -  'scrapy.extensions.logstats.LogStats']
+[2022-12-18T10:00:38.329+0000] {subprocess.py:93} INFO - 2022-12-18 10:00:38 [scrapy.middleware] INFO: Enabled downloader middlewares:
+[2022-12-18T10:00:38.331+0000] {subprocess.py:93} INFO - ['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+[2022-12-18T10:00:38.333+0000] {subprocess.py:93} INFO -  'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+[2022-12-18T10:00:38.335+0000] {subprocess.py:93} INFO -  'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+[2022-12-18T10:00:38.338+0000] {subprocess.py:93} INFO -  'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+[2022-12-18T10:00:38.350+0000] {subprocess.py:93} INFO -  'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+[2022-12-18T10:00:38.356+0000] {subprocess.py:93} INFO -  'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+[2022-12-18T10:00:38.360+0000] {subprocess.py:93} INFO -  'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+[2022-12-18T10:00:38.365+0000] {subprocess.py:93} INFO -  'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+[2022-12-18T10:00:38.370+0000] {subprocess.py:93} INFO -  'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+[2022-12-18T10:00:38.381+0000] {subprocess.py:93} INFO -  'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+[2022-12-18T10:00:38.386+0000] {subprocess.py:93} INFO -  'scrapy.downloadermiddlewares.stats.DownloaderStats']
+[2022-12-18T10:00:38.390+0000] {subprocess.py:93} INFO - 2022-12-18 10:00:38 [scrapy.middleware] INFO: Enabled spider middlewares:
+[2022-12-18T10:00:38.393+0000] {subprocess.py:93} INFO - ['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+[2022-12-18T10:00:38.396+0000] {subprocess.py:93} INFO -  'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+[2022-12-18T10:00:38.397+0000] {subprocess.py:93} INFO -  'scrapy.spidermiddlewares.referer.RefererMiddleware',
+[2022-12-18T10:00:38.402+0000] {subprocess.py:93} INFO -  'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+[2022-12-18T10:00:38.407+0000] {subprocess.py:93} INFO -  'scrapy.spidermiddlewares.depth.DepthMiddleware']
+[2022-12-18T10:00:38.409+0000] {subprocess.py:93} INFO - 2022-12-18 10:00:38 [scrapy.middleware] INFO: Enabled item pipelines:
+[2022-12-18T10:00:38.412+0000] {subprocess.py:93} INFO - []
+[2022-12-18T10:00:38.413+0000] {subprocess.py:93} INFO - 2022-12-18 10:00:38 [scrapy.core.engine] INFO: Spider opened
+[2022-12-18T10:00:39.167+0000] {subprocess.py:93} INFO - 2022-12-18 10:00:39 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+[2022-12-18T10:00:39.173+0000] {subprocess.py:93} INFO - 2022-12-18 10:00:39 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6024
+[2022-12-18T10:00:40.556+0000] {subprocess.py:93} INFO - 2022-12-18 10:00:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/stats> (referer: None)
+[2022-12-18T10:00:41.151+0000] {subprocess.py:93} INFO - 2022-12-18 10:00:41 [scrapy.core.engine] INFO: Closing spider (finished)
+[2022-12-18T10:00:41.207+0000] {subprocess.py:93} INFO - 2022-12-18 10:00:41 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+[2022-12-18T10:00:41.210+0000] {subprocess.py:93} INFO - {'downloader/request_bytes': 310,
+[2022-12-18T10:00:41.218+0000] {subprocess.py:93} INFO -  'downloader/request_count': 1,
+[2022-12-18T10:00:41.221+0000] {subprocess.py:93} INFO -  'downloader/request_method_count/GET': 1,
+[2022-12-18T10:00:41.227+0000] {subprocess.py:93} INFO -  'downloader/response_bytes': 34714,
+[2022-12-18T10:00:41.238+0000] {subprocess.py:93} INFO -  'downloader/response_count': 1,
+[2022-12-18T10:00:41.269+0000] {subprocess.py:93} INFO -  'downloader/response_status_count/200': 1,
+[2022-12-18T10:00:41.276+0000] {subprocess.py:93} INFO -  'elapsed_time_seconds': 1.995791,
+[2022-12-18T10:00:41.282+0000] {subprocess.py:93} INFO -  'finish_reason': 'finished',
+[2022-12-18T10:00:41.320+0000] {subprocess.py:93} INFO -  'finish_time': datetime.datetime(2022, 12, 18, 10, 0, 41, 162213),
+[2022-12-18T10:00:41.324+0000] {subprocess.py:93} INFO -  'httpcompression/response_bytes': 492101,
+[2022-12-18T10:00:41.337+0000] {subprocess.py:93} INFO -  'httpcompression/response_count': 1,
+[2022-12-18T10:00:41.339+0000] {subprocess.py:93} INFO -  'log_count/DEBUG': 2,
+[2022-12-18T10:00:41.343+0000] {subprocess.py:93} INFO -  'log_count/INFO': 10,
+[2022-12-18T10:00:41.403+0000] {subprocess.py:93} INFO -  'log_count/WARNING': 1,
+[2022-12-18T10:00:41.409+0000] {subprocess.py:93} INFO -  'memusage/max': 238899200,
+[2022-12-18T10:00:41.413+0000] {subprocess.py:93} INFO -  'memusage/startup': 238899200,
+[2022-12-18T10:00:41.416+0000] {subprocess.py:93} INFO -  'response_received_count': 1,
+[2022-12-18T10:00:41.420+0000] {subprocess.py:93} INFO -  'scheduler/dequeued': 1,
+[2022-12-18T10:00:41.421+0000] {subprocess.py:93} INFO -  'scheduler/dequeued/memory': 1,
+[2022-12-18T10:00:41.424+0000] {subprocess.py:93} INFO -  'scheduler/enqueued': 1,
+[2022-12-18T10:00:41.427+0000] {subprocess.py:93} INFO -  'scheduler/enqueued/memory': 1,
+[2022-12-18T10:00:41.432+0000] {subprocess.py:93} INFO -  'start_time': datetime.datetime(2022, 12, 18, 10, 0, 39, 166422)}
+[2022-12-18T10:00:41.435+0000] {subprocess.py:93} INFO - 2022-12-18 10:00:41 [scrapy.core.engine] INFO: Spider closed (finished)
+[2022-12-18T10:00:41.436+0000] {subprocess.py:93} INFO - {"message": "successfully scrape champ basic stat", "time": "2022-12-18T10:00:41.219059"}
+[2022-12-18T10:00:41.440+0000] {subprocess.py:93} INFO - 2022-12-18 10:00:41 [__main__] INFO: successfully scrape champ basic stat
+[2022-12-18T10:00:41.441+0000] {subprocess.py:93} INFO - {"message": "scrapying champ stat have used 3.8938342519995786s", "time": "2022-12-18T10:00:41.273904"}
+[2022-12-18T10:00:41.446+0000] {subprocess.py:93} INFO - 2022-12-18 10:00:41 [__main__] INFO: scrapying champ stat have used 3.8938342519995786s
+[2022-12-18T10:00:41.458+0000] {subprocess.py:93} INFO - {"message": "scrapying champ stat have used cpu scpustats(ctx_switches=31307527, interrupts=25776300, soft_interrupts=8859364, syscalls=0)% and disk sdiskusage(total=245107195904, used=229519699968, free=15587495936, percent=93.6)%", "time": "2022-12-18T10:00:41.288960"}
+[2022-12-18T10:00:41.460+0000] {subprocess.py:93} INFO - 2022-12-18 10:00:41 [__main__] INFO: scrapying champ stat have used cpu scpustats(ctx_switches=31307527, interrupts=25776300, soft_interrupts=8859364, syscalls=0)% and disk sdiskusage(total=245107195904, used=229519699968, free=15587495936, percent=93.6)%
+[2022-12-18T10:00:41.760+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2022-12-18T10:00:42.903+0000] {taskinstance.py:1327} INFO - Marking task as SUCCESS. dag_id=Can_I_change_name_to_this, task_id=scrape_basic, execution_date=20221217T100000, start_date=20221218T100029, end_date=20221218T100042
+[2022-12-18T10:00:50.382+0000] {local_task_job.py:159} INFO - Task exited with return code 0
+[2022-12-18T10:00:51.483+0000] {taskinstance.py:2582} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,34 @@
+[2022-12-23T10:03:16.444+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: Can_I_change_name_to_this.processed_put_to_s3 scheduled__2022-12-22T10:00:00+00:00 [queued]>
+[2022-12-23T10:03:16.461+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: Can_I_change_name_to_this.processed_put_to_s3 scheduled__2022-12-22T10:00:00+00:00 [queued]>
+[2022-12-23T10:03:16.462+0000] {taskinstance.py:1283} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-23T10:03:16.464+0000] {taskinstance.py:1284} INFO - Starting attempt 1 of 1
+[2022-12-23T10:03:16.465+0000] {taskinstance.py:1285} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-23T10:03:16.490+0000] {taskinstance.py:1304} INFO - Executing <Task(BashOperator): processed_put_to_s3> on 2022-12-22 10:00:00+00:00
+[2022-12-23T10:03:16.497+0000] {standard_task_runner.py:55} INFO - Started process 1185 to run task
+[2022-12-23T10:03:16.503+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'Can_I_change_name_to_this', 'processed_put_to_s3', 'scheduled__2022-12-22T10:00:00+00:00', '--job-id', '249', '--raw', '--subdir', 'DAGS_FOLDER/dags.py', '--cfg-path', '/tmp/tmp0bop2ot4']
+[2022-12-23T10:03:16.506+0000] {standard_task_runner.py:83} INFO - Job 249: Subtask processed_put_to_s3
+[2022-12-23T10:03:16.597+0000] {task_command.py:389} INFO - Running <TaskInstance: Can_I_change_name_to_this.processed_put_to_s3 scheduled__2022-12-22T10:00:00+00:00 [running]> on host 502390ac5559
+[2022-12-23T10:03:16.747+0000] {taskinstance.py:1513} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=Can_I_change_name_to_this
+AIRFLOW_CTX_TASK_ID=processed_put_to_s3
+AIRFLOW_CTX_EXECUTION_DATE=2022-12-22T10:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-12-22T10:00:00+00:00
+[2022-12-23T10:03:16.751+0000] {subprocess.py:63} INFO - Tmp dir root location: 
+ /tmp
+[2022-12-23T10:03:16.753+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'python /opt/***/tasks/processed_put_to_s3.py']
+[2022-12-23T10:03:16.779+0000] {subprocess.py:86} INFO - Output:
+[2022-12-23T10:03:17.875+0000] {subprocess.py:93} INFO - {"message": "now putting clean file to s3", "time": "2022-12-23T10:03:17.872362"}
+[2022-12-23T10:03:17.883+0000] {subprocess.py:93} INFO - {"message": "now putting /opt/***/processed_zone/lol_clean_basic_stat.json to clean_zone", "time": "2022-12-23T10:03:17.883381"}
+[2022-12-23T10:03:17.885+0000] {subprocess.py:93} INFO - {"message": "now putting /opt/***/processed_zone/lol_clean_counter_stat.json to clean_zone", "time": "2022-12-23T10:03:17.883555"}
+[2022-12-23T10:03:20.986+0000] {subprocess.py:93} INFO - {"message": "successfully putting /opt/***/processed_zone/lol_clean_basic_stat.json to raw_zone", "time": "2022-12-23T10:03:20.983272"}
+[2022-12-23T10:03:26.348+0000] {subprocess.py:93} INFO - {"message": "successfully putting /opt/***/processed_zone/lol_clean_counter_stat.json to raw_zone", "time": "2022-12-23T10:03:26.342544"}
+[2022-12-23T10:03:26.401+0000] {subprocess.py:93} INFO - {"message": "successfully put clean file to s3", "time": "2022-12-23T10:03:26.365090"}
+[2022-12-23T10:03:26.405+0000] {subprocess.py:93} INFO - {"message": "put clean file to s3 have used 8.49242558800006s", "time": "2022-12-23T10:03:26.367793"}
+[2022-12-23T10:03:27.467+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2022-12-23T10:03:28.256+0000] {taskinstance.py:1327} INFO - Marking task as SUCCESS. dag_id=Can_I_change_name_to_this, task_id=processed_put_to_s3, execution_date=20221222T100000, start_date=20221223T100316, end_date=20221223T100328
+[2022-12-23T10:03:28.554+0000] {local_task_job.py:159} INFO - Task exited with return code 0
+[2022-12-23T10:03:28.919+0000] {taskinstance.py:2582} INFO - 1 downstream tasks scheduled from follow-on schedule check

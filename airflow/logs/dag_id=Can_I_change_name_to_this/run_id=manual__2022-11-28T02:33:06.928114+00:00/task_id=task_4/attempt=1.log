@@ -1,0 +1,34 @@
+[2022-11-28T02:33:23.501+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: Can_I_change_name_to_this.task_4 manual__2022-11-28T02:33:06.928114+00:00 [queued]>
+[2022-11-28T02:33:23.508+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: Can_I_change_name_to_this.task_4 manual__2022-11-28T02:33:06.928114+00:00 [queued]>
+[2022-11-28T02:33:23.510+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-28T02:33:23.511+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 1
+[2022-11-28T02:33:23.511+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-28T02:33:23.521+0000] {taskinstance.py:1383} INFO - Executing <Task(BashOperator): task_4> on 2022-11-28 02:33:06.928114+00:00
+[2022-11-28T02:33:23.525+0000] {standard_task_runner.py:55} INFO - Started process 262 to run task
+[2022-11-28T02:33:23.528+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'Can_I_change_name_to_this', 'task_4', 'manual__2022-11-28T02:33:06.928114+00:00', '--job-id', '9', '--raw', '--subdir', 'DAGS_FOLDER/dags.py', '--cfg-path', '/tmp/tmppidyibny']
+[2022-11-28T02:33:23.529+0000] {standard_task_runner.py:83} INFO - Job 9: Subtask task_4
+[2022-11-28T02:33:23.569+0000] {task_command.py:376} INFO - Running <TaskInstance: Can_I_change_name_to_this.task_4 manual__2022-11-28T02:33:06.928114+00:00 [running]> on host 7667c9be398a
+[2022-11-28T02:33:23.610+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=Can_I_change_name_to_this
+AIRFLOW_CTX_TASK_ID=task_4
+AIRFLOW_CTX_EXECUTION_DATE=2022-11-28T02:33:06.928114+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-11-28T02:33:06.928114+00:00
+[2022-11-28T02:33:23.612+0000] {subprocess.py:63} INFO - Tmp dir root location: 
+ /tmp
+[2022-11-28T02:33:23.614+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'mv -v /opt/***/zone1/* /opt/***/zone2']
+[2022-11-28T02:33:23.622+0000] {subprocess.py:86} INFO - Output:
+[2022-11-28T02:33:23.638+0000] {subprocess.py:93} INFO - mv: cannot stat '/opt/***/zone1/*': No such file or directory
+[2022-11-28T02:33:23.639+0000] {subprocess.py:97} INFO - Command exited with return code 1
+[2022-11-28T02:33:23.651+0000] {taskinstance.py:1851} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py", line 197, in execute
+    f'Bash command failed. The command returned a non-zero exit code {result.exit_code}.'
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2022-11-28T02:33:23.655+0000] {taskinstance.py:1406} INFO - Marking task as FAILED. dag_id=Can_I_change_name_to_this, task_id=task_4, execution_date=20221128T023306, start_date=20221128T023323, end_date=20221128T023323
+[2022-11-28T02:33:23.666+0000] {standard_task_runner.py:105} ERROR - Failed to execute job 9 for task task_4 (Bash command failed. The command returned a non-zero exit code 1.; 262)
+[2022-11-28T02:33:23.700+0000] {local_task_job.py:159} INFO - Task exited with return code 1
+[2022-11-28T02:33:23.713+0000] {taskinstance.py:2623} INFO - 0 downstream tasks scheduled from follow-on schedule check

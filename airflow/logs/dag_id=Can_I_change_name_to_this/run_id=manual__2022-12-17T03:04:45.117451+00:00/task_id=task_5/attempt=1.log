@@ -1,0 +1,34 @@
+[2022-12-17T03:05:37.604+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: Can_I_change_name_to_this.task_5 manual__2022-12-17T03:04:45.117451+00:00 [queued]>
+[2022-12-17T03:05:37.695+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: Can_I_change_name_to_this.task_5 manual__2022-12-17T03:04:45.117451+00:00 [queued]>
+[2022-12-17T03:05:37.702+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-17T03:05:37.704+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 1
+[2022-12-17T03:05:37.707+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-17T03:05:37.767+0000] {taskinstance.py:1383} INFO - Executing <Task(BashOperator): task_5> on 2022-12-17 03:04:45.117451+00:00
+[2022-12-17T03:05:37.818+0000] {standard_task_runner.py:55} INFO - Started process 308 to run task
+[2022-12-17T03:05:37.842+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'Can_I_change_name_to_this', 'task_5', 'manual__2022-12-17T03:04:45.117451+00:00', '--job-id', '85', '--raw', '--subdir', 'DAGS_FOLDER/dags.py', '--cfg-path', '/tmp/tmpew9zczz2']
+[2022-12-17T03:05:37.845+0000] {standard_task_runner.py:83} INFO - Job 85: Subtask task_5
+[2022-12-17T03:05:38.002+0000] {task_command.py:376} INFO - Running <TaskInstance: Can_I_change_name_to_this.task_5 manual__2022-12-17T03:04:45.117451+00:00 [running]> on host c8f80f7eb8b2
+[2022-12-17T03:05:38.207+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=Can_I_change_name_to_this
+AIRFLOW_CTX_TASK_ID=task_5
+AIRFLOW_CTX_EXECUTION_DATE=2022-12-17T03:04:45.117451+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-12-17T03:04:45.117451+00:00
+[2022-12-17T03:05:38.226+0000] {subprocess.py:63} INFO - Tmp dir root location: 
+ /tmp
+[2022-12-17T03:05:38.236+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'python /opt/***/tasks/raw_put_to_s3.py ']
+[2022-12-17T03:05:38.276+0000] {subprocess.py:86} INFO - Output:
+[2022-12-17T03:05:43.335+0000] {subprocess.py:93} INFO - {"message": "now putting raw file to s3", "time": "2022-12-17T03:05:43.333773"}
+[2022-12-17T03:05:43.401+0000] {subprocess.py:93} INFO - {"message": "now putting /opt/***/zone1/lol_basic_stat.json to raw_zone", "time": "2022-12-17T03:05:43.401189"}
+[2022-12-17T03:05:43.403+0000] {subprocess.py:93} INFO - {"message": "now putting /opt/***/zone1/lol_counter_stat.json to raw_zone", "time": "2022-12-17T03:05:43.401682"}
+[2022-12-17T03:05:46.235+0000] {subprocess.py:93} INFO - {"message": "successfully putting /opt/***/zone1/lol_basic_stat.json to raw_zone", "time": "2022-12-17T03:05:46.230574"}
+[2022-12-17T03:05:49.657+0000] {subprocess.py:93} INFO - {"message": "successfully putting /opt/***/zone1/lol_counter_stat.json to raw_zone", "time": "2022-12-17T03:05:49.650615"}
+[2022-12-17T03:05:49.683+0000] {subprocess.py:93} INFO - {"message": "successfully put raw file to s3", "time": "2022-12-17T03:05:49.656119"}
+[2022-12-17T03:05:49.684+0000] {subprocess.py:93} INFO - {"message": "put raw file to s3 have used 6.319991502999983s", "time": "2022-12-17T03:05:49.658034"}
+[2022-12-17T03:05:49.854+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2022-12-17T03:05:49.973+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=Can_I_change_name_to_this, task_id=task_5, execution_date=20221217T030445, start_date=20221217T030537, end_date=20221217T030549
+[2022-12-17T03:05:50.095+0000] {local_task_job.py:159} INFO - Task exited with return code 0
+[2022-12-17T03:05:50.124+0000] {taskinstance.py:2623} INFO - 0 downstream tasks scheduled from follow-on schedule check

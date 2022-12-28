@@ -1,0 +1,354 @@
+[2022-12-17T02:50:47.852+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: Can_I_change_name_to_this.task_2 manual__2022-12-17T02:50:41.373960+00:00 [queued]>
+[2022-12-17T02:50:48.100+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: Can_I_change_name_to_this.task_2 manual__2022-12-17T02:50:41.373960+00:00 [queued]>
+[2022-12-17T02:50:48.105+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-17T02:50:48.109+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 1
+[2022-12-17T02:50:48.114+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-17T02:50:48.154+0000] {taskinstance.py:1383} INFO - Executing <Task(BashOperator): task_2> on 2022-12-17 02:50:41.373960+00:00
+[2022-12-17T02:50:48.199+0000] {standard_task_runner.py:55} INFO - Started process 1285 to run task
+[2022-12-17T02:50:48.234+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'Can_I_change_name_to_this', 'task_2', 'manual__2022-12-17T02:50:41.373960+00:00', '--job-id', '73', '--raw', '--subdir', 'DAGS_FOLDER/dags.py', '--cfg-path', '/tmp/tmpo137d456']
+[2022-12-17T02:50:48.237+0000] {standard_task_runner.py:83} INFO - Job 73: Subtask task_2
+[2022-12-17T02:50:48.467+0000] {task_command.py:376} INFO - Running <TaskInstance: Can_I_change_name_to_this.task_2 manual__2022-12-17T02:50:41.373960+00:00 [running]> on host 418b9a9aa3df
+[2022-12-17T02:50:49.173+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=Can_I_change_name_to_this
+AIRFLOW_CTX_TASK_ID=task_2
+AIRFLOW_CTX_EXECUTION_DATE=2022-12-17T02:50:41.373960+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-12-17T02:50:41.373960+00:00
+[2022-12-17T02:50:49.194+0000] {subprocess.py:63} INFO - Tmp dir root location: 
+ /tmp
+[2022-12-17T02:50:49.203+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'python /opt/***/tasks/lol_champ_counter_stat.py ']
+[2022-12-17T02:50:49.253+0000] {subprocess.py:86} INFO - Output:
+[2022-12-17T02:50:55.809+0000] {subprocess.py:93} INFO - {"message": "now scraping the champ counter stat", "time": "2022-12-17T02:50:55.800685"}
+[2022-12-17T02:50:55.822+0000] {subprocess.py:93} INFO - 2022-12-17 02:50:55 [scrapy.utils.log] INFO: Scrapy 2.7.1 started (bot: scrapybot)
+[2022-12-17T02:50:55.841+0000] {subprocess.py:93} INFO - 2022-12-17 02:50:55 [scrapy.utils.log] INFO: Versions: lxml 4.9.1.0, libxml2 2.9.14, cssselect 1.2.0, parsel 1.7.0, w3lib 2.1.0, Twisted 22.10.0, Python 3.7.15 (default, Oct 25 2022, 07:08:46) - [GCC 10.2.1 20210110], pyOpenSSL 22.0.0 (OpenSSL 1.1.1n  15 Mar 2022), cryptography 36.0.2, Platform Linux-5.10.124-linuxkit-aarch64-with-debian-11.5
+[2022-12-17T02:50:55.849+0000] {subprocess.py:93} INFO - 2022-12-17 02:50:55 [scrapy.crawler] INFO: Overridden settings:
+[2022-12-17T02:50:55.850+0000] {subprocess.py:93} INFO - {}
+[2022-12-17T02:50:55.862+0000] {subprocess.py:93} INFO - 2022-12-17 02:50:55 [py.warnings] WARNING: /home/***/.local/lib/python3.7/site-packages/scrapy/utils/request.py:231: ScrapyDeprecationWarning: '2.6' is a deprecated value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting.
+[2022-12-17T02:50:55.863+0000] {subprocess.py:93} INFO - 
+[2022-12-17T02:50:55.865+0000] {subprocess.py:93} INFO - It is also the default value. In other words, it is normal to get this warning if you have not defined a value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting. This is so for backward compatibility reasons, but it will change in a future version of Scrapy.
+[2022-12-17T02:50:55.867+0000] {subprocess.py:93} INFO - 
+[2022-12-17T02:50:55.868+0000] {subprocess.py:93} INFO - See the documentation of the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting for information on how to handle this deprecation.
+[2022-12-17T02:50:55.872+0000] {subprocess.py:93} INFO -   return cls(crawler)
+[2022-12-17T02:50:55.873+0000] {subprocess.py:93} INFO - 
+[2022-12-17T02:50:55.874+0000] {subprocess.py:93} INFO - 2022-12-17 02:50:55 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.epollreactor.EPollReactor
+[2022-12-17T02:50:55.910+0000] {subprocess.py:93} INFO - 2022-12-17 02:50:55 [scrapy.extensions.telnet] INFO: Telnet Password: fa88e367f4efef37
+[2022-12-17T02:50:56.128+0000] {subprocess.py:93} INFO - 2022-12-17 02:50:56 [scrapy.middleware] INFO: Enabled extensions:
+[2022-12-17T02:50:56.129+0000] {subprocess.py:93} INFO - ['scrapy.extensions.corestats.CoreStats',
+[2022-12-17T02:50:56.131+0000] {subprocess.py:93} INFO -  'scrapy.extensions.telnet.TelnetConsole',
+[2022-12-17T02:50:56.132+0000] {subprocess.py:93} INFO -  'scrapy.extensions.memusage.MemoryUsage',
+[2022-12-17T02:50:56.136+0000] {subprocess.py:93} INFO -  'scrapy.extensions.logstats.LogStats']
+[2022-12-17T02:50:56.545+0000] {subprocess.py:93} INFO - 2022-12-17 02:50:56 [scrapy.middleware] INFO: Enabled downloader middlewares:
+[2022-12-17T02:50:56.554+0000] {subprocess.py:93} INFO - ['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+[2022-12-17T02:50:56.557+0000] {subprocess.py:93} INFO -  'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+[2022-12-17T02:50:56.559+0000] {subprocess.py:93} INFO -  'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+[2022-12-17T02:50:56.560+0000] {subprocess.py:93} INFO -  'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+[2022-12-17T02:50:56.562+0000] {subprocess.py:93} INFO -  'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+[2022-12-17T02:50:56.563+0000] {subprocess.py:93} INFO -  'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+[2022-12-17T02:50:56.564+0000] {subprocess.py:93} INFO -  'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+[2022-12-17T02:50:56.565+0000] {subprocess.py:93} INFO -  'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+[2022-12-17T02:50:56.566+0000] {subprocess.py:93} INFO -  'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+[2022-12-17T02:50:56.569+0000] {subprocess.py:93} INFO -  'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+[2022-12-17T02:50:56.570+0000] {subprocess.py:93} INFO -  'scrapy.downloadermiddlewares.stats.DownloaderStats']
+[2022-12-17T02:50:56.573+0000] {subprocess.py:93} INFO - 2022-12-17 02:50:56 [scrapy.middleware] INFO: Enabled spider middlewares:
+[2022-12-17T02:50:56.574+0000] {subprocess.py:93} INFO - ['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+[2022-12-17T02:50:56.575+0000] {subprocess.py:93} INFO -  'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+[2022-12-17T02:50:56.578+0000] {subprocess.py:93} INFO -  'scrapy.spidermiddlewares.referer.RefererMiddleware',
+[2022-12-17T02:50:56.584+0000] {subprocess.py:93} INFO -  'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+[2022-12-17T02:50:56.586+0000] {subprocess.py:93} INFO -  'scrapy.spidermiddlewares.depth.DepthMiddleware']
+[2022-12-17T02:50:56.587+0000] {subprocess.py:93} INFO - 2022-12-17 02:50:56 [scrapy.middleware] INFO: Enabled item pipelines:
+[2022-12-17T02:50:56.589+0000] {subprocess.py:93} INFO - []
+[2022-12-17T02:50:56.593+0000] {subprocess.py:93} INFO - 2022-12-17 02:50:56 [scrapy.core.engine] INFO: Spider opened
+[2022-12-17T02:50:56.672+0000] {subprocess.py:93} INFO - 2022-12-17 02:50:56 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+[2022-12-17T02:50:56.678+0000] {subprocess.py:93} INFO - 2022-12-17 02:50:56 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+[2022-12-17T02:50:56.991+0000] {subprocess.py:93} INFO - 2022-12-17 02:50:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/stats> (referer: None)
+[2022-12-17T02:50:57.329+0000] {subprocess.py:93} INFO - 2022-12-17 02:50:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/aatrox/top> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:50:57.383+0000] {subprocess.py:93} INFO - 2022-12-17 02:50:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/alistar/support> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:50:57.529+0000] {subprocess.py:93} INFO - 2022-12-17 02:50:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/annie/mid> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:50:57.541+0000] {subprocess.py:93} INFO - 2022-12-17 02:50:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/akshan/top> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:50:57.752+0000] {subprocess.py:93} INFO - 2022-12-17 02:50:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/aphelios/adc> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:50:57.776+0000] {subprocess.py:93} INFO - 2022-12-17 02:50:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/amumu/support> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:50:57.777+0000] {subprocess.py:93} INFO - 2022-12-17 02:50:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/annie/support> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:50:57.778+0000] {subprocess.py:93} INFO - 2022-12-17 02:50:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/amumu/jungle> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:50:57.779+0000] {subprocess.py:93} INFO - 2022-12-17 02:50:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/anivia/mid> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:50:57.782+0000] {subprocess.py:93} INFO - 2022-12-17 02:50:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/anivia/support> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:50:57.909+0000] {subprocess.py:93} INFO - 2022-12-17 02:50:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/akshan/mid> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:50:57.914+0000] {subprocess.py:93} INFO - 2022-12-17 02:50:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/akali/top> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:50:58.260+0000] {subprocess.py:93} INFO - 2022-12-17 02:50:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/swain/mid> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:50:58.265+0000] {subprocess.py:93} INFO - 2022-12-17 02:50:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/swain/support> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:50:58.271+0000] {subprocess.py:93} INFO - 2022-12-17 02:50:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/fiora/top> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:50:58.276+0000] {subprocess.py:93} INFO - 2022-12-17 02:50:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/ahri/mid> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:50:58.283+0000] {subprocess.py:93} INFO - 2022-12-17 02:50:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/renekton/mid> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:50:58.288+0000] {subprocess.py:93} INFO - 2022-12-17 02:50:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/akali/mid> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:50:58.295+0000] {subprocess.py:93} INFO - 2022-12-17 02:50:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/karthus/adc> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:50:58.301+0000] {subprocess.py:93} INFO - 2022-12-17 02:50:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/fizz/mid> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:50:58.594+0000] {subprocess.py:93} INFO - 2022-12-17 02:50:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/ziggs/support> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:50:58.599+0000] {subprocess.py:93} INFO - 2022-12-17 02:50:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/zyra/support> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:50:58.603+0000] {subprocess.py:93} INFO - 2022-12-17 02:50:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/ziggs/mid> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:50:58.609+0000] {subprocess.py:93} INFO - 2022-12-17 02:50:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/zoe/mid> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:50:58.614+0000] {subprocess.py:93} INFO - 2022-12-17 02:50:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/zilean/support> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:50:58.619+0000] {subprocess.py:93} INFO - 2022-12-17 02:50:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/ziggs/adc> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:50:58.626+0000] {subprocess.py:93} INFO - 2022-12-17 02:50:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/zoe/support> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:50:58.631+0000] {subprocess.py:93} INFO - 2022-12-17 02:50:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/zilean/mid> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:50:58.681+0000] {subprocess.py:93} INFO - 2022-12-17 02:50:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/yuumi/support> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:50:58.684+0000] {subprocess.py:93} INFO - 2022-12-17 02:50:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/zed/jungle> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:50:58.688+0000] {subprocess.py:93} INFO - 2022-12-17 02:50:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/zeri/adc> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:50:58.691+0000] {subprocess.py:93} INFO - 2022-12-17 02:50:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/zed/mid> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:50:58.695+0000] {subprocess.py:93} INFO - 2022-12-17 02:50:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/zac/top> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:50:58.698+0000] {subprocess.py:93} INFO - 2022-12-17 02:50:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/zac/jungle> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:50:58.702+0000] {subprocess.py:93} INFO - 2022-12-17 02:50:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/yorick/top> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:50:58.705+0000] {subprocess.py:93} INFO - 2022-12-17 02:50:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/yone/top> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:50:59.383+0000] {subprocess.py:93} INFO - 2022-12-17 02:50:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/yasuo/top> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:50:59.399+0000] {subprocess.py:93} INFO - 2022-12-17 02:50:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/yasuo/adc> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:50:59.404+0000] {subprocess.py:93} INFO - 2022-12-17 02:50:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/yone/mid> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:50:59.464+0000] {subprocess.py:93} INFO - 2022-12-17 02:50:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/xerath/support> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:50:59.472+0000] {subprocess.py:93} INFO - 2022-12-17 02:50:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/xayah/adc> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:50:59.480+0000] {subprocess.py:93} INFO - 2022-12-17 02:50:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/monkeyking/top> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:50:59.488+0000] {subprocess.py:93} INFO - 2022-12-17 02:50:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/monkeyking/jungle> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:50:59.547+0000] {subprocess.py:93} INFO - 2022-12-17 02:50:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/warwick/top> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:50:59.551+0000] {subprocess.py:93} INFO - 2022-12-17 02:50:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/xerath/mid> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:50:59.564+0000] {subprocess.py:93} INFO - 2022-12-17 02:50:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/xinzhao/jungle> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:50:59.579+0000] {subprocess.py:93} INFO - 2022-12-17 02:50:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/yasuo/mid> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:50:59.723+0000] {subprocess.py:93} INFO - 2022-12-17 02:50:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/warwick/jungle> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:50:59.730+0000] {subprocess.py:93} INFO - 2022-12-17 02:50:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/volibear/top> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:50:59.735+0000] {subprocess.py:93} INFO - 2022-12-17 02:50:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/volibear/jungle> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:50:59.743+0000] {subprocess.py:93} INFO - 2022-12-17 02:50:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/vladimir/top> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:00.003+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/vex/mid> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:00.008+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/velkoz/support> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:00.016+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/veigar/support> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:00.022+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/vi/jungle> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:00.069+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/vayne/top> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:00.073+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/veigar/mid> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:00.077+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/vayne/adc> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:00.084+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/veigar/adc> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:00.146+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/urgot/top> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:00.151+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/varus/adc> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:00.160+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/varus/mid> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:00.165+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/udyr/jungle> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:00.269+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/velkoz/mid> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:00.276+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/viego/jungle> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:01.416+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/twitch/support> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:01.419+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/twitch/mid> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:01.422+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/twitch/adc> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:01.425+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/twistedfate/mid> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:01.429+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/vladimir/mid> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:01.431+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/viktor/mid> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:01.482+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/tryndamere/mid> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:01.576+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/trundle/jungle> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:01.588+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/taric/support> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:01.600+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/teemo/top> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:01.607+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/trundle/top> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:01.611+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/thresh/support> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:01.619+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/tryndamere/top> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:01.630+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/tristana/adc> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:01.637+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/tristana/mid> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:02.062+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/talon/jungle> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:02.067+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/talon/mid> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:02.075+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/taliyah/jungle> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:02.080+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/taliyah/support> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:02.085+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/taliyah/mid> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:02.101+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/tahmkench/support> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:02.106+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/tahmkench/top> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:02.110+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/syndra/mid> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:02.402+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/sona/support> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:02.409+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/skarner/jungle> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:02.413+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/sion/top> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:02.418+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/sylas/jungle> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:02.422+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/soraka/support> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:02.430+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/sylas/mid> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:02.435+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/sivir/adc> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:02.442+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/skarner/top> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:02.447+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/singed/top> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:02.477+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/singed/mid> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:02.482+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/shyvana/top> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:02.487+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/shyvana/jungle> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:02.491+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/shaco/support> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:02.498+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/shen/support> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:02.503+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/sett/top> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:02.507+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/shen/top> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:02.531+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/shaco/jungle> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:03.110+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/sejuani/jungle> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:03.116+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/ryze/mid> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:03.128+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/sejuani/top> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:03.135+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/ryze/top> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:03.142+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/seraphine/support> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:03.151+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/senna/support> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:03.156+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/seraphine/adc> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:03.164+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/rumble/jungle> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:03.172+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/rumble/top> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:03.182+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/rumble/mid> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:03.188+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/riven/top> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:03.196+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/rengar/top> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:03.252+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/rell/support> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:03.259+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/renekton/top> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:03.267+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/reksai/jungle> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:03.273+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/renata/support> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:03.278+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/rammus/jungle> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:03.281+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/rakan/support> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:03.288+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/rengar/jungle> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:03.598+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/samira/adc> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:04.161+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/quinn/adc> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:04.236+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/pyke/support> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:04.241+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/qiyana/mid> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:04.252+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/poppy/jungle> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:04.259+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/poppy/top> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:04.263+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/qiyana/jungle> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:04.270+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/poppy/support> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:04.275+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/quinn/top> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:04.282+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/quinn/mid> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:04.310+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/pantheon/support> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:04.314+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/pantheon/top> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:04.326+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/pantheon/mid> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:04.344+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/ornn/top> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:04.352+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/orianna/mid> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:04.433+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/nocturne/jungle> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:04.439+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/nilah/adc> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:04.444+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/nidalee/jungle> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:04.448+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/nunu/jungle> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:04.456+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/olaf/top> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:04.462+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/olaf/jungle> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:04.900+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/neeko/mid> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:04.904+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/neeko/support> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:04.909+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/morgana/support> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:04.913+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/nami/support> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:04.918+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/mordekaiser/jungle> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:04.926+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/nautilus/support> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:04.965+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/nasus/mid> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:04.974+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/nasus/top> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:04.996+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/mordekaiser/top> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:05.184+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/malzahar/mid> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:05.192+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/maokai/jungle> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:05.207+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/maokai/support> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:05.216+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/malphite/top> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:05.222+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/missfortune/adc> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:05.226+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/malphite/support> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:05.231+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/maokai/top> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:05.236+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/masteryi/jungle> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:05.582+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/lux/mid> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:05.589+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/lux/support> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:05.593+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/lissandra/mid> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:05.598+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/lulu/support> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:05.603+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/lillia/top> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:05.609+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/malphite/mid> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:05.615+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/lillia/jungle> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:05.620+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/lucian/adc> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:05.626+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/leona/support> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:05.639+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/kled/mid> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:05.647+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/leblanc/mid> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:05.654+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/leesin/jungle> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:05.661+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/kled/top> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:05.666+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/kindred/jungle> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:05.671+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/khazix/jungle> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:05.678+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/kogmaw/adc> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:05.684+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/kayn/jungle> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:05.688+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/kennen/top> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:05.723+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/kayle/top> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:05.727+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/kayle/mid> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:05.732+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/kennen/mid> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:06.861+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/kalista/adc> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:06.869+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/karthus/mid> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:06.872+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/katarina/mid> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:06.877+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/karma/support> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:06.881+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/kaisa/adc> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:06.887+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/ksante/top> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:06.891+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/karthus/jungle> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:06.895+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/kassadin/mid> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:06.928+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/jayce/top> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:06.933+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/jinx/adc> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:06.937+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/jayce/mid> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:06.948+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/jax/jungle> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:06.952+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/janna/support> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:06.958+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/jarvaniv/jungle> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:06.966+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/jax/top> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:06.972+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/jhin/adc> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:07.077+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/ivern/support> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:07.087+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/ivern/jungle> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:07.524+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/heimerdinger/mid> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:07.533+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/heimerdinger/top> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:07.540+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/irelia/top> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:07.545+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/hecarim/jungle> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:07.551+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/heimerdinger/support> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:07.568+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/gwen/jungle> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:07.582+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/irelia/mid> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:07.625+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/illaoi/top> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:07.670+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/gragas/jungle> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:07.675+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/gragas/top> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:07.681+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/gragas/support> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:07.693+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/graves/jungle> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:07.700+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/gnar/top> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:07.705+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/gwen/top> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:07.710+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/gragas/mid> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:07.928+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/garen/top> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:08.317+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/gangplank/mid> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:08.329+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/gangplank/top> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:08.340+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/galio/support> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:08.353+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/galio/mid> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:08.374+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/fiddlesticks/support> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:08.397+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/fiddlesticks/jungle> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:08.406+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/ezreal/adc> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:08.773+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/diana/mid> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:08.783+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/ekko/jungle> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:08.794+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/evelynn/jungle> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:08.803+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/ekko/mid> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:08.809+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/drmundo/top> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:08.814+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/elise/jungle> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:08.820+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/draven/adc> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:08.824+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/drmundo/jungle> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:08.853+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/corki/mid> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:08.858+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/chogath/top> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:08.861+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/cassiopeia/top> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:08.869+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/diana/jungle> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:08.873+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/cassiopeia/mid> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:08.884+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/chogath/mid> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:08.889+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/cassiopeia/adc> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:08.899+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/darius/top> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:09.771+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/camille/top> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:09.777+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/caitlyn/adc> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:09.783+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/brand/support> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:09.794+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/bard/support> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:09.801+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/braum/support> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:09.805+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/brand/mid> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:09.809+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/blitzcrank/support> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:09.815+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/belveth/jungle> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:09.875+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/ashe/adc> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:09.885+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/ashe/support> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:09.891+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/azir/mid> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:10.014+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.metasrc.com/5v5/champion/aurelionsol/mid> (referer: https://www.metasrc.com/5v5/stats)
+[2022-12-17T02:51:10.385+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:10 [scrapy.core.engine] INFO: Closing spider (finished)
+[2022-12-17T02:51:10.389+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:10 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+[2022-12-17T02:51:10.391+0000] {subprocess.py:93} INFO - {'downloader/request_bytes': 93413,
+[2022-12-17T02:51:10.393+0000] {subprocess.py:93} INFO -  'downloader/request_count': 253,
+[2022-12-17T02:51:10.395+0000] {subprocess.py:93} INFO -  'downloader/request_method_count/GET': 253,
+[2022-12-17T02:51:10.398+0000] {subprocess.py:93} INFO -  'downloader/response_bytes': 13865053,
+[2022-12-17T02:51:10.400+0000] {subprocess.py:93} INFO -  'downloader/response_count': 253,
+[2022-12-17T02:51:10.401+0000] {subprocess.py:93} INFO -  'downloader/response_status_count/200': 253,
+[2022-12-17T02:51:10.402+0000] {subprocess.py:93} INFO -  'elapsed_time_seconds': 13.714619,
+[2022-12-17T02:51:10.403+0000] {subprocess.py:93} INFO -  'finish_reason': 'finished',
+[2022-12-17T02:51:10.404+0000] {subprocess.py:93} INFO -  'finish_time': datetime.datetime(2022, 12, 17, 2, 51, 10, 387056),
+[2022-12-17T02:51:10.406+0000] {subprocess.py:93} INFO -  'httpcompression/response_bytes': 169288098,
+[2022-12-17T02:51:10.407+0000] {subprocess.py:93} INFO -  'httpcompression/response_count': 253,
+[2022-12-17T02:51:10.409+0000] {subprocess.py:93} INFO -  'log_count/DEBUG': 254,
+[2022-12-17T02:51:10.411+0000] {subprocess.py:93} INFO -  'log_count/INFO': 10,
+[2022-12-17T02:51:10.412+0000] {subprocess.py:93} INFO -  'log_count/WARNING': 1,
+[2022-12-17T02:51:10.415+0000] {subprocess.py:93} INFO -  'memusage/max': 236179456,
+[2022-12-17T02:51:10.416+0000] {subprocess.py:93} INFO -  'memusage/startup': 236179456,
+[2022-12-17T02:51:10.418+0000] {subprocess.py:93} INFO -  'request_depth_max': 1,
+[2022-12-17T02:51:10.420+0000] {subprocess.py:93} INFO -  'response_received_count': 253,
+[2022-12-17T02:51:10.422+0000] {subprocess.py:93} INFO -  'scheduler/dequeued': 253,
+[2022-12-17T02:51:10.424+0000] {subprocess.py:93} INFO -  'scheduler/dequeued/memory': 253,
+[2022-12-17T02:51:10.425+0000] {subprocess.py:93} INFO -  'scheduler/enqueued': 253,
+[2022-12-17T02:51:10.426+0000] {subprocess.py:93} INFO -  'scheduler/enqueued/memory': 253,
+[2022-12-17T02:51:10.428+0000] {subprocess.py:93} INFO -  'start_time': datetime.datetime(2022, 12, 17, 2, 50, 56, 672437)}
+[2022-12-17T02:51:10.430+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:10 [scrapy.core.engine] INFO: Spider closed (finished)
+[2022-12-17T02:51:10.432+0000] {subprocess.py:93} INFO - {"message": "successfully scrape champ counter stat", "time": "2022-12-17T02:51:10.413567"}
+[2022-12-17T02:51:10.433+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:10 [__main__] INFO: successfully scrape champ counter stat
+[2022-12-17T02:51:10.434+0000] {subprocess.py:93} INFO - {"message": "scrapying champ counter stat have used 14.603891798999939s", "time": "2022-12-17T02:51:10.420361"}
+[2022-12-17T02:51:10.435+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:10 [__main__] INFO: scrapying champ counter stat have used 14.603891798999939s
+[2022-12-17T02:51:10.435+0000] {subprocess.py:93} INFO - {"message": "scrapying champ counter stat have used cpu scpustats(ctx_switches=7290074, interrupts=5369277, soft_interrupts=2341014, syscalls=0)% and disk sdiskusage(total=245107195904, used=231620739072, free=13486456832, percent=94.5)%", "time": "2022-12-17T02:51:10.427870"}
+[2022-12-17T02:51:10.436+0000] {subprocess.py:93} INFO - 2022-12-17 02:51:10 [__main__] INFO: scrapying champ counter stat have used cpu scpustats(ctx_switches=7290074, interrupts=5369277, soft_interrupts=2341014, syscalls=0)% and disk sdiskusage(total=245107195904, used=231620739072, free=13486456832, percent=94.5)%
+[2022-12-17T02:51:11.680+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2022-12-17T02:51:11.783+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=Can_I_change_name_to_this, task_id=task_2, execution_date=20221217T025041, start_date=20221217T025048, end_date=20221217T025111
+[2022-12-17T02:51:11.912+0000] {local_task_job.py:159} INFO - Task exited with return code 0
+[2022-12-17T02:51:11.991+0000] {taskinstance.py:2623} INFO - 1 downstream tasks scheduled from follow-on schedule check

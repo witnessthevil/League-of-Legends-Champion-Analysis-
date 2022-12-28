@@ -1,0 +1,167 @@
+[2022-12-17T02:45:53.375+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: Can_I_change_name_to_this.task_6 manual__2022-12-17T02:45:14.728802+00:00 [queued]>
+[2022-12-17T02:45:53.396+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: Can_I_change_name_to_this.task_6 manual__2022-12-17T02:45:14.728802+00:00 [queued]>
+[2022-12-17T02:45:53.397+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-17T02:45:53.399+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 1
+[2022-12-17T02:45:53.401+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-17T02:45:53.434+0000] {taskinstance.py:1383} INFO - Executing <Task(BashOperator): task_6> on 2022-12-17 02:45:14.728802+00:00
+[2022-12-17T02:45:53.466+0000] {standard_task_runner.py:55} INFO - Started process 1025 to run task
+[2022-12-17T02:45:53.481+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'Can_I_change_name_to_this', 'task_6', 'manual__2022-12-17T02:45:14.728802+00:00', '--job-id', '70', '--raw', '--subdir', 'DAGS_FOLDER/dags.py', '--cfg-path', '/tmp/tmp0rlj7gz5']
+[2022-12-17T02:45:53.483+0000] {standard_task_runner.py:83} INFO - Job 70: Subtask task_6
+[2022-12-17T02:45:53.577+0000] {task_command.py:376} INFO - Running <TaskInstance: Can_I_change_name_to_this.task_6 manual__2022-12-17T02:45:14.728802+00:00 [running]> on host 418b9a9aa3df
+[2022-12-17T02:45:53.674+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=Can_I_change_name_to_this
+AIRFLOW_CTX_TASK_ID=task_6
+AIRFLOW_CTX_EXECUTION_DATE=2022-12-17T02:45:14.728802+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-12-17T02:45:14.728802+00:00
+[2022-12-17T02:45:53.678+0000] {subprocess.py:63} INFO - Tmp dir root location: 
+ /tmp
+[2022-12-17T02:45:53.683+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'python /opt/***/tasks/data_cleansing_basic_stat.py']
+[2022-12-17T02:45:53.698+0000] {subprocess.py:86} INFO - Output:
+[2022-12-17T02:45:57.536+0000] {subprocess.py:93} INFO - 2022-12-17 02:45:57 +0000 - dagster - DEBUG - data_cleansing_whole_job - 19a70820-e511-4a42-be02-7ef8569b6492 - 1027 - RUN_START - Started execution of run for "data_cleansing_whole_job".
+[2022-12-17T02:45:57.569+0000] {subprocess.py:93} INFO - 2022-12-17 02:45:57 +0000 - dagster - DEBUG - data_cleansing_whole_job - 19a70820-e511-4a42-be02-7ef8569b6492 - 1027 - ENGINE_EVENT - Executing steps in process (pid: 1027)
+[2022-12-17T02:45:57.575+0000] {subprocess.py:93} INFO - 2022-12-17 02:45:57 +0000 - dagster - DEBUG - data_cleansing_whole_job - 19a70820-e511-4a42-be02-7ef8569b6492 - 1027 - RESOURCE_INIT_STARTED - Starting initialization of resources [io_manager].
+[2022-12-17T02:45:57.581+0000] {subprocess.py:93} INFO - 2022-12-17 02:45:57 +0000 - dagster - DEBUG - data_cleansing_whole_job - 19a70820-e511-4a42-be02-7ef8569b6492 - 1027 - RESOURCE_INIT_SUCCESS - Finished initialization of resources [io_manager].
+[2022-12-17T02:45:57.588+0000] {subprocess.py:93} INFO - 2022-12-17 02:45:57 +0000 - dagster - DEBUG - data_cleansing_whole_job - 19a70820-e511-4a42-be02-7ef8569b6492 - 1027 - LOGS_CAPTURED - Started capturing logs in process (pid: 1027).
+[2022-12-17T02:45:57.589+0000] {subprocess.py:93} INFO - 2022-12-17 02:45:57 +0000 - dagster - DEBUG - data_cleansing_whole_job - 19a70820-e511-4a42-be02-7ef8569b6492 - 1027 - reading_json - STEP_START - Started execution of step "reading_json".
+[2022-12-17T02:45:57.721+0000] {subprocess.py:93} INFO - 2022-12-17 02:45:57 +0000 - dagster - DEBUG - data_cleansing_whole_job - 19a70820-e511-4a42-be02-7ef8569b6492 - 1027 - reading_json - STEP_OUTPUT - Yielded output "result" of type "DataFrame". (Type check passed).
+[2022-12-17T02:45:57.727+0000] {subprocess.py:93} INFO - 2022-12-17 02:45:57 +0000 - dagster - DEBUG - data_cleansing_whole_job - 19a70820-e511-4a42-be02-7ef8569b6492 - 1027 - reading_json - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+[2022-12-17T02:45:57.733+0000] {subprocess.py:93} INFO - 2022-12-17 02:45:57 +0000 - dagster - DEBUG - data_cleansing_whole_job - 19a70820-e511-4a42-be02-7ef8569b6492 - 1027 - reading_json - STEP_SUCCESS - Finished execution of step "reading_json" in 174ms.
+[2022-12-17T02:45:57.739+0000] {subprocess.py:93} INFO - 2022-12-17 02:45:57 +0000 - dagster - DEBUG - data_cleansing_whole_job - 19a70820-e511-4a42-be02-7ef8569b6492 - 1027 - data_validation - STEP_START - Started execution of step "data_validation".
+[2022-12-17T02:45:57.741+0000] {subprocess.py:93} INFO - 2022-12-17 02:45:57 +0000 - dagster - DEBUG - data_cleansing_whole_job - 19a70820-e511-4a42-be02-7ef8569b6492 - 1027 - data_validation - LOADED_INPUT - Loaded input "df" using input manager "io_manager", from output "result" of step "reading_json"
+[2022-12-17T02:45:57.742+0000] {subprocess.py:93} INFO - 2022-12-17 02:45:57 +0000 - dagster - DEBUG - data_cleansing_whole_job - 19a70820-e511-4a42-be02-7ef8569b6492 - 1027 - data_validation - STEP_INPUT - Got input "df" of type "DataFrame". (Type check passed).
+[2022-12-17T02:45:57.753+0000] {subprocess.py:93} INFO - 2022-12-17 02:45:57 +0000 - dagster - DEBUG - data_cleansing_whole_job - 19a70820-e511-4a42-be02-7ef8569b6492 - 1027 - data_validation - STEP_OUTPUT - Yielded output "result" of type "DataFrame". (Type check passed).
+[2022-12-17T02:45:57.754+0000] {subprocess.py:93} INFO - 2022-12-17 02:45:57 +0000 - dagster - DEBUG - data_cleansing_whole_job - 19a70820-e511-4a42-be02-7ef8569b6492 - 1027 - data_validation - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+[2022-12-17T02:45:57.756+0000] {subprocess.py:93} INFO - 2022-12-17 02:45:57 +0000 - dagster - DEBUG - data_cleansing_whole_job - 19a70820-e511-4a42-be02-7ef8569b6492 - 1027 - data_validation - STEP_SUCCESS - Finished execution of step "data_validation" in 24ms.
+[2022-12-17T02:45:57.759+0000] {subprocess.py:93} INFO - 2022-12-17 02:45:57 +0000 - dagster - DEBUG - data_cleansing_whole_job - 19a70820-e511-4a42-be02-7ef8569b6492 - 1027 - data_cleaning - STEP_START - Started execution of step "data_cleaning".
+[2022-12-17T02:45:57.764+0000] {subprocess.py:93} INFO - 2022-12-17 02:45:57 +0000 - dagster - DEBUG - data_cleansing_whole_job - 19a70820-e511-4a42-be02-7ef8569b6492 - 1027 - data_cleaning - LOADED_INPUT - Loaded input "df" using input manager "io_manager", from output "result" of step "data_validation"
+[2022-12-17T02:45:57.765+0000] {subprocess.py:93} INFO - 2022-12-17 02:45:57 +0000 - dagster - DEBUG - data_cleansing_whole_job - 19a70820-e511-4a42-be02-7ef8569b6492 - 1027 - data_cleaning - STEP_INPUT - Got input "df" of type "DataFrame". (Type check passed).
+[2022-12-17T02:45:57.766+0000] {subprocess.py:93} INFO - {"message": "now perform data cleansing on lol_basic_stat", "time": "2022-12-17T02:45:57.765731"}
+[2022-12-17T02:45:57.868+0000] {subprocess.py:93} INFO - {"message": "successfully perform data cleansing on lol_basic_stat", "time": "2022-12-17T02:45:57.868563"}
+[2022-12-17T02:45:57.873+0000] {subprocess.py:93} INFO - {"message": "Now putting dataframe into pg and redshift", "time": "2022-12-17T02:45:57.872926"}
+[2022-12-17T02:45:57.875+0000] {subprocess.py:93} INFO - 2022-12-17 02:45:57 +0000 - dagster - DEBUG - data_cleansing_whole_job - 19a70820-e511-4a42-be02-7ef8569b6492 - 1027 - data_cleaning - STEP_OUTPUT - Yielded output "result" of type "DataFrame". (Type check passed).
+[2022-12-17T02:45:57.877+0000] {subprocess.py:93} INFO - 2022-12-17 02:45:57 +0000 - dagster - DEBUG - data_cleansing_whole_job - 19a70820-e511-4a42-be02-7ef8569b6492 - 1027 - data_cleaning - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+[2022-12-17T02:45:57.880+0000] {subprocess.py:93} INFO - 2022-12-17 02:45:57 +0000 - dagster - DEBUG - data_cleansing_whole_job - 19a70820-e511-4a42-be02-7ef8569b6492 - 1027 - data_cleaning - STEP_SUCCESS - Finished execution of step "data_cleaning" in 111ms.
+[2022-12-17T02:45:57.882+0000] {subprocess.py:93} INFO - 2022-12-17 02:45:57 +0000 - dagster - DEBUG - data_cleansing_whole_job - 19a70820-e511-4a42-be02-7ef8569b6492 - 1027 - df_to_file - STEP_START - Started execution of step "df_to_file".
+[2022-12-17T02:45:57.890+0000] {subprocess.py:93} INFO - 2022-12-17 02:45:57 +0000 - dagster - DEBUG - data_cleansing_whole_job - 19a70820-e511-4a42-be02-7ef8569b6492 - 1027 - df_to_file - LOADED_INPUT - Loaded input "df" using input manager "io_manager", from output "result" of step "data_cleaning"
+[2022-12-17T02:45:57.894+0000] {subprocess.py:93} INFO - 2022-12-17 02:45:57 +0000 - dagster - DEBUG - data_cleansing_whole_job - 19a70820-e511-4a42-be02-7ef8569b6492 - 1027 - df_to_file - STEP_INPUT - Got input "df" of type "DataFrame". (Type check passed).
+[2022-12-17T02:45:57.917+0000] {subprocess.py:93} INFO - 2022-12-17 02:45:57 +0000 - dagster - ERROR - data_cleansing_whole_job - 19a70820-e511-4a42-be02-7ef8569b6492 - 1027 - df_to_file - STEP_FAILURE - Execution of step "df_to_file" failed.
+[2022-12-17T02:45:57.924+0000] {subprocess.py:93} INFO - 
+[2022-12-17T02:45:57.926+0000] {subprocess.py:93} INFO - dagster._core.errors.DagsterExecutionStepExecutionError: Error occurred while executing op "df_to_file"::
+[2022-12-17T02:45:57.932+0000] {subprocess.py:93} INFO - 
+[2022-12-17T02:45:57.937+0000] {subprocess.py:93} INFO - FileNotFoundError: [Errno 2] No such file or directory: './***/processed_zone/lol_clean_basic_stat.json'
+[2022-12-17T02:45:57.940+0000] {subprocess.py:93} INFO - 
+[2022-12-17T02:45:57.942+0000] {subprocess.py:93} INFO - Stack Trace:
+[2022-12-17T02:45:57.950+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/dagster/_core/execution/plan/utils.py", line 47, in solid_execution_error_boundary
+[2022-12-17T02:45:57.953+0000] {subprocess.py:93} INFO -     yield
+[2022-12-17T02:45:57.955+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/dagster/_utils/__init__.py", line 447, in iterate_with_context
+[2022-12-17T02:45:57.958+0000] {subprocess.py:93} INFO -     next_output = next(iterator)
+[2022-12-17T02:45:57.959+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/dagster/_core/execution/plan/compute_generator.py", line 74, in _coerce_solid_compute_fn_to_iterator
+[2022-12-17T02:45:57.960+0000] {subprocess.py:93} INFO -     result = fn(context, **kwargs) if context_arg_provided else fn(**kwargs)
+[2022-12-17T02:45:57.963+0000] {subprocess.py:93} INFO -   File "/opt/***/tasks/data_cleansing_basic_stat.py", line 83, in df_to_file
+[2022-12-17T02:45:57.965+0000] {subprocess.py:93} INFO -     df.to_json("./***/processed_zone/lol_clean_basic_stat.json",orient='records',lines=True)
+[2022-12-17T02:45:57.967+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/pandas/core/generic.py", line 2571, in to_json
+[2022-12-17T02:45:57.970+0000] {subprocess.py:93} INFO -     storage_options=storage_options,
+[2022-12-17T02:45:57.971+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/pandas/io/json/_json.py", line 131, in to_json
+[2022-12-17T02:45:57.973+0000] {subprocess.py:93} INFO -     path_or_buf, "w", compression=compression, storage_options=storage_options
+[2022-12-17T02:45:57.975+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/pandas/io/common.py", line 707, in get_handle
+[2022-12-17T02:45:57.976+0000] {subprocess.py:93} INFO -     newline="",
+[2022-12-17T02:45:57.979+0000] {subprocess.py:93} INFO - 
+[2022-12-17T02:45:57.981+0000] {subprocess.py:93} INFO - 2022-12-17 02:45:57 +0000 - dagster - ERROR - data_cleansing_whole_job - 19a70820-e511-4a42-be02-7ef8569b6492 - 1027 - RUN_FAILURE - Execution of run for "data_cleansing_whole_job" failed. An exception was thrown during execution.
+[2022-12-17T02:45:57.983+0000] {subprocess.py:93} INFO - 
+[2022-12-17T02:45:57.986+0000] {subprocess.py:93} INFO - FileNotFoundError: [Errno 2] No such file or directory: './***/processed_zone/lol_clean_basic_stat.json'
+[2022-12-17T02:45:57.988+0000] {subprocess.py:93} INFO - 
+[2022-12-17T02:45:57.993+0000] {subprocess.py:93} INFO - Stack Trace:
+[2022-12-17T02:45:57.994+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/dagster/_core/execution/api.py", line 1091, in pipeline_execution_iterator
+[2022-12-17T02:45:57.996+0000] {subprocess.py:93} INFO -     for event in pipeline_context.executor.execute(pipeline_context, execution_plan):
+[2022-12-17T02:45:58.000+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/dagster/_core/executor/in_process.py", line 50, in execute
+[2022-12-17T02:45:58.005+0000] {subprocess.py:93} INFO -     output_capture=plan_context.output_capture,
+[2022-12-17T02:45:58.006+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/dagster/_core/execution/api.py", line 1189, in __iter__
+[2022-12-17T02:45:58.013+0000] {subprocess.py:93} INFO -     pipeline_context=self.pipeline_context,
+[2022-12-17T02:45:58.016+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/dagster/_core/execution/plan/execute_plan.py", line 121, in inner_plan_execution_iterator
+[2022-12-17T02:45:58.021+0000] {subprocess.py:93} INFO -     dagster_event_sequence_for_step(step_context)
+[2022-12-17T02:45:58.025+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/dagster/_core/execution/plan/execute_plan.py", line 325, in dagster_event_sequence_for_step
+[2022-12-17T02:45:58.029+0000] {subprocess.py:93} INFO -     raise dagster_user_error.user_exception
+[2022-12-17T02:45:58.088+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/dagster/_core/execution/plan/utils.py", line 47, in solid_execution_error_boundary
+[2022-12-17T02:45:58.089+0000] {subprocess.py:93} INFO -     yield
+[2022-12-17T02:45:58.089+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/dagster/_utils/__init__.py", line 447, in iterate_with_context
+[2022-12-17T02:45:58.103+0000] {subprocess.py:93} INFO -     next_output = next(iterator)
+[2022-12-17T02:45:58.141+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/dagster/_core/execution/plan/compute_generator.py", line 74, in _coerce_solid_compute_fn_to_iterator
+[2022-12-17T02:45:58.146+0000] {subprocess.py:93} INFO -     result = fn(context, **kwargs) if context_arg_provided else fn(**kwargs)
+[2022-12-17T02:45:58.147+0000] {subprocess.py:93} INFO -   File "/opt/***/tasks/data_cleansing_basic_stat.py", line 83, in df_to_file
+[2022-12-17T02:45:58.149+0000] {subprocess.py:93} INFO -     df.to_json("./***/processed_zone/lol_clean_basic_stat.json",orient='records',lines=True)
+[2022-12-17T02:45:58.150+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/pandas/core/generic.py", line 2571, in to_json
+[2022-12-17T02:45:58.151+0000] {subprocess.py:93} INFO -     storage_options=storage_options,
+[2022-12-17T02:45:58.152+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/pandas/io/json/_json.py", line 131, in to_json
+[2022-12-17T02:45:58.155+0000] {subprocess.py:93} INFO -     path_or_buf, "w", compression=compression, storage_options=storage_options
+[2022-12-17T02:45:58.157+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/pandas/io/common.py", line 707, in get_handle
+[2022-12-17T02:45:58.161+0000] {subprocess.py:93} INFO -     newline="",
+[2022-12-17T02:45:58.165+0000] {subprocess.py:93} INFO - 
+[2022-12-17T02:45:58.172+0000] {subprocess.py:93} INFO - Traceback (most recent call last):
+[2022-12-17T02:45:58.173+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/dagster/_core/execution/plan/execute_plan.py", line 251, in dagster_event_sequence_for_step
+[2022-12-17T02:45:58.177+0000] {subprocess.py:93} INFO -     for step_event in check.generator(step_events):
+[2022-12-17T02:45:58.182+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/dagster/_core/execution/plan/execute_step.py", line 390, in core_dagster_event_sequence_for_step
+[2022-12-17T02:45:58.188+0000] {subprocess.py:93} INFO -     _step_output_error_checked_user_event_sequence(step_context, user_event_sequence)
+[2022-12-17T02:45:58.189+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/dagster/_core/execution/plan/execute_step.py", line 95, in _step_output_error_checked_user_event_sequence
+[2022-12-17T02:45:58.195+0000] {subprocess.py:93} INFO -     for user_event in user_event_sequence:
+[2022-12-17T02:45:58.201+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/dagster/_core/execution/plan/compute.py", line 174, in execute_core_compute
+[2022-12-17T02:45:58.207+0000] {subprocess.py:93} INFO -     for step_output in _yield_compute_results(step_context, inputs, compute_fn):
+[2022-12-17T02:45:58.208+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/dagster/_core/execution/plan/compute.py", line 151, in _yield_compute_results
+[2022-12-17T02:45:58.210+0000] {subprocess.py:93} INFO -     user_event_generator,
+[2022-12-17T02:45:58.219+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/dagster/_utils/__init__.py", line 449, in iterate_with_context
+[2022-12-17T02:45:58.221+0000] {subprocess.py:93} INFO -     return
+[2022-12-17T02:45:58.224+0000] {subprocess.py:93} INFO -   File "/usr/local/lib/python3.7/contextlib.py", line 130, in __exit__
+[2022-12-17T02:45:58.225+0000] {subprocess.py:93} INFO -     self.gen.throw(type, value, traceback)
+[2022-12-17T02:45:58.226+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/dagster/_core/execution/plan/utils.py", line 82, in solid_execution_error_boundary
+[2022-12-17T02:45:58.226+0000] {subprocess.py:93} INFO -     ) from e
+[2022-12-17T02:45:58.227+0000] {subprocess.py:93} INFO - dagster._core.errors.DagsterExecutionStepExecutionError: Error occurred while executing op "df_to_file":
+[2022-12-17T02:45:58.228+0000] {subprocess.py:93} INFO - 
+[2022-12-17T02:45:58.230+0000] {subprocess.py:93} INFO - During handling of the above exception, another exception occurred:
+[2022-12-17T02:45:58.231+0000] {subprocess.py:93} INFO - 
+[2022-12-17T02:45:58.235+0000] {subprocess.py:93} INFO - Traceback (most recent call last):
+[2022-12-17T02:45:58.238+0000] {subprocess.py:93} INFO -   File "/opt/***/tasks/data_cleansing_basic_stat.py", line 95, in <module>
+[2022-12-17T02:45:58.242+0000] {subprocess.py:93} INFO -     result = data_cleansing_whole_job.execute_in_process()
+[2022-12-17T02:45:58.245+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/dagster/_core/definitions/job_definition.py", line 395, in execute_in_process
+[2022-12-17T02:45:58.269+0000] {subprocess.py:93} INFO -     asset_selection=frozenset(asset_selection),
+[2022-12-17T02:45:58.271+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/dagster/_core/execution/execute_in_process.py", line 77, in core_execute_in_process
+[2022-12-17T02:45:58.282+0000] {subprocess.py:93} INFO -     event_list = list(execute_run_iterable)
+[2022-12-17T02:45:58.289+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/dagster/_core/execution/api.py", line 1189, in __iter__
+[2022-12-17T02:45:58.300+0000] {subprocess.py:93} INFO -     pipeline_context=self.pipeline_context,
+[2022-12-17T02:45:58.303+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/dagster/_core/execution/api.py", line 1091, in pipeline_execution_iterator
+[2022-12-17T02:45:58.312+0000] {subprocess.py:93} INFO -     for event in pipeline_context.executor.execute(pipeline_context, execution_plan):
+[2022-12-17T02:45:58.313+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/dagster/_core/executor/in_process.py", line 50, in execute
+[2022-12-17T02:45:58.314+0000] {subprocess.py:93} INFO -     output_capture=plan_context.output_capture,
+[2022-12-17T02:45:58.315+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/dagster/_core/execution/api.py", line 1189, in __iter__
+[2022-12-17T02:45:58.322+0000] {subprocess.py:93} INFO -     pipeline_context=self.pipeline_context,
+[2022-12-17T02:45:58.326+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/dagster/_core/execution/plan/execute_plan.py", line 121, in inner_plan_execution_iterator
+[2022-12-17T02:45:58.326+0000] {subprocess.py:93} INFO -     dagster_event_sequence_for_step(step_context)
+[2022-12-17T02:45:58.328+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/dagster/_core/execution/plan/execute_plan.py", line 325, in dagster_event_sequence_for_step
+[2022-12-17T02:45:58.330+0000] {subprocess.py:93} INFO -     raise dagster_user_error.user_exception
+[2022-12-17T02:45:58.332+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/dagster/_core/execution/plan/utils.py", line 47, in solid_execution_error_boundary
+[2022-12-17T02:45:58.333+0000] {subprocess.py:93} INFO -     yield
+[2022-12-17T02:45:58.334+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/dagster/_utils/__init__.py", line 447, in iterate_with_context
+[2022-12-17T02:45:58.340+0000] {subprocess.py:93} INFO -     next_output = next(iterator)
+[2022-12-17T02:45:58.345+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/dagster/_core/execution/plan/compute_generator.py", line 74, in _coerce_solid_compute_fn_to_iterator
+[2022-12-17T02:45:58.348+0000] {subprocess.py:93} INFO -     result = fn(context, **kwargs) if context_arg_provided else fn(**kwargs)
+[2022-12-17T02:45:58.349+0000] {subprocess.py:93} INFO -   File "/opt/***/tasks/data_cleansing_basic_stat.py", line 83, in df_to_file
+[2022-12-17T02:45:58.358+0000] {subprocess.py:93} INFO -     df.to_json("./***/processed_zone/lol_clean_basic_stat.json",orient='records',lines=True)
+[2022-12-17T02:45:58.366+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/pandas/core/generic.py", line 2571, in to_json
+[2022-12-17T02:45:58.413+0000] {subprocess.py:93} INFO -     storage_options=storage_options,
+[2022-12-17T02:45:58.445+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/pandas/io/json/_json.py", line 131, in to_json
+[2022-12-17T02:45:58.508+0000] {subprocess.py:93} INFO -     path_or_buf, "w", compression=compression, storage_options=storage_options
+[2022-12-17T02:45:58.545+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/pandas/io/common.py", line 707, in get_handle
+[2022-12-17T02:45:58.555+0000] {subprocess.py:93} INFO -     newline="",
+[2022-12-17T02:45:58.566+0000] {subprocess.py:93} INFO - FileNotFoundError: [Errno 2] No such file or directory: './***/processed_zone/lol_clean_basic_stat.json'
+[2022-12-17T02:45:58.638+0000] {subprocess.py:97} INFO - Command exited with return code 1
+[2022-12-17T02:45:58.756+0000] {taskinstance.py:1851} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py", line 197, in execute
+    f'Bash command failed. The command returned a non-zero exit code {result.exit_code}.'
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2022-12-17T02:45:58.787+0000] {taskinstance.py:1406} INFO - Marking task as FAILED. dag_id=Can_I_change_name_to_this, task_id=task_6, execution_date=20221217T024514, start_date=20221217T024553, end_date=20221217T024558
+[2022-12-17T02:45:58.831+0000] {standard_task_runner.py:105} ERROR - Failed to execute job 70 for task task_6 (Bash command failed. The command returned a non-zero exit code 1.; 1025)
+[2022-12-17T02:45:58.863+0000] {local_task_job.py:159} INFO - Task exited with return code 1
+[2022-12-17T02:45:58.901+0000] {taskinstance.py:2623} INFO - 0 downstream tasks scheduled from follow-on schedule check

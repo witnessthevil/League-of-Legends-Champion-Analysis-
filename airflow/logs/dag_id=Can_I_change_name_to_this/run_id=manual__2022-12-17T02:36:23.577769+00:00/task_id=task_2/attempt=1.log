@@ -1,0 +1,43 @@
+[2022-12-17T02:36:28.740+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: Can_I_change_name_to_this.task_2 manual__2022-12-17T02:36:23.577769+00:00 [queued]>
+[2022-12-17T02:36:28.770+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: Can_I_change_name_to_this.task_2 manual__2022-12-17T02:36:23.577769+00:00 [queued]>
+[2022-12-17T02:36:28.771+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-17T02:36:28.772+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 1
+[2022-12-17T02:36:28.775+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-17T02:36:28.811+0000] {taskinstance.py:1383} INFO - Executing <Task(BashOperator): task_2> on 2022-12-17 02:36:23.577769+00:00
+[2022-12-17T02:36:28.820+0000] {standard_task_runner.py:55} INFO - Started process 539 to run task
+[2022-12-17T02:36:28.836+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'Can_I_change_name_to_this', 'task_2', 'manual__2022-12-17T02:36:23.577769+00:00', '--job-id', '60', '--raw', '--subdir', 'DAGS_FOLDER/dags.py', '--cfg-path', '/tmp/tmpf9s6u9fn']
+[2022-12-17T02:36:28.848+0000] {standard_task_runner.py:83} INFO - Job 60: Subtask task_2
+[2022-12-17T02:36:28.999+0000] {task_command.py:376} INFO - Running <TaskInstance: Can_I_change_name_to_this.task_2 manual__2022-12-17T02:36:23.577769+00:00 [running]> on host 418b9a9aa3df
+[2022-12-17T02:36:29.132+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=Can_I_change_name_to_this
+AIRFLOW_CTX_TASK_ID=task_2
+AIRFLOW_CTX_EXECUTION_DATE=2022-12-17T02:36:23.577769+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-12-17T02:36:23.577769+00:00
+[2022-12-17T02:36:29.142+0000] {subprocess.py:63} INFO - Tmp dir root location: 
+ /tmp
+[2022-12-17T02:36:29.154+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'python /opt/***/tasks/lol_champ_counter_stat.py ']
+[2022-12-17T02:36:29.176+0000] {subprocess.py:86} INFO - Output:
+[2022-12-17T02:36:43.140+0000] {subprocess.py:93} INFO - Traceback (most recent call last):
+[2022-12-17T02:36:43.262+0000] {subprocess.py:93} INFO -   File "/opt/***/tasks/lol_champ_counter_stat.py", line 12, in <module>
+[2022-12-17T02:36:43.269+0000] {subprocess.py:93} INFO -     logger = Log(__name__)
+[2022-12-17T02:36:43.286+0000] {subprocess.py:93} INFO -   File "/opt/***/tasks/logger/Logger.py", line 16, in __init__
+[2022-12-17T02:36:43.292+0000] {subprocess.py:93} INFO -     self.info_file_handler = logging.FileHandler("./***/python_log/" + self.current_filename + '_info.log')
+[2022-12-17T02:36:43.296+0000] {subprocess.py:93} INFO -   File "/usr/local/lib/python3.7/logging/__init__.py", line 1087, in __init__
+[2022-12-17T02:36:43.298+0000] {subprocess.py:93} INFO -     StreamHandler.__init__(self, self._open())
+[2022-12-17T02:36:43.300+0000] {subprocess.py:93} INFO -   File "/usr/local/lib/python3.7/logging/__init__.py", line 1116, in _open
+[2022-12-17T02:36:43.302+0000] {subprocess.py:93} INFO -     return open(self.baseFilename, self.mode, encoding=self.encoding)
+[2022-12-17T02:36:43.308+0000] {subprocess.py:93} INFO - FileNotFoundError: [Errno 2] No such file or directory: '/tmp/***tmpc5ouk_m7/***/python_log/logger_info.log'
+[2022-12-17T02:36:43.596+0000] {subprocess.py:97} INFO - Command exited with return code 1
+[2022-12-17T02:36:44.523+0000] {taskinstance.py:1851} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py", line 197, in execute
+    f'Bash command failed. The command returned a non-zero exit code {result.exit_code}.'
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2022-12-17T02:36:44.752+0000] {taskinstance.py:1406} INFO - Marking task as FAILED. dag_id=Can_I_change_name_to_this, task_id=task_2, execution_date=20221217T023623, start_date=20221217T023628, end_date=20221217T023644
+[2022-12-17T02:36:45.864+0000] {standard_task_runner.py:105} ERROR - Failed to execute job 60 for task task_2 (Bash command failed. The command returned a non-zero exit code 1.; 539)
+[2022-12-17T02:36:46.678+0000] {local_task_job.py:159} INFO - Task exited with return code 1
+[2022-12-17T02:36:49.672+0000] {taskinstance.py:2623} INFO - 0 downstream tasks scheduled from follow-on schedule check

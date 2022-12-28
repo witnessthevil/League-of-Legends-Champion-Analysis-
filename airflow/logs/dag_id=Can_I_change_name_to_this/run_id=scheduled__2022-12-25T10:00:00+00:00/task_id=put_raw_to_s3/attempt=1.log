@@ -1,0 +1,42 @@
+[2022-12-26T10:02:22.099+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: Can_I_change_name_to_this.put_raw_to_s3 scheduled__2022-12-25T10:00:00+00:00 [queued]>
+[2022-12-26T10:02:22.153+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: Can_I_change_name_to_this.put_raw_to_s3 scheduled__2022-12-25T10:00:00+00:00 [queued]>
+[2022-12-26T10:02:22.155+0000] {taskinstance.py:1283} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-26T10:02:22.159+0000] {taskinstance.py:1284} INFO - Starting attempt 1 of 1
+[2022-12-26T10:02:22.161+0000] {taskinstance.py:1285} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-26T10:02:22.210+0000] {taskinstance.py:1304} INFO - Executing <Task(BashOperator): put_raw_to_s3> on 2022-12-25 10:00:00+00:00
+[2022-12-26T10:02:22.239+0000] {standard_task_runner.py:55} INFO - Started process 181 to run task
+[2022-12-26T10:02:22.249+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'Can_I_change_name_to_this', 'put_raw_to_s3', 'scheduled__2022-12-25T10:00:00+00:00', '--job-id', '270', '--raw', '--subdir', 'DAGS_FOLDER/dags.py', '--cfg-path', '/tmp/tmpo2w9qri5']
+[2022-12-26T10:02:22.252+0000] {standard_task_runner.py:83} INFO - Job 270: Subtask put_raw_to_s3
+[2022-12-26T10:02:22.391+0000] {task_command.py:389} INFO - Running <TaskInstance: Can_I_change_name_to_this.put_raw_to_s3 scheduled__2022-12-25T10:00:00+00:00 [running]> on host 502390ac5559
+[2022-12-26T10:02:22.698+0000] {taskinstance.py:1513} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=Can_I_change_name_to_this
+AIRFLOW_CTX_TASK_ID=put_raw_to_s3
+AIRFLOW_CTX_EXECUTION_DATE=2022-12-25T10:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-12-25T10:00:00+00:00
+[2022-12-26T10:02:22.723+0000] {subprocess.py:63} INFO - Tmp dir root location: 
+ /tmp
+[2022-12-26T10:02:22.739+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'python /opt/***/tasks/raw_put_to_s3.py ']
+[2022-12-26T10:02:22.829+0000] {subprocess.py:86} INFO - Output:
+[2022-12-26T10:02:25.246+0000] {subprocess.py:93} INFO - {"message": "now putting raw file to s3", "time": "2022-12-26T10:02:25.243887"}
+[2022-12-26T10:02:25.303+0000] {subprocess.py:93} INFO - Traceback (most recent call last):
+[2022-12-26T10:02:25.309+0000] {subprocess.py:93} INFO -   File "/opt/***/tasks/raw_put_to_s3.py", line 33, in <module>
+[2022-12-26T10:02:25.325+0000] {subprocess.py:93} INFO -     pool = ThreadPool(processes=len(raw_str_json)*2)
+[2022-12-26T10:02:25.341+0000] {subprocess.py:93} INFO -   File "/usr/local/lib/python3.7/multiprocessing/pool.py", line 802, in __init__
+[2022-12-26T10:02:25.352+0000] {subprocess.py:93} INFO -     Pool.__init__(self, processes, initializer, initargs)
+[2022-12-26T10:02:25.368+0000] {subprocess.py:93} INFO -   File "/usr/local/lib/python3.7/multiprocessing/pool.py", line 169, in __init__
+[2022-12-26T10:02:25.377+0000] {subprocess.py:93} INFO -     raise ValueError("Number of processes must be at least 1")
+[2022-12-26T10:02:25.379+0000] {subprocess.py:93} INFO - ValueError: Number of processes must be at least 1
+[2022-12-26T10:02:25.999+0000] {subprocess.py:97} INFO - Command exited with return code 1
+[2022-12-26T10:02:26.076+0000] {taskinstance.py:1772} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py", line 197, in execute
+    f"Bash command failed. The command returned a non-zero exit code {result.exit_code}."
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2022-12-26T10:02:26.140+0000] {taskinstance.py:1327} INFO - Marking task as FAILED. dag_id=Can_I_change_name_to_this, task_id=put_raw_to_s3, execution_date=20221225T100000, start_date=20221226T100222, end_date=20221226T100226
+[2022-12-26T10:02:26.231+0000] {standard_task_runner.py:105} ERROR - Failed to execute job 270 for task put_raw_to_s3 (Bash command failed. The command returned a non-zero exit code 1.; 181)
+[2022-12-26T10:02:26.410+0000] {local_task_job.py:159} INFO - Task exited with return code 1
+[2022-12-26T10:02:26.540+0000] {taskinstance.py:2582} INFO - 0 downstream tasks scheduled from follow-on schedule check

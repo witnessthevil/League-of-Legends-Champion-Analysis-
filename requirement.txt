@@ -1,0 +1,14 @@
+scrapy
+json-log-formatter
+boto3
+sqlalchemy
+psycopg2 
+python-dotenv
+apache-airflow[statsd]
+dagster 
+dagit 
+pandera
+sqlalchemy-redshift 
+dbt-postgres
+dbt-redshift
+airflow-dbt

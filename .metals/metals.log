@@ -1,0 +1,11 @@
+2022.12.19 01:11:35 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/danie/new_project_lol_stat/.metals/lsp.trace.json or /Users/danie/Library/Caches/org.scalameta.metals/lsp.trace.json
+2022.12.19 01:11:36 INFO  logging to file /Users/danie/new_project_lol_stat/.metals/metals.log
+2022.12.19 01:11:36 INFO  Started: Metals version 0.11.9 in workspace '/Users/danie/new_project_lol_stat' for client Visual Studio Code 1.72.0.
+2022.12.19 01:11:38 INFO  time: initialize in 1.85s
+2022.12.19 01:11:38 WARN  Build server is not auto-connectable.
+2022.12.19 01:11:38 WARN  no build tool detected in workspace '/Users/danie/new_project_lol_stat'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2022.12.19 01:12:06 INFO  
+2022.12.19 01:12:06 INFO  Template applied in /Users/danie/./scala-spark
+2022.12.19 01:12:06 INFO  
+2022.12.19 01:12:06 INFO  time: ran 'giter8.Giter8' in 3.72s
+2022.12.19 01:16:01 INFO  shutting down Metals

@@ -1,0 +1,41 @@
+[2022-12-21T11:03:28.862+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: Can_I_change_name_to_this.load_counter_to_pg scheduled__2022-12-20T10:00:00+00:00 [queued]>
+[2022-12-21T11:03:28.888+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: Can_I_change_name_to_this.load_counter_to_pg scheduled__2022-12-20T10:00:00+00:00 [queued]>
+[2022-12-21T11:03:28.891+0000] {taskinstance.py:1283} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-21T11:03:28.893+0000] {taskinstance.py:1284} INFO - Starting attempt 1 of 1
+[2022-12-21T11:03:28.895+0000] {taskinstance.py:1285} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-21T11:03:28.912+0000] {taskinstance.py:1304} INFO - Executing <Task(BashOperator): load_counter_to_pg> on 2022-12-20 10:00:00+00:00
+[2022-12-21T11:03:28.929+0000] {standard_task_runner.py:55} INFO - Started process 622 to run task
+[2022-12-21T11:03:28.936+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'Can_I_change_name_to_this', 'load_counter_to_pg', 'scheduled__2022-12-20T10:00:00+00:00', '--job-id', '196', '--raw', '--subdir', 'DAGS_FOLDER/dags.py', '--cfg-path', '/tmp/tmpw1cac76h']
+[2022-12-21T11:03:28.938+0000] {standard_task_runner.py:83} INFO - Job 196: Subtask load_counter_to_pg
+[2022-12-21T11:03:29.044+0000] {task_command.py:389} INFO - Running <TaskInstance: Can_I_change_name_to_this.load_counter_to_pg scheduled__2022-12-20T10:00:00+00:00 [running]> on host 502390ac5559
+[2022-12-21T11:03:29.107+0000] {taskinstance.py:1513} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=Can_I_change_name_to_this
+AIRFLOW_CTX_TASK_ID=load_counter_to_pg
+AIRFLOW_CTX_EXECUTION_DATE=2022-12-20T10:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-12-20T10:00:00+00:00
+[2022-12-21T11:03:29.110+0000] {subprocess.py:63} INFO - Tmp dir root location: 
+ /tmp
+[2022-12-21T11:03:29.111+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'python /opt/***/tasks/redshift/counter_load_to_redshift.py']
+[2022-12-21T11:03:29.129+0000] {subprocess.py:86} INFO - Output:
+[2022-12-21T11:03:40.874+0000] {subprocess.py:93} INFO - Traceback (most recent call last):
+[2022-12-21T11:03:40.902+0000] {subprocess.py:93} INFO -   File "/opt/***/tasks/redshift/counter_load_to_redshift.py", line 20, in <module>
+[2022-12-21T11:03:40.903+0000] {subprocess.py:93} INFO -     dbname=config["redshift_database"],
+[2022-12-21T11:03:40.906+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/psycopg2/__init__.py", line 122, in connect
+[2022-12-21T11:03:40.909+0000] {subprocess.py:93} INFO -     conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+[2022-12-21T11:03:40.910+0000] {subprocess.py:93} INFO - psycopg2.OperationalError: connection to server at "tf-daniel-clustering.cqq8hx1h9dt9.us-east-1.redshift.amazonaws.com" (44.205.131.17), port 5439 failed: Connection refused
+[2022-12-21T11:03:40.914+0000] {subprocess.py:93} INFO - 	Is the server running on that host and accepting TCP/IP connections?
+[2022-12-21T11:03:40.918+0000] {subprocess.py:93} INFO - 
+[2022-12-21T11:03:40.999+0000] {subprocess.py:97} INFO - Command exited with return code 1
+[2022-12-21T11:03:41.379+0000] {taskinstance.py:1772} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py", line 197, in execute
+    f"Bash command failed. The command returned a non-zero exit code {result.exit_code}."
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2022-12-21T11:03:41.452+0000] {taskinstance.py:1327} INFO - Marking task as FAILED. dag_id=Can_I_change_name_to_this, task_id=load_counter_to_pg, execution_date=20221220T100000, start_date=20221221T110328, end_date=20221221T110341
+[2022-12-21T11:03:41.675+0000] {standard_task_runner.py:105} ERROR - Failed to execute job 196 for task load_counter_to_pg (Bash command failed. The command returned a non-zero exit code 1.; 622)
+[2022-12-21T11:03:41.835+0000] {local_task_job.py:159} INFO - Task exited with return code 1
+[2022-12-21T11:03:41.948+0000] {taskinstance.py:2582} INFO - 0 downstream tasks scheduled from follow-on schedule check

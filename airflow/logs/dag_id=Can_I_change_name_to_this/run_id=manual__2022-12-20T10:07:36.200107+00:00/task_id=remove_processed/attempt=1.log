@@ -1,0 +1,27 @@
+[2022-12-20T10:09:19.395+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: Can_I_change_name_to_this.remove_processed manual__2022-12-20T10:07:36.200107+00:00 [queued]>
+[2022-12-20T10:09:19.419+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: Can_I_change_name_to_this.remove_processed manual__2022-12-20T10:07:36.200107+00:00 [queued]>
+[2022-12-20T10:09:19.432+0000] {taskinstance.py:1283} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-20T10:09:19.438+0000] {taskinstance.py:1284} INFO - Starting attempt 1 of 1
+[2022-12-20T10:09:19.442+0000] {taskinstance.py:1285} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-20T10:09:19.474+0000] {taskinstance.py:1304} INFO - Executing <Task(BashOperator): remove_processed> on 2022-12-20 10:07:36.200107+00:00
+[2022-12-20T10:09:19.488+0000] {standard_task_runner.py:55} INFO - Started process 3288 to run task
+[2022-12-20T10:09:19.493+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'Can_I_change_name_to_this', 'remove_processed', 'manual__2022-12-20T10:07:36.200107+00:00', '--job-id', '182', '--raw', '--subdir', 'DAGS_FOLDER/dags.py', '--cfg-path', '/tmp/tmpg6c71rsb']
+[2022-12-20T10:09:19.495+0000] {standard_task_runner.py:83} INFO - Job 182: Subtask remove_processed
+[2022-12-20T10:09:19.574+0000] {task_command.py:389} INFO - Running <TaskInstance: Can_I_change_name_to_this.remove_processed manual__2022-12-20T10:07:36.200107+00:00 [running]> on host 502390ac5559
+[2022-12-20T10:09:19.642+0000] {taskinstance.py:1513} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=Can_I_change_name_to_this
+AIRFLOW_CTX_TASK_ID=remove_processed
+AIRFLOW_CTX_EXECUTION_DATE=2022-12-20T10:07:36.200107+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-12-20T10:07:36.200107+00:00
+[2022-12-20T10:09:19.656+0000] {subprocess.py:63} INFO - Tmp dir root location: 
+ /tmp
+[2022-12-20T10:09:19.659+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'rm -f /opt/***/processed_zone/*']
+[2022-12-20T10:09:19.672+0000] {subprocess.py:86} INFO - Output:
+[2022-12-20T10:09:19.702+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2022-12-20T10:09:19.735+0000] {taskinstance.py:1327} INFO - Marking task as SUCCESS. dag_id=Can_I_change_name_to_this, task_id=remove_processed, execution_date=20221220T100736, start_date=20221220T100919, end_date=20221220T100919
+[2022-12-20T10:09:19.792+0000] {local_task_job.py:159} INFO - Task exited with return code 0
+[2022-12-20T10:09:19.831+0000] {taskinstance.py:2582} INFO - 0 downstream tasks scheduled from follow-on schedule check

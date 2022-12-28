@@ -1,0 +1,27 @@
+[2022-12-20T10:08:25.987+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: Can_I_change_name_to_this.task_3 manual__2022-12-20T10:07:36.200107+00:00 [queued]>
+[2022-12-20T10:08:26.022+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: Can_I_change_name_to_this.task_3 manual__2022-12-20T10:07:36.200107+00:00 [queued]>
+[2022-12-20T10:08:26.025+0000] {taskinstance.py:1283} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-20T10:08:26.027+0000] {taskinstance.py:1284} INFO - Starting attempt 1 of 1
+[2022-12-20T10:08:26.028+0000] {taskinstance.py:1285} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-20T10:08:26.061+0000] {taskinstance.py:1304} INFO - Executing <Task(BashOperator): task_3> on 2022-12-20 10:07:36.200107+00:00
+[2022-12-20T10:08:26.079+0000] {standard_task_runner.py:55} INFO - Started process 3182 to run task
+[2022-12-20T10:08:26.108+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'Can_I_change_name_to_this', 'task_3', 'manual__2022-12-20T10:07:36.200107+00:00', '--job-id', '172', '--raw', '--subdir', 'DAGS_FOLDER/dags.py', '--cfg-path', '/tmp/tmplxf9hu4e']
+[2022-12-20T10:08:26.112+0000] {standard_task_runner.py:83} INFO - Job 172: Subtask task_3
+[2022-12-20T10:08:26.272+0000] {task_command.py:389} INFO - Running <TaskInstance: Can_I_change_name_to_this.task_3 manual__2022-12-20T10:07:36.200107+00:00 [running]> on host 502390ac5559
+[2022-12-20T10:08:26.412+0000] {taskinstance.py:1513} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=Can_I_change_name_to_this
+AIRFLOW_CTX_TASK_ID=task_3
+AIRFLOW_CTX_EXECUTION_DATE=2022-12-20T10:07:36.200107+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-12-20T10:07:36.200107+00:00
+[2022-12-20T10:08:26.420+0000] {subprocess.py:63} INFO - Tmp dir root location: 
+ /tmp
+[2022-12-20T10:08:26.444+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'sleep 1']
+[2022-12-20T10:08:26.478+0000] {subprocess.py:86} INFO - Output:
+[2022-12-20T10:08:27.505+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2022-12-20T10:08:27.675+0000] {taskinstance.py:1327} INFO - Marking task as SUCCESS. dag_id=Can_I_change_name_to_this, task_id=task_3, execution_date=20221220T100736, start_date=20221220T100825, end_date=20221220T100827
+[2022-12-20T10:08:27.803+0000] {local_task_job.py:159} INFO - Task exited with return code 0
+[2022-12-20T10:08:28.000+0000] {taskinstance.py:2582} INFO - 3 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,29 @@
+[2022-12-23T10:03:41.006+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: Can_I_change_name_to_this.load_basic_to_pg scheduled__2022-12-22T10:00:00+00:00 [queued]>
+[2022-12-23T10:03:41.024+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: Can_I_change_name_to_this.load_basic_to_pg scheduled__2022-12-22T10:00:00+00:00 [queued]>
+[2022-12-23T10:03:41.025+0000] {taskinstance.py:1283} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-23T10:03:41.027+0000] {taskinstance.py:1284} INFO - Starting attempt 1 of 1
+[2022-12-23T10:03:41.029+0000] {taskinstance.py:1285} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-23T10:03:41.050+0000] {taskinstance.py:1304} INFO - Executing <Task(BashOperator): load_basic_to_pg> on 2022-12-22 10:00:00+00:00
+[2022-12-23T10:03:41.104+0000] {standard_task_runner.py:55} INFO - Started process 1225 to run task
+[2022-12-23T10:03:41.125+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'Can_I_change_name_to_this', 'load_basic_to_pg', 'scheduled__2022-12-22T10:00:00+00:00', '--job-id', '252', '--raw', '--subdir', 'DAGS_FOLDER/dags.py', '--cfg-path', '/tmp/tmp54vn1wf3']
+[2022-12-23T10:03:41.127+0000] {standard_task_runner.py:83} INFO - Job 252: Subtask load_basic_to_pg
+[2022-12-23T10:03:41.249+0000] {task_command.py:389} INFO - Running <TaskInstance: Can_I_change_name_to_this.load_basic_to_pg scheduled__2022-12-22T10:00:00+00:00 [running]> on host 502390ac5559
+[2022-12-23T10:03:41.360+0000] {taskinstance.py:1513} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=Can_I_change_name_to_this
+AIRFLOW_CTX_TASK_ID=load_basic_to_pg
+AIRFLOW_CTX_EXECUTION_DATE=2022-12-22T10:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-12-22T10:00:00+00:00
+[2022-12-23T10:03:41.366+0000] {subprocess.py:63} INFO - Tmp dir root location: 
+ /tmp
+[2022-12-23T10:03:41.369+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'python /opt/***/tasks/redshift/basic_load_to_redshift.py']
+[2022-12-23T10:03:41.389+0000] {subprocess.py:86} INFO - Output:
+[2022-12-23T10:03:45.241+0000] {subprocess.py:93} INFO - {"message": "successfully put basic lol stat to redshift", "time": "2022-12-23T10:03:45.236114"}
+[2022-12-23T10:03:45.263+0000] {subprocess.py:93} INFO - {"message": "put s3 basic lol stat to redshift have used 1.2286719180001455s", "time": "2022-12-23T10:03:45.262726"}
+[2022-12-23T10:03:45.389+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2022-12-23T10:03:45.546+0000] {taskinstance.py:1327} INFO - Marking task as SUCCESS. dag_id=Can_I_change_name_to_this, task_id=load_basic_to_pg, execution_date=20221222T100000, start_date=20221223T100341, end_date=20221223T100345
+[2022-12-23T10:03:45.686+0000] {local_task_job.py:159} INFO - Task exited with return code 0
+[2022-12-23T10:03:45.862+0000] {taskinstance.py:2582} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,58 @@
+[2022-12-17T09:55:32.571+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: Can_I_change_name_to_this.task_7 manual__2022-12-17T09:53:31.433840+00:00 [queued]>
+[2022-12-17T09:55:32.823+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: Can_I_change_name_to_this.task_7 manual__2022-12-17T09:53:31.433840+00:00 [queued]>
+[2022-12-17T09:55:33.093+0000] {taskinstance.py:1283} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-17T09:55:33.451+0000] {taskinstance.py:1284} INFO - Starting attempt 1 of 1
+[2022-12-17T09:55:33.740+0000] {taskinstance.py:1285} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-17T09:55:34.230+0000] {taskinstance.py:1304} INFO - Executing <Task(BashOperator): task_7> on 2022-12-17 09:53:31.433840+00:00
+[2022-12-17T09:55:34.313+0000] {standard_task_runner.py:55} INFO - Started process 1846 to run task
+[2022-12-17T09:55:34.338+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'Can_I_change_name_to_this', 'task_7', 'manual__2022-12-17T09:53:31.433840+00:00', '--job-id', '113', '--raw', '--subdir', 'DAGS_FOLDER/dags.py', '--cfg-path', '/tmp/tmpyjin1ju8']
+[2022-12-17T09:55:34.356+0000] {standard_task_runner.py:83} INFO - Job 113: Subtask task_7
+[2022-12-17T09:55:34.638+0000] {task_command.py:389} INFO - Running <TaskInstance: Can_I_change_name_to_this.task_7 manual__2022-12-17T09:53:31.433840+00:00 [running]> on host 502390ac5559
+[2022-12-17T09:55:34.866+0000] {taskinstance.py:1513} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=Can_I_change_name_to_this
+AIRFLOW_CTX_TASK_ID=task_7
+AIRFLOW_CTX_EXECUTION_DATE=2022-12-17T09:53:31.433840+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-12-17T09:53:31.433840+00:00
+[2022-12-17T09:55:34.875+0000] {subprocess.py:63} INFO - Tmp dir root location: 
+ /tmp
+[2022-12-17T09:55:34.880+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'python /opt/***/tasks/data_cleansing_counter_stat.py']
+[2022-12-17T09:55:34.951+0000] {subprocess.py:86} INFO - Output:
+[2022-12-17T09:55:39.854+0000] {subprocess.py:93} INFO - 2022-12-17 09:55:39 +0000 - dagster - DEBUG - counter_stat_job - b4eff94f-bf3f-4108-8d9d-423eb6e4e462 - 1847 - RUN_START - Started execution of run for "counter_stat_job".
+[2022-12-17T09:55:39.859+0000] {subprocess.py:93} INFO - 2022-12-17 09:55:39 +0000 - dagster - DEBUG - counter_stat_job - b4eff94f-bf3f-4108-8d9d-423eb6e4e462 - 1847 - ENGINE_EVENT - Executing steps in process (pid: 1847)
+[2022-12-17T09:55:39.860+0000] {subprocess.py:93} INFO - 2022-12-17 09:55:39 +0000 - dagster - DEBUG - counter_stat_job - b4eff94f-bf3f-4108-8d9d-423eb6e4e462 - 1847 - RESOURCE_INIT_STARTED - Starting initialization of resources [io_manager].
+[2022-12-17T09:55:39.861+0000] {subprocess.py:93} INFO - 2022-12-17 09:55:39 +0000 - dagster - DEBUG - counter_stat_job - b4eff94f-bf3f-4108-8d9d-423eb6e4e462 - 1847 - RESOURCE_INIT_SUCCESS - Finished initialization of resources [io_manager].
+[2022-12-17T09:55:39.862+0000] {subprocess.py:93} INFO - 2022-12-17 09:55:39 +0000 - dagster - DEBUG - counter_stat_job - b4eff94f-bf3f-4108-8d9d-423eb6e4e462 - 1847 - LOGS_CAPTURED - Started capturing logs in process (pid: 1847).
+[2022-12-17T09:55:39.863+0000] {subprocess.py:93} INFO - 2022-12-17 09:55:39 +0000 - dagster - DEBUG - counter_stat_job - b4eff94f-bf3f-4108-8d9d-423eb6e4e462 - 1847 - read_json - STEP_START - Started execution of step "read_json".
+[2022-12-17T09:55:39.894+0000] {subprocess.py:93} INFO - 2022-12-17 09:55:39 +0000 - dagster - DEBUG - counter_stat_job - b4eff94f-bf3f-4108-8d9d-423eb6e4e462 - 1847 - read_json - STEP_OUTPUT - Yielded output "result" of type "DataFrame". (Type check passed).
+[2022-12-17T09:55:39.896+0000] {subprocess.py:93} INFO - 2022-12-17 09:55:39 +0000 - dagster - DEBUG - counter_stat_job - b4eff94f-bf3f-4108-8d9d-423eb6e4e462 - 1847 - read_json - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+[2022-12-17T09:55:39.897+0000] {subprocess.py:93} INFO - 2022-12-17 09:55:39 +0000 - dagster - DEBUG - counter_stat_job - b4eff94f-bf3f-4108-8d9d-423eb6e4e462 - 1847 - read_json - STEP_SUCCESS - Finished execution of step "read_json" in 38ms.
+[2022-12-17T09:55:39.899+0000] {subprocess.py:93} INFO - 2022-12-17 09:55:39 +0000 - dagster - DEBUG - counter_stat_job - b4eff94f-bf3f-4108-8d9d-423eb6e4e462 - 1847 - data_cleansing - STEP_START - Started execution of step "data_cleansing".
+[2022-12-17T09:55:39.902+0000] {subprocess.py:93} INFO - 2022-12-17 09:55:39 +0000 - dagster - DEBUG - counter_stat_job - b4eff94f-bf3f-4108-8d9d-423eb6e4e462 - 1847 - data_cleansing - LOADED_INPUT - Loaded input "df" using input manager "io_manager", from output "result" of step "read_json"
+[2022-12-17T09:55:39.904+0000] {subprocess.py:93} INFO - 2022-12-17 09:55:39 +0000 - dagster - DEBUG - counter_stat_job - b4eff94f-bf3f-4108-8d9d-423eb6e4e462 - 1847 - data_cleansing - STEP_INPUT - Got input "df" of type "DataFrame". (Type check passed).
+[2022-12-17T09:55:39.958+0000] {subprocess.py:93} INFO - 2022-12-17 09:55:39 +0000 - dagster - DEBUG - counter_stat_job - b4eff94f-bf3f-4108-8d9d-423eb6e4e462 - 1847 - data_cleansing - STEP_OUTPUT - Yielded output "result" of type "DataFrame". (Type check passed).
+[2022-12-17T09:55:39.964+0000] {subprocess.py:93} INFO - 2022-12-17 09:55:39 +0000 - dagster - DEBUG - counter_stat_job - b4eff94f-bf3f-4108-8d9d-423eb6e4e462 - 1847 - data_cleansing - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+[2022-12-17T09:55:39.968+0000] {subprocess.py:93} INFO - 2022-12-17 09:55:39 +0000 - dagster - DEBUG - counter_stat_job - b4eff94f-bf3f-4108-8d9d-423eb6e4e462 - 1847 - data_cleansing - STEP_SUCCESS - Finished execution of step "data_cleansing" in 53ms.
+[2022-12-17T09:55:39.973+0000] {subprocess.py:93} INFO - 2022-12-17 09:55:39 +0000 - dagster - DEBUG - counter_stat_job - b4eff94f-bf3f-4108-8d9d-423eb6e4e462 - 1847 - df_to_file - STEP_START - Started execution of step "df_to_file".
+[2022-12-17T09:55:39.978+0000] {subprocess.py:93} INFO - 2022-12-17 09:55:39 +0000 - dagster - DEBUG - counter_stat_job - b4eff94f-bf3f-4108-8d9d-423eb6e4e462 - 1847 - df_to_file - LOADED_INPUT - Loaded input "df" using input manager "io_manager", from output "result" of step "data_cleansing"
+[2022-12-17T09:55:39.981+0000] {subprocess.py:93} INFO - 2022-12-17 09:55:39 +0000 - dagster - DEBUG - counter_stat_job - b4eff94f-bf3f-4108-8d9d-423eb6e4e462 - 1847 - df_to_file - STEP_INPUT - Got input "df" of type "DataFrame". (Type check passed).
+[2022-12-17T09:55:40.056+0000] {subprocess.py:93} INFO - 2022-12-17 09:55:40 +0000 - dagster - DEBUG - counter_stat_job - b4eff94f-bf3f-4108-8d9d-423eb6e4e462 - 1847 - df_to_file - STEP_OUTPUT - Yielded output "result" of type "Any". (Type check passed).
+[2022-12-17T09:55:40.059+0000] {subprocess.py:93} INFO - 2022-12-17 09:55:40 +0000 - dagster - DEBUG - counter_stat_job - b4eff94f-bf3f-4108-8d9d-423eb6e4e462 - 1847 - df_to_file - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+[2022-12-17T09:55:40.061+0000] {subprocess.py:93} INFO - 2022-12-17 09:55:40 +0000 - dagster - DEBUG - counter_stat_job - b4eff94f-bf3f-4108-8d9d-423eb6e4e462 - 1847 - df_to_file - STEP_SUCCESS - Finished execution of step "df_to_file" in 93ms.
+[2022-12-17T09:55:40.064+0000] {subprocess.py:93} INFO - 2022-12-17 09:55:40 +0000 - dagster - DEBUG - counter_stat_job - b4eff94f-bf3f-4108-8d9d-423eb6e4e462 - 1847 - df_to_pg - STEP_START - Started execution of step "df_to_pg".
+[2022-12-17T09:55:40.067+0000] {subprocess.py:93} INFO - 2022-12-17 09:55:40 +0000 - dagster - DEBUG - counter_stat_job - b4eff94f-bf3f-4108-8d9d-423eb6e4e462 - 1847 - df_to_pg - LOADED_INPUT - Loaded input "df" using input manager "io_manager", from output "result" of step "data_cleansing"
+[2022-12-17T09:55:40.069+0000] {subprocess.py:93} INFO - 2022-12-17 09:55:40 +0000 - dagster - DEBUG - counter_stat_job - b4eff94f-bf3f-4108-8d9d-423eb6e4e462 - 1847 - df_to_pg - STEP_INPUT - Got input "df" of type "DataFrame". (Type check passed).
+[2022-12-17T09:55:42.381+0000] {subprocess.py:93} INFO - 2022-12-17 09:55:42 +0000 - dagster - DEBUG - counter_stat_job - b4eff94f-bf3f-4108-8d9d-423eb6e4e462 - 1847 - df_to_pg - STEP_OUTPUT - Yielded output "result" of type "Any". (Type check passed).
+[2022-12-17T09:55:42.394+0000] {subprocess.py:93} INFO - 2022-12-17 09:55:42 +0000 - dagster - DEBUG - counter_stat_job - b4eff94f-bf3f-4108-8d9d-423eb6e4e462 - 1847 - df_to_pg - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+[2022-12-17T09:55:42.398+0000] {subprocess.py:93} INFO - 2022-12-17 09:55:42 +0000 - dagster - DEBUG - counter_stat_job - b4eff94f-bf3f-4108-8d9d-423eb6e4e462 - 1847 - df_to_pg - STEP_SUCCESS - Finished execution of step "df_to_pg" in 2.31s.
+[2022-12-17T09:55:42.401+0000] {subprocess.py:93} INFO - 2022-12-17 09:55:42 +0000 - dagster - DEBUG - counter_stat_job - b4eff94f-bf3f-4108-8d9d-423eb6e4e462 - 1847 - ENGINE_EVENT - Finished steps in process (pid: 1847) in 2.53s
+[2022-12-17T09:55:42.405+0000] {subprocess.py:93} INFO - 2022-12-17 09:55:42 +0000 - dagster - DEBUG - counter_stat_job - b4eff94f-bf3f-4108-8d9d-423eb6e4e462 - 1847 - RUN_SUCCESS - Finished execution of run for "counter_stat_job".
+[2022-12-17T09:55:42.421+0000] {subprocess.py:93} INFO - {"message": "successfully put lol_basic_stat to pg and redshift", "time": "2022-12-17T09:55:42.421561"}
+[2022-12-17T09:55:42.426+0000] {subprocess.py:93} INFO - {"message": "put lol_basic_stat to pg and file have used 2.8435530009992362s", "time": "2022-12-17T09:55:42.425274"}
+[2022-12-17T09:55:42.905+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2022-12-17T09:55:43.104+0000] {taskinstance.py:1327} INFO - Marking task as SUCCESS. dag_id=Can_I_change_name_to_this, task_id=task_7, execution_date=20221217T095331, start_date=20221217T095532, end_date=20221217T095543
+[2022-12-17T09:55:43.310+0000] {local_task_job.py:159} INFO - Task exited with return code 0
+[2022-12-17T09:55:43.813+0000] {taskinstance.py:2582} INFO - 0 downstream tasks scheduled from follow-on schedule check

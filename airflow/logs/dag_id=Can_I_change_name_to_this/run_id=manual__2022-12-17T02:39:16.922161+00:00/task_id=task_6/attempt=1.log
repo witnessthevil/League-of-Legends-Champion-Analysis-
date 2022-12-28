@@ -1,0 +1,170 @@
+[2022-12-17T02:40:34.739+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: Can_I_change_name_to_this.task_6 manual__2022-12-17T02:39:16.922161+00:00 [queued]>
+[2022-12-17T02:40:34.754+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: Can_I_change_name_to_this.task_6 manual__2022-12-17T02:39:16.922161+00:00 [queued]>
+[2022-12-17T02:40:34.755+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-17T02:40:34.756+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 1
+[2022-12-17T02:40:34.758+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-17T02:40:34.783+0000] {taskinstance.py:1383} INFO - Executing <Task(BashOperator): task_6> on 2022-12-17 02:39:16.922161+00:00
+[2022-12-17T02:40:34.791+0000] {standard_task_runner.py:55} INFO - Started process 747 to run task
+[2022-12-17T02:40:34.796+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'Can_I_change_name_to_this', 'task_6', 'manual__2022-12-17T02:39:16.922161+00:00', '--job-id', '66', '--raw', '--subdir', 'DAGS_FOLDER/dags.py', '--cfg-path', '/tmp/tmpmqwk36m_']
+[2022-12-17T02:40:34.799+0000] {standard_task_runner.py:83} INFO - Job 66: Subtask task_6
+[2022-12-17T02:40:34.865+0000] {task_command.py:376} INFO - Running <TaskInstance: Can_I_change_name_to_this.task_6 manual__2022-12-17T02:39:16.922161+00:00 [running]> on host 418b9a9aa3df
+[2022-12-17T02:40:34.930+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=Can_I_change_name_to_this
+AIRFLOW_CTX_TASK_ID=task_6
+AIRFLOW_CTX_EXECUTION_DATE=2022-12-17T02:39:16.922161+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-12-17T02:39:16.922161+00:00
+[2022-12-17T02:40:34.934+0000] {subprocess.py:63} INFO - Tmp dir root location: 
+ /tmp
+[2022-12-17T02:40:34.937+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'python /opt/***/tasks/data_cleansing_basic_stat.py']
+[2022-12-17T02:40:34.956+0000] {subprocess.py:86} INFO - Output:
+[2022-12-17T02:40:41.947+0000] {subprocess.py:93} INFO - 2022-12-17 02:40:41 +0000 - dagster - DEBUG - data_cleansing_whole_job - 41cad4e1-6b12-41fa-8bbc-a0b9bff31ece - 749 - RUN_START - Started execution of run for "data_cleansing_whole_job".
+[2022-12-17T02:40:41.970+0000] {subprocess.py:93} INFO - 2022-12-17 02:40:41 +0000 - dagster - DEBUG - data_cleansing_whole_job - 41cad4e1-6b12-41fa-8bbc-a0b9bff31ece - 749 - ENGINE_EVENT - Executing steps in process (pid: 749)
+[2022-12-17T02:40:41.973+0000] {subprocess.py:93} INFO - 2022-12-17 02:40:41 +0000 - dagster - DEBUG - data_cleansing_whole_job - 41cad4e1-6b12-41fa-8bbc-a0b9bff31ece - 749 - RESOURCE_INIT_STARTED - Starting initialization of resources [io_manager].
+[2022-12-17T02:40:41.975+0000] {subprocess.py:93} INFO - 2022-12-17 02:40:41 +0000 - dagster - DEBUG - data_cleansing_whole_job - 41cad4e1-6b12-41fa-8bbc-a0b9bff31ece - 749 - RESOURCE_INIT_SUCCESS - Finished initialization of resources [io_manager].
+[2022-12-17T02:40:41.976+0000] {subprocess.py:93} INFO - 2022-12-17 02:40:41 +0000 - dagster - DEBUG - data_cleansing_whole_job - 41cad4e1-6b12-41fa-8bbc-a0b9bff31ece - 749 - LOGS_CAPTURED - Started capturing logs in process (pid: 749).
+[2022-12-17T02:40:41.977+0000] {subprocess.py:93} INFO - 2022-12-17 02:40:41 +0000 - dagster - DEBUG - data_cleansing_whole_job - 41cad4e1-6b12-41fa-8bbc-a0b9bff31ece - 749 - reading_json - STEP_START - Started execution of step "reading_json".
+[2022-12-17T02:40:41.984+0000] {subprocess.py:93} INFO - 2022-12-17 02:40:41 +0000 - dagster - ERROR - data_cleansing_whole_job - 41cad4e1-6b12-41fa-8bbc-a0b9bff31ece - 749 - reading_json - STEP_FAILURE - Execution of step "reading_json" failed.
+[2022-12-17T02:40:41.986+0000] {subprocess.py:93} INFO - 
+[2022-12-17T02:40:41.987+0000] {subprocess.py:93} INFO - dagster._core.errors.DagsterExecutionStepExecutionError: Error occurred while executing op "reading_json"::
+[2022-12-17T02:40:41.988+0000] {subprocess.py:93} INFO - 
+[2022-12-17T02:40:41.989+0000] {subprocess.py:93} INFO - ValueError: Expected object or value
+[2022-12-17T02:40:41.989+0000] {subprocess.py:93} INFO - 
+[2022-12-17T02:40:41.990+0000] {subprocess.py:93} INFO - Stack Trace:
+[2022-12-17T02:40:41.991+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/dagster/_core/execution/plan/utils.py", line 47, in solid_execution_error_boundary
+[2022-12-17T02:40:41.992+0000] {subprocess.py:93} INFO -     yield
+[2022-12-17T02:40:41.992+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/dagster/_utils/__init__.py", line 447, in iterate_with_context
+[2022-12-17T02:40:41.996+0000] {subprocess.py:93} INFO -     next_output = next(iterator)
+[2022-12-17T02:40:41.999+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/dagster/_core/execution/plan/compute_generator.py", line 74, in _coerce_solid_compute_fn_to_iterator
+[2022-12-17T02:40:42.005+0000] {subprocess.py:93} INFO -     result = fn(context, **kwargs) if context_arg_provided else fn(**kwargs)
+[2022-12-17T02:40:42.008+0000] {subprocess.py:93} INFO -   File "/opt/***/tasks/data_cleansing_basic_stat.py", line 22, in reading_json
+[2022-12-17T02:40:42.010+0000] {subprocess.py:93} INFO -     df = pd.read_json("./***/zone1/lol_basic_stat.json",lines=True)
+[2022-12-17T02:40:42.011+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/pandas/util/_decorators.py", line 207, in wrapper
+[2022-12-17T02:40:42.014+0000] {subprocess.py:93} INFO -     return func(*args, **kwargs)
+[2022-12-17T02:40:42.016+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/pandas/util/_decorators.py", line 311, in wrapper
+[2022-12-17T02:40:42.024+0000] {subprocess.py:93} INFO -     return func(*args, **kwargs)
+[2022-12-17T02:40:42.026+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/pandas/io/json/_json.py", line 614, in read_json
+[2022-12-17T02:40:42.027+0000] {subprocess.py:93} INFO -     return json_reader.read()
+[2022-12-17T02:40:42.035+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/pandas/io/json/_json.py", line 746, in read
+[2022-12-17T02:40:42.057+0000] {subprocess.py:93} INFO -     obj = self._get_object_parser(self._combine_lines(data_lines))
+[2022-12-17T02:40:42.063+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/pandas/io/json/_json.py", line 770, in _get_object_parser
+[2022-12-17T02:40:42.065+0000] {subprocess.py:93} INFO -     obj = FrameParser(json, **kwargs).parse()
+[2022-12-17T02:40:42.067+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/pandas/io/json/_json.py", line 885, in parse
+[2022-12-17T02:40:42.069+0000] {subprocess.py:93} INFO -     self._parse_no_numpy()
+[2022-12-17T02:40:42.075+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/pandas/io/json/_json.py", line 1140, in _parse_no_numpy
+[2022-12-17T02:40:42.081+0000] {subprocess.py:93} INFO -     loads(json, precise_float=self.precise_float), dtype=None
+[2022-12-17T02:40:42.086+0000] {subprocess.py:93} INFO - 
+[2022-12-17T02:40:42.090+0000] {subprocess.py:93} INFO - 2022-12-17 02:40:41 +0000 - dagster - ERROR - data_cleansing_whole_job - 41cad4e1-6b12-41fa-8bbc-a0b9bff31ece - 749 - RUN_FAILURE - Execution of run for "data_cleansing_whole_job" failed. An exception was thrown during execution.
+[2022-12-17T02:40:42.091+0000] {subprocess.py:93} INFO - 
+[2022-12-17T02:40:42.092+0000] {subprocess.py:93} INFO - ValueError: Expected object or value
+[2022-12-17T02:40:42.098+0000] {subprocess.py:93} INFO - 
+[2022-12-17T02:40:42.100+0000] {subprocess.py:93} INFO - Stack Trace:
+[2022-12-17T02:40:42.102+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/dagster/_core/execution/api.py", line 1091, in pipeline_execution_iterator
+[2022-12-17T02:40:42.104+0000] {subprocess.py:93} INFO -     for event in pipeline_context.executor.execute(pipeline_context, execution_plan):
+[2022-12-17T02:40:42.108+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/dagster/_core/executor/in_process.py", line 50, in execute
+[2022-12-17T02:40:42.114+0000] {subprocess.py:93} INFO -     output_capture=plan_context.output_capture,
+[2022-12-17T02:40:42.121+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/dagster/_core/execution/api.py", line 1189, in __iter__
+[2022-12-17T02:40:42.124+0000] {subprocess.py:93} INFO -     pipeline_context=self.pipeline_context,
+[2022-12-17T02:40:42.130+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/dagster/_core/execution/plan/execute_plan.py", line 121, in inner_plan_execution_iterator
+[2022-12-17T02:40:42.134+0000] {subprocess.py:93} INFO -     dagster_event_sequence_for_step(step_context)
+[2022-12-17T02:40:42.137+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/dagster/_core/execution/plan/execute_plan.py", line 325, in dagster_event_sequence_for_step
+[2022-12-17T02:40:42.139+0000] {subprocess.py:93} INFO -     raise dagster_user_error.user_exception
+[2022-12-17T02:40:42.141+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/dagster/_core/execution/plan/utils.py", line 47, in solid_execution_error_boundary
+[2022-12-17T02:40:42.143+0000] {subprocess.py:93} INFO -     yield
+[2022-12-17T02:40:42.145+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/dagster/_utils/__init__.py", line 447, in iterate_with_context
+[2022-12-17T02:40:42.148+0000] {subprocess.py:93} INFO -     next_output = next(iterator)
+[2022-12-17T02:40:42.150+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/dagster/_core/execution/plan/compute_generator.py", line 74, in _coerce_solid_compute_fn_to_iterator
+[2022-12-17T02:40:42.152+0000] {subprocess.py:93} INFO -     result = fn(context, **kwargs) if context_arg_provided else fn(**kwargs)
+[2022-12-17T02:40:42.153+0000] {subprocess.py:93} INFO -   File "/opt/***/tasks/data_cleansing_basic_stat.py", line 22, in reading_json
+[2022-12-17T02:40:42.155+0000] {subprocess.py:93} INFO -     df = pd.read_json("./***/zone1/lol_basic_stat.json",lines=True)
+[2022-12-17T02:40:42.156+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/pandas/util/_decorators.py", line 207, in wrapper
+[2022-12-17T02:40:42.158+0000] {subprocess.py:93} INFO -     return func(*args, **kwargs)
+[2022-12-17T02:40:42.162+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/pandas/util/_decorators.py", line 311, in wrapper
+[2022-12-17T02:40:42.163+0000] {subprocess.py:93} INFO -     return func(*args, **kwargs)
+[2022-12-17T02:40:42.165+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/pandas/io/json/_json.py", line 614, in read_json
+[2022-12-17T02:40:42.165+0000] {subprocess.py:93} INFO -     return json_reader.read()
+[2022-12-17T02:40:42.166+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/pandas/io/json/_json.py", line 746, in read
+[2022-12-17T02:40:42.168+0000] {subprocess.py:93} INFO -     obj = self._get_object_parser(self._combine_lines(data_lines))
+[2022-12-17T02:40:42.170+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/pandas/io/json/_json.py", line 770, in _get_object_parser
+[2022-12-17T02:40:42.173+0000] {subprocess.py:93} INFO -     obj = FrameParser(json, **kwargs).parse()
+[2022-12-17T02:40:42.174+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/pandas/io/json/_json.py", line 885, in parse
+[2022-12-17T02:40:42.175+0000] {subprocess.py:93} INFO -     self._parse_no_numpy()
+[2022-12-17T02:40:42.176+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/pandas/io/json/_json.py", line 1140, in _parse_no_numpy
+[2022-12-17T02:40:42.178+0000] {subprocess.py:93} INFO -     loads(json, precise_float=self.precise_float), dtype=None
+[2022-12-17T02:40:42.185+0000] {subprocess.py:93} INFO - 
+[2022-12-17T02:40:42.187+0000] {subprocess.py:93} INFO - Traceback (most recent call last):
+[2022-12-17T02:40:42.188+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/dagster/_core/execution/plan/execute_plan.py", line 251, in dagster_event_sequence_for_step
+[2022-12-17T02:40:42.189+0000] {subprocess.py:93} INFO -     for step_event in check.generator(step_events):
+[2022-12-17T02:40:42.193+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/dagster/_core/execution/plan/execute_step.py", line 390, in core_dagster_event_sequence_for_step
+[2022-12-17T02:40:42.195+0000] {subprocess.py:93} INFO -     _step_output_error_checked_user_event_sequence(step_context, user_event_sequence)
+[2022-12-17T02:40:42.196+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/dagster/_core/execution/plan/execute_step.py", line 95, in _step_output_error_checked_user_event_sequence
+[2022-12-17T02:40:42.200+0000] {subprocess.py:93} INFO -     for user_event in user_event_sequence:
+[2022-12-17T02:40:42.202+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/dagster/_core/execution/plan/compute.py", line 174, in execute_core_compute
+[2022-12-17T02:40:42.203+0000] {subprocess.py:93} INFO -     for step_output in _yield_compute_results(step_context, inputs, compute_fn):
+[2022-12-17T02:40:42.204+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/dagster/_core/execution/plan/compute.py", line 151, in _yield_compute_results
+[2022-12-17T02:40:42.205+0000] {subprocess.py:93} INFO -     user_event_generator,
+[2022-12-17T02:40:42.207+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/dagster/_utils/__init__.py", line 449, in iterate_with_context
+[2022-12-17T02:40:42.211+0000] {subprocess.py:93} INFO -     return
+[2022-12-17T02:40:42.213+0000] {subprocess.py:93} INFO -   File "/usr/local/lib/python3.7/contextlib.py", line 130, in __exit__
+[2022-12-17T02:40:42.216+0000] {subprocess.py:93} INFO -     self.gen.throw(type, value, traceback)
+[2022-12-17T02:40:42.218+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/dagster/_core/execution/plan/utils.py", line 82, in solid_execution_error_boundary
+[2022-12-17T02:40:42.220+0000] {subprocess.py:93} INFO -     ) from e
+[2022-12-17T02:40:42.223+0000] {subprocess.py:93} INFO - dagster._core.errors.DagsterExecutionStepExecutionError: Error occurred while executing op "reading_json":
+[2022-12-17T02:40:42.226+0000] {subprocess.py:93} INFO - 
+[2022-12-17T02:40:42.229+0000] {subprocess.py:93} INFO - During handling of the above exception, another exception occurred:
+[2022-12-17T02:40:42.233+0000] {subprocess.py:93} INFO - 
+[2022-12-17T02:40:42.235+0000] {subprocess.py:93} INFO - Traceback (most recent call last):
+[2022-12-17T02:40:42.238+0000] {subprocess.py:93} INFO -   File "/opt/***/tasks/data_cleansing_basic_stat.py", line 95, in <module>
+[2022-12-17T02:40:42.241+0000] {subprocess.py:93} INFO -     result = data_cleansing_whole_job.execute_in_process()
+[2022-12-17T02:40:42.246+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/dagster/_core/definitions/job_definition.py", line 395, in execute_in_process
+[2022-12-17T02:40:42.256+0000] {subprocess.py:93} INFO -     asset_selection=frozenset(asset_selection),
+[2022-12-17T02:40:42.264+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/dagster/_core/execution/execute_in_process.py", line 77, in core_execute_in_process
+[2022-12-17T02:40:42.267+0000] {subprocess.py:93} INFO -     event_list = list(execute_run_iterable)
+[2022-12-17T02:40:42.275+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/dagster/_core/execution/api.py", line 1189, in __iter__
+[2022-12-17T02:40:42.280+0000] {subprocess.py:93} INFO -     pipeline_context=self.pipeline_context,
+[2022-12-17T02:40:42.286+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/dagster/_core/execution/api.py", line 1091, in pipeline_execution_iterator
+[2022-12-17T02:40:42.288+0000] {subprocess.py:93} INFO -     for event in pipeline_context.executor.execute(pipeline_context, execution_plan):
+[2022-12-17T02:40:42.291+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/dagster/_core/executor/in_process.py", line 50, in execute
+[2022-12-17T02:40:42.293+0000] {subprocess.py:93} INFO -     output_capture=plan_context.output_capture,
+[2022-12-17T02:40:42.307+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/dagster/_core/execution/api.py", line 1189, in __iter__
+[2022-12-17T02:40:42.308+0000] {subprocess.py:93} INFO -     pipeline_context=self.pipeline_context,
+[2022-12-17T02:40:42.310+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/dagster/_core/execution/plan/execute_plan.py", line 121, in inner_plan_execution_iterator
+[2022-12-17T02:40:42.314+0000] {subprocess.py:93} INFO -     dagster_event_sequence_for_step(step_context)
+[2022-12-17T02:40:42.317+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/dagster/_core/execution/plan/execute_plan.py", line 325, in dagster_event_sequence_for_step
+[2022-12-17T02:40:42.319+0000] {subprocess.py:93} INFO -     raise dagster_user_error.user_exception
+[2022-12-17T02:40:42.321+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/dagster/_core/execution/plan/utils.py", line 47, in solid_execution_error_boundary
+[2022-12-17T02:40:42.322+0000] {subprocess.py:93} INFO -     yield
+[2022-12-17T02:40:42.324+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/dagster/_utils/__init__.py", line 447, in iterate_with_context
+[2022-12-17T02:40:42.326+0000] {subprocess.py:93} INFO -     next_output = next(iterator)
+[2022-12-17T02:40:42.328+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/dagster/_core/execution/plan/compute_generator.py", line 74, in _coerce_solid_compute_fn_to_iterator
+[2022-12-17T02:40:42.330+0000] {subprocess.py:93} INFO -     result = fn(context, **kwargs) if context_arg_provided else fn(**kwargs)
+[2022-12-17T02:40:42.331+0000] {subprocess.py:93} INFO -   File "/opt/***/tasks/data_cleansing_basic_stat.py", line 22, in reading_json
+[2022-12-17T02:40:42.333+0000] {subprocess.py:93} INFO -     df = pd.read_json("./***/zone1/lol_basic_stat.json",lines=True)
+[2022-12-17T02:40:42.336+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/pandas/util/_decorators.py", line 207, in wrapper
+[2022-12-17T02:40:42.338+0000] {subprocess.py:93} INFO -     return func(*args, **kwargs)
+[2022-12-17T02:40:42.340+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/pandas/util/_decorators.py", line 311, in wrapper
+[2022-12-17T02:40:42.343+0000] {subprocess.py:93} INFO -     return func(*args, **kwargs)
+[2022-12-17T02:40:42.346+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/pandas/io/json/_json.py", line 614, in read_json
+[2022-12-17T02:40:42.348+0000] {subprocess.py:93} INFO -     return json_reader.read()
+[2022-12-17T02:40:42.349+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/pandas/io/json/_json.py", line 746, in read
+[2022-12-17T02:40:42.352+0000] {subprocess.py:93} INFO -     obj = self._get_object_parser(self._combine_lines(data_lines))
+[2022-12-17T02:40:42.353+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/pandas/io/json/_json.py", line 770, in _get_object_parser
+[2022-12-17T02:40:42.356+0000] {subprocess.py:93} INFO -     obj = FrameParser(json, **kwargs).parse()
+[2022-12-17T02:40:42.358+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/pandas/io/json/_json.py", line 885, in parse
+[2022-12-17T02:40:42.369+0000] {subprocess.py:93} INFO -     self._parse_no_numpy()
+[2022-12-17T02:40:42.370+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/pandas/io/json/_json.py", line 1140, in _parse_no_numpy
+[2022-12-17T02:40:42.374+0000] {subprocess.py:93} INFO -     loads(json, precise_float=self.precise_float), dtype=None
+[2022-12-17T02:40:42.375+0000] {subprocess.py:93} INFO - ValueError: Expected object or value
+[2022-12-17T02:40:42.636+0000] {subprocess.py:97} INFO - Command exited with return code 1
+[2022-12-17T02:40:42.725+0000] {taskinstance.py:1851} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py", line 197, in execute
+    f'Bash command failed. The command returned a non-zero exit code {result.exit_code}.'
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2022-12-17T02:40:42.816+0000] {taskinstance.py:1406} INFO - Marking task as FAILED. dag_id=Can_I_change_name_to_this, task_id=task_6, execution_date=20221217T023916, start_date=20221217T024034, end_date=20221217T024042
+[2022-12-17T02:40:42.871+0000] {standard_task_runner.py:105} ERROR - Failed to execute job 66 for task task_6 (Bash command failed. The command returned a non-zero exit code 1.; 747)
+[2022-12-17T02:40:42.935+0000] {local_task_job.py:159} INFO - Task exited with return code 1
+[2022-12-17T02:40:43.025+0000] {taskinstance.py:2623} INFO - 0 downstream tasks scheduled from follow-on schedule check

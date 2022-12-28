@@ -1,0 +1,12 @@
+[2022-12-26T09:49:31.419+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: Can_I_change_name_to_this.counter_data_cleansing scheduled__2022-12-23T10:00:00+00:00 [queued]>
+[2022-12-26T09:49:40.129+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: Can_I_change_name_to_this.counter_data_cleansing scheduled__2022-12-23T10:00:00+00:00 [queued]>
+[2022-12-26T09:49:40.254+0000] {taskinstance.py:1283} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-26T09:49:40.261+0000] {taskinstance.py:1284} INFO - Starting attempt 1 of 1
+[2022-12-26T09:49:40.262+0000] {taskinstance.py:1285} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-26T09:49:43.417+0000] {taskinstance.py:1304} INFO - Executing <Task(BashOperator): counter_data_cleansing> on 2022-12-23 10:00:00+00:00
+[2022-12-26T09:49:50.067+0000] {standard_task_runner.py:55} INFO - Started process 237 to run task
+[2022-12-26T09:49:52.723+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'Can_I_change_name_to_this', 'counter_data_cleansing', 'scheduled__2022-12-23T10:00:00+00:00', '--job-id', '263', '--raw', '--subdir', 'DAGS_FOLDER/dags.py', '--cfg-path', '/tmp/tmpce_c4t_u']
+[2022-12-26T09:49:52.964+0000] {standard_task_runner.py:83} INFO - Job 263: Subtask counter_data_cleansing
+[2022-12-26T09:57:31.661+0000] {task_command.py:389} INFO - Running <TaskInstance: Can_I_change_name_to_this.counter_data_cleansing scheduled__2022-12-23T10:00:00+00:00 [running]> on host 502390ac5559

@@ -1,0 +1,27 @@
+[2022-12-19T15:08:18.364+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: Can_I_change_name_to_this.move_logger_to_site scheduled__2022-12-18T10:00:00+00:00 [queued]>
+[2022-12-19T15:08:18.411+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: Can_I_change_name_to_this.move_logger_to_site scheduled__2022-12-18T10:00:00+00:00 [queued]>
+[2022-12-19T15:08:18.415+0000] {taskinstance.py:1283} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-19T15:08:18.416+0000] {taskinstance.py:1284} INFO - Starting attempt 1 of 1
+[2022-12-19T15:08:18.420+0000] {taskinstance.py:1285} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-19T15:08:18.470+0000] {taskinstance.py:1304} INFO - Executing <Task(BashOperator): move_logger_to_site> on 2022-12-18 10:00:00+00:00
+[2022-12-19T15:08:18.495+0000] {standard_task_runner.py:55} INFO - Started process 76 to run task
+[2022-12-19T15:08:18.509+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'Can_I_change_name_to_this', 'move_logger_to_site', 'scheduled__2022-12-18T10:00:00+00:00', '--job-id', '148', '--raw', '--subdir', 'DAGS_FOLDER/dags.py', '--cfg-path', '/tmp/tmp49wqwpp0']
+[2022-12-19T15:08:18.512+0000] {standard_task_runner.py:83} INFO - Job 148: Subtask move_logger_to_site
+[2022-12-19T15:08:18.691+0000] {task_command.py:389} INFO - Running <TaskInstance: Can_I_change_name_to_this.move_logger_to_site scheduled__2022-12-18T10:00:00+00:00 [running]> on host 502390ac5559
+[2022-12-19T15:08:19.376+0000] {taskinstance.py:1513} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=Can_I_change_name_to_this
+AIRFLOW_CTX_TASK_ID=move_logger_to_site
+AIRFLOW_CTX_EXECUTION_DATE=2022-12-18T10:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-12-18T10:00:00+00:00
+[2022-12-19T15:08:19.382+0000] {subprocess.py:63} INFO - Tmp dir root location: 
+ /tmp
+[2022-12-19T15:08:19.384+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'cp -R /opt/***/tasks/logger /home/***/.local/lib/python3.7/site-packages']
+[2022-12-19T15:08:19.420+0000] {subprocess.py:86} INFO - Output:
+[2022-12-19T15:08:19.741+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2022-12-19T15:08:19.805+0000] {taskinstance.py:1327} INFO - Marking task as SUCCESS. dag_id=Can_I_change_name_to_this, task_id=move_logger_to_site, execution_date=20221218T100000, start_date=20221219T150818, end_date=20221219T150819
+[2022-12-19T15:08:19.848+0000] {local_task_job.py:159} INFO - Task exited with return code 0
+[2022-12-19T15:08:19.900+0000] {taskinstance.py:2582} INFO - 2 downstream tasks scheduled from follow-on schedule check

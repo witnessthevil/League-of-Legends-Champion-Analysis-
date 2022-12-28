@@ -1,0 +1,588 @@
+[2022-12-21T07:24:14.283+0000] {processor.py:153} INFO - Started process (PID=32) to work on /opt/airflow/dags/dags.py
+[2022-12-21T07:24:14.289+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2022-12-21T07:24:14.293+0000] {logging_mixin.py:137} INFO - [2022-12-21T07:24:14.292+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2022-12-21T07:24:14.316+0000] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow_dbt/hooks/dbt_hook.py:7 DeprecationWarning: The `airflow.hooks.base_hook.BaseHook` class is deprecated. Please use `'airflow.hooks.base.BaseHook'`.
+[2022-12-21T07:24:14.321+0000] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow_dbt/operators/dbt_operator.py:6 RemovedInAirflow3Warning: This decorator is deprecated.
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the `default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-12-21T07:24:14.326+0000] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow_dbt/operators/__init__.py:1 RemovedInAirflow3Warning: This decorator is deprecated.
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the `default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-12-21T07:24:14.349+0000] {processor.py:753} INFO - DAG(s) dict_keys(['Can_I_change_name_to_this']) retrieved from /opt/airflow/dags/dags.py
+[2022-12-21T07:24:14.464+0000] {logging_mixin.py:137} INFO - [2022-12-21T07:24:14.464+0000] {dag.py:2676} INFO - Sync 1 DAGs
+[2022-12-21T07:24:14.495+0000] {logging_mixin.py:137} INFO - [2022-12-21T07:24:14.494+0000] {dag.py:3427} INFO - Setting next_dagrun for Can_I_change_name_to_this to 2022-12-20T10:00:00+00:00, run_after=2022-12-21T10:00:00+00:00
+[2022-12-21T07:24:14.530+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/dags.py took 0.261 seconds
+[2022-12-21T09:45:14.127+0000] {processor.py:153} INFO - Started process (PID=45) to work on /opt/airflow/dags/dags.py
+[2022-12-21T09:45:14.133+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2022-12-21T09:45:14.143+0000] {logging_mixin.py:137} INFO - [2022-12-21T09:45:14.139+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2022-12-21T09:45:14.376+0000] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow_dbt/hooks/dbt_hook.py:7 DeprecationWarning: The `airflow.hooks.base_hook.BaseHook` class is deprecated. Please use `'airflow.hooks.base.BaseHook'`.
+[2022-12-21T09:45:14.404+0000] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow_dbt/operators/dbt_operator.py:6 RemovedInAirflow3Warning: This decorator is deprecated.
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the `default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-12-21T09:45:14.417+0000] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow_dbt/operators/__init__.py:1 RemovedInAirflow3Warning: This decorator is deprecated.
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the `default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-12-21T09:45:14.736+0000] {processor.py:753} INFO - DAG(s) dict_keys(['Can_I_change_name_to_this']) retrieved from /opt/airflow/dags/dags.py
+[2022-12-21T09:45:15.845+0000] {logging_mixin.py:137} INFO - [2022-12-21T09:45:15.845+0000] {dag.py:2676} INFO - Sync 1 DAGs
+[2022-12-21T09:45:16.601+0000] {logging_mixin.py:137} INFO - [2022-12-21T09:45:16.601+0000] {dag.py:3427} INFO - Setting next_dagrun for Can_I_change_name_to_this to 2022-12-20T10:00:00+00:00, run_after=2022-12-21T10:00:00+00:00
+[2022-12-21T09:45:17.285+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/dags.py took 3.170 seconds
+[2022-12-21T09:47:13.032+0000] {processor.py:153} INFO - Started process (PID=153) to work on /opt/airflow/dags/dags.py
+[2022-12-21T09:47:13.044+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2022-12-21T09:47:13.050+0000] {logging_mixin.py:137} INFO - [2022-12-21T09:47:13.050+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2022-12-21T09:47:16.549+0000] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow_dbt/hooks/dbt_hook.py:7 DeprecationWarning: The `airflow.hooks.base_hook.BaseHook` class is deprecated. Please use `'airflow.hooks.base.BaseHook'`.
+[2022-12-21T09:47:18.222+0000] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow_dbt/operators/dbt_operator.py:6 RemovedInAirflow3Warning: This decorator is deprecated.
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the `default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-12-21T09:47:18.286+0000] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow_dbt/operators/__init__.py:1 RemovedInAirflow3Warning: This decorator is deprecated.
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the `default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-12-21T09:47:18.816+0000] {processor.py:753} INFO - DAG(s) dict_keys(['Can_I_change_name_to_this']) retrieved from /opt/airflow/dags/dags.py
+[2022-12-21T09:47:19.408+0000] {logging_mixin.py:137} INFO - [2022-12-21T09:47:19.407+0000] {dag.py:2676} INFO - Sync 1 DAGs
+[2022-12-21T09:47:19.578+0000] {logging_mixin.py:137} INFO - [2022-12-21T09:47:19.578+0000] {dag.py:3427} INFO - Setting next_dagrun for Can_I_change_name_to_this to 2022-12-20T10:00:00+00:00, run_after=2022-12-21T10:00:00+00:00
+[2022-12-21T09:47:19.675+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/dags.py took 6.652 seconds
+[2022-12-21T09:47:49.907+0000] {processor.py:153} INFO - Started process (PID=219) to work on /opt/airflow/dags/dags.py
+[2022-12-21T09:47:49.910+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2022-12-21T09:47:49.912+0000] {logging_mixin.py:137} INFO - [2022-12-21T09:47:49.912+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2022-12-21T09:47:49.996+0000] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow_dbt/hooks/dbt_hook.py:7 DeprecationWarning: The `airflow.hooks.base_hook.BaseHook` class is deprecated. Please use `'airflow.hooks.base.BaseHook'`.
+[2022-12-21T09:47:50.000+0000] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow_dbt/operators/dbt_operator.py:6 RemovedInAirflow3Warning: This decorator is deprecated.
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the `default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-12-21T09:47:50.003+0000] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow_dbt/operators/__init__.py:1 RemovedInAirflow3Warning: This decorator is deprecated.
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the `default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-12-21T09:47:50.024+0000] {processor.py:753} INFO - DAG(s) dict_keys(['Can_I_change_name_to_this']) retrieved from /opt/airflow/dags/dags.py
+[2022-12-21T09:47:50.073+0000] {logging_mixin.py:137} INFO - [2022-12-21T09:47:50.073+0000] {dag.py:2676} INFO - Sync 1 DAGs
+[2022-12-21T09:47:50.103+0000] {logging_mixin.py:137} INFO - [2022-12-21T09:47:50.103+0000] {dag.py:3427} INFO - Setting next_dagrun for Can_I_change_name_to_this to 2022-12-20T10:00:00+00:00, run_after=2022-12-21T10:00:00+00:00
+[2022-12-21T09:47:50.122+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/dags.py took 0.237 seconds
+[2022-12-21T09:48:20.922+0000] {processor.py:153} INFO - Started process (PID=291) to work on /opt/airflow/dags/dags.py
+[2022-12-21T09:48:20.925+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2022-12-21T09:48:20.936+0000] {logging_mixin.py:137} INFO - [2022-12-21T09:48:20.936+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2022-12-21T09:48:21.000+0000] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow_dbt/hooks/dbt_hook.py:7 DeprecationWarning: The `airflow.hooks.base_hook.BaseHook` class is deprecated. Please use `'airflow.hooks.base.BaseHook'`.
+[2022-12-21T09:48:21.011+0000] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow_dbt/operators/dbt_operator.py:6 RemovedInAirflow3Warning: This decorator is deprecated.
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the `default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-12-21T09:48:21.014+0000] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow_dbt/operators/__init__.py:1 RemovedInAirflow3Warning: This decorator is deprecated.
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the `default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-12-21T09:48:21.033+0000] {processor.py:753} INFO - DAG(s) dict_keys(['Can_I_change_name_to_this']) retrieved from /opt/airflow/dags/dags.py
+[2022-12-21T09:48:21.096+0000] {logging_mixin.py:137} INFO - [2022-12-21T09:48:21.096+0000] {dag.py:2676} INFO - Sync 1 DAGs
+[2022-12-21T09:48:21.122+0000] {logging_mixin.py:137} INFO - [2022-12-21T09:48:21.121+0000] {dag.py:3427} INFO - Setting next_dagrun for Can_I_change_name_to_this to 2022-12-20T10:00:00+00:00, run_after=2022-12-21T10:00:00+00:00
+[2022-12-21T09:48:21.138+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/dags.py took 0.224 seconds
+[2022-12-21T09:48:51.987+0000] {processor.py:153} INFO - Started process (PID=357) to work on /opt/airflow/dags/dags.py
+[2022-12-21T09:48:51.990+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2022-12-21T09:48:51.992+0000] {logging_mixin.py:137} INFO - [2022-12-21T09:48:51.992+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2022-12-21T09:48:52.014+0000] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow_dbt/hooks/dbt_hook.py:7 DeprecationWarning: The `airflow.hooks.base_hook.BaseHook` class is deprecated. Please use `'airflow.hooks.base.BaseHook'`.
+[2022-12-21T09:48:52.018+0000] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow_dbt/operators/dbt_operator.py:6 RemovedInAirflow3Warning: This decorator is deprecated.
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the `default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-12-21T09:48:52.021+0000] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow_dbt/operators/__init__.py:1 RemovedInAirflow3Warning: This decorator is deprecated.
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the `default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-12-21T09:48:52.037+0000] {processor.py:753} INFO - DAG(s) dict_keys(['Can_I_change_name_to_this']) retrieved from /opt/airflow/dags/dags.py
+[2022-12-21T09:48:52.073+0000] {logging_mixin.py:137} INFO - [2022-12-21T09:48:52.073+0000] {dag.py:2676} INFO - Sync 1 DAGs
+[2022-12-21T09:48:52.096+0000] {logging_mixin.py:137} INFO - [2022-12-21T09:48:52.096+0000] {dag.py:3427} INFO - Setting next_dagrun for Can_I_change_name_to_this to 2022-12-20T10:00:00+00:00, run_after=2022-12-21T10:00:00+00:00
+[2022-12-21T09:48:52.111+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/dags.py took 0.130 seconds
+[2022-12-21T09:49:22.593+0000] {processor.py:153} INFO - Started process (PID=420) to work on /opt/airflow/dags/dags.py
+[2022-12-21T09:49:22.608+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2022-12-21T09:49:22.614+0000] {logging_mixin.py:137} INFO - [2022-12-21T09:49:22.614+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2022-12-21T09:49:22.682+0000] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow_dbt/hooks/dbt_hook.py:7 DeprecationWarning: The `airflow.hooks.base_hook.BaseHook` class is deprecated. Please use `'airflow.hooks.base.BaseHook'`.
+[2022-12-21T09:49:22.693+0000] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow_dbt/operators/dbt_operator.py:6 RemovedInAirflow3Warning: This decorator is deprecated.
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the `default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-12-21T09:49:22.703+0000] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow_dbt/operators/__init__.py:1 RemovedInAirflow3Warning: This decorator is deprecated.
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the `default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-12-21T09:49:22.749+0000] {processor.py:753} INFO - DAG(s) dict_keys(['Can_I_change_name_to_this']) retrieved from /opt/airflow/dags/dags.py
+[2022-12-21T09:49:22.880+0000] {logging_mixin.py:137} INFO - [2022-12-21T09:49:22.880+0000] {dag.py:2676} INFO - Sync 1 DAGs
+[2022-12-21T09:49:22.937+0000] {logging_mixin.py:137} INFO - [2022-12-21T09:49:22.937+0000] {dag.py:3427} INFO - Setting next_dagrun for Can_I_change_name_to_this to 2022-12-20T10:00:00+00:00, run_after=2022-12-21T10:00:00+00:00
+[2022-12-21T09:49:22.980+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/dags.py took 0.409 seconds
+[2022-12-21T09:49:53.734+0000] {processor.py:153} INFO - Started process (PID=483) to work on /opt/airflow/dags/dags.py
+[2022-12-21T09:49:53.736+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2022-12-21T09:49:53.737+0000] {logging_mixin.py:137} INFO - [2022-12-21T09:49:53.737+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2022-12-21T09:49:53.758+0000] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow_dbt/hooks/dbt_hook.py:7 DeprecationWarning: The `airflow.hooks.base_hook.BaseHook` class is deprecated. Please use `'airflow.hooks.base.BaseHook'`.
+[2022-12-21T09:49:53.762+0000] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow_dbt/operators/dbt_operator.py:6 RemovedInAirflow3Warning: This decorator is deprecated.
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the `default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-12-21T09:49:53.764+0000] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow_dbt/operators/__init__.py:1 RemovedInAirflow3Warning: This decorator is deprecated.
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the `default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-12-21T09:49:53.778+0000] {processor.py:753} INFO - DAG(s) dict_keys(['Can_I_change_name_to_this']) retrieved from /opt/airflow/dags/dags.py
+[2022-12-21T09:49:53.818+0000] {logging_mixin.py:137} INFO - [2022-12-21T09:49:53.818+0000] {dag.py:2676} INFO - Sync 1 DAGs
+[2022-12-21T09:49:53.844+0000] {logging_mixin.py:137} INFO - [2022-12-21T09:49:53.844+0000] {dag.py:3427} INFO - Setting next_dagrun for Can_I_change_name_to_this to 2022-12-20T10:00:00+00:00, run_after=2022-12-21T10:00:00+00:00
+[2022-12-21T09:49:53.860+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/dags.py took 0.130 seconds
+[2022-12-21T09:50:24.018+0000] {processor.py:153} INFO - Started process (PID=559) to work on /opt/airflow/dags/dags.py
+[2022-12-21T09:50:24.026+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2022-12-21T09:50:24.030+0000] {logging_mixin.py:137} INFO - [2022-12-21T09:50:24.030+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2022-12-21T09:50:24.056+0000] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow_dbt/hooks/dbt_hook.py:7 DeprecationWarning: The `airflow.hooks.base_hook.BaseHook` class is deprecated. Please use `'airflow.hooks.base.BaseHook'`.
+[2022-12-21T09:50:24.059+0000] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow_dbt/operators/dbt_operator.py:6 RemovedInAirflow3Warning: This decorator is deprecated.
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the `default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-12-21T09:50:24.062+0000] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow_dbt/operators/__init__.py:1 RemovedInAirflow3Warning: This decorator is deprecated.
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the `default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-12-21T09:50:24.084+0000] {processor.py:753} INFO - DAG(s) dict_keys(['Can_I_change_name_to_this']) retrieved from /opt/airflow/dags/dags.py
+[2022-12-21T09:50:24.163+0000] {logging_mixin.py:137} INFO - [2022-12-21T09:50:24.162+0000] {dag.py:2676} INFO - Sync 1 DAGs
+[2022-12-21T09:50:24.230+0000] {logging_mixin.py:137} INFO - [2022-12-21T09:50:24.230+0000] {dag.py:3427} INFO - Setting next_dagrun for Can_I_change_name_to_this to 2022-12-20T10:00:00+00:00, run_after=2022-12-21T10:00:00+00:00
+[2022-12-21T09:50:24.282+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/dags.py took 0.269 seconds
+[2022-12-21T09:50:55.045+0000] {processor.py:153} INFO - Started process (PID=631) to work on /opt/airflow/dags/dags.py
+[2022-12-21T09:50:55.055+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2022-12-21T09:50:55.061+0000] {logging_mixin.py:137} INFO - [2022-12-21T09:50:55.061+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2022-12-21T09:50:55.131+0000] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow_dbt/hooks/dbt_hook.py:7 DeprecationWarning: The `airflow.hooks.base_hook.BaseHook` class is deprecated. Please use `'airflow.hooks.base.BaseHook'`.
+[2022-12-21T09:50:55.135+0000] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow_dbt/operators/dbt_operator.py:6 RemovedInAirflow3Warning: This decorator is deprecated.
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the `default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-12-21T09:50:55.140+0000] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow_dbt/operators/__init__.py:1 RemovedInAirflow3Warning: This decorator is deprecated.
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the `default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-12-21T09:50:55.196+0000] {processor.py:753} INFO - DAG(s) dict_keys(['Can_I_change_name_to_this']) retrieved from /opt/airflow/dags/dags.py
+[2022-12-21T09:50:55.270+0000] {logging_mixin.py:137} INFO - [2022-12-21T09:50:55.270+0000] {dag.py:2676} INFO - Sync 1 DAGs
+[2022-12-21T09:50:55.295+0000] {logging_mixin.py:137} INFO - [2022-12-21T09:50:55.295+0000] {dag.py:3427} INFO - Setting next_dagrun for Can_I_change_name_to_this to 2022-12-20T10:00:00+00:00, run_after=2022-12-21T10:00:00+00:00
+[2022-12-21T09:50:55.331+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/dags.py took 0.302 seconds
+[2022-12-21T09:51:25.649+0000] {processor.py:153} INFO - Started process (PID=697) to work on /opt/airflow/dags/dags.py
+[2022-12-21T09:51:25.656+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2022-12-21T09:51:25.658+0000] {logging_mixin.py:137} INFO - [2022-12-21T09:51:25.658+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2022-12-21T09:51:25.686+0000] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow_dbt/hooks/dbt_hook.py:7 DeprecationWarning: The `airflow.hooks.base_hook.BaseHook` class is deprecated. Please use `'airflow.hooks.base.BaseHook'`.
+[2022-12-21T09:51:25.690+0000] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow_dbt/operators/dbt_operator.py:6 RemovedInAirflow3Warning: This decorator is deprecated.
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the `default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-12-21T09:51:25.693+0000] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow_dbt/operators/__init__.py:1 RemovedInAirflow3Warning: This decorator is deprecated.
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the `default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-12-21T09:51:25.719+0000] {processor.py:753} INFO - DAG(s) dict_keys(['Can_I_change_name_to_this']) retrieved from /opt/airflow/dags/dags.py
+[2022-12-21T09:51:25.795+0000] {logging_mixin.py:137} INFO - [2022-12-21T09:51:25.795+0000] {dag.py:2676} INFO - Sync 1 DAGs
+[2022-12-21T09:51:25.832+0000] {logging_mixin.py:137} INFO - [2022-12-21T09:51:25.832+0000] {dag.py:3427} INFO - Setting next_dagrun for Can_I_change_name_to_this to 2022-12-20T10:00:00+00:00, run_after=2022-12-21T10:00:00+00:00
+[2022-12-21T09:51:25.858+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/dags.py took 0.218 seconds
+[2022-12-21T09:51:56.141+0000] {processor.py:153} INFO - Started process (PID=772) to work on /opt/airflow/dags/dags.py
+[2022-12-21T09:51:56.151+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2022-12-21T09:51:56.155+0000] {logging_mixin.py:137} INFO - [2022-12-21T09:51:56.155+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2022-12-21T09:51:56.234+0000] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow_dbt/hooks/dbt_hook.py:7 DeprecationWarning: The `airflow.hooks.base_hook.BaseHook` class is deprecated. Please use `'airflow.hooks.base.BaseHook'`.
+[2022-12-21T09:51:56.253+0000] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow_dbt/operators/dbt_operator.py:6 RemovedInAirflow3Warning: This decorator is deprecated.
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the `default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-12-21T09:51:56.271+0000] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow_dbt/operators/__init__.py:1 RemovedInAirflow3Warning: This decorator is deprecated.
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the `default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-12-21T09:51:56.412+0000] {processor.py:753} INFO - DAG(s) dict_keys(['Can_I_change_name_to_this']) retrieved from /opt/airflow/dags/dags.py
+[2022-12-21T09:51:56.821+0000] {logging_mixin.py:137} INFO - [2022-12-21T09:51:56.820+0000] {dag.py:2676} INFO - Sync 1 DAGs
+[2022-12-21T09:51:56.855+0000] {logging_mixin.py:137} INFO - [2022-12-21T09:51:56.855+0000] {dag.py:3427} INFO - Setting next_dagrun for Can_I_change_name_to_this to 2022-12-20T10:00:00+00:00, run_after=2022-12-21T10:00:00+00:00
+[2022-12-21T09:51:56.881+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/dags.py took 0.756 seconds
+[2022-12-21T10:25:38.204+0000] {processor.py:153} INFO - Started process (PID=817) to work on /opt/airflow/dags/dags.py
+[2022-12-21T10:25:38.270+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2022-12-21T10:25:38.342+0000] {logging_mixin.py:137} INFO - [2022-12-21T10:25:38.342+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2022-12-21T10:25:38.543+0000] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow_dbt/hooks/dbt_hook.py:7 DeprecationWarning: The `airflow.hooks.base_hook.BaseHook` class is deprecated. Please use `'airflow.hooks.base.BaseHook'`.
+[2022-12-21T10:25:38.551+0000] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow_dbt/operators/dbt_operator.py:6 RemovedInAirflow3Warning: This decorator is deprecated.
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the `default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-12-21T10:25:38.564+0000] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow_dbt/operators/__init__.py:1 RemovedInAirflow3Warning: This decorator is deprecated.
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the `default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-12-21T10:25:38.702+0000] {processor.py:753} INFO - DAG(s) dict_keys(['Can_I_change_name_to_this']) retrieved from /opt/airflow/dags/dags.py
+[2022-12-21T10:25:38.898+0000] {logging_mixin.py:137} INFO - [2022-12-21T10:25:38.897+0000] {dag.py:2676} INFO - Sync 1 DAGs
+[2022-12-21T10:25:39.042+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/dags.py took 0.881 seconds
+[2022-12-21T11:00:59.477+0000] {processor.py:153} INFO - Started process (PID=883) to work on /opt/airflow/dags/dags.py
+[2022-12-21T11:00:59.480+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2022-12-21T11:00:59.482+0000] {logging_mixin.py:137} INFO - [2022-12-21T11:00:59.482+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2022-12-21T11:00:59.535+0000] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow_dbt/hooks/dbt_hook.py:7 DeprecationWarning: The `airflow.hooks.base_hook.BaseHook` class is deprecated. Please use `'airflow.hooks.base.BaseHook'`.
+[2022-12-21T11:00:59.547+0000] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow_dbt/operators/dbt_operator.py:6 RemovedInAirflow3Warning: This decorator is deprecated.
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the `default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-12-21T11:00:59.552+0000] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow_dbt/operators/__init__.py:1 RemovedInAirflow3Warning: This decorator is deprecated.
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the `default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-12-21T11:00:59.575+0000] {processor.py:753} INFO - DAG(s) dict_keys(['Can_I_change_name_to_this']) retrieved from /opt/airflow/dags/dags.py
+[2022-12-21T11:00:59.640+0000] {logging_mixin.py:137} INFO - [2022-12-21T11:00:59.639+0000] {dag.py:2676} INFO - Sync 1 DAGs
+[2022-12-21T11:00:59.730+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/dags.py took 0.268 seconds
+[2022-12-21T11:01:36.968+0000] {processor.py:153} INFO - Started process (PID=936) to work on /opt/airflow/dags/dags.py
+[2022-12-21T11:01:36.975+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2022-12-21T11:01:36.983+0000] {logging_mixin.py:137} INFO - [2022-12-21T11:01:36.982+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2022-12-21T11:01:37.090+0000] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow_dbt/hooks/dbt_hook.py:7 DeprecationWarning: The `airflow.hooks.base_hook.BaseHook` class is deprecated. Please use `'airflow.hooks.base.BaseHook'`.
+[2022-12-21T11:01:37.105+0000] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow_dbt/operators/dbt_operator.py:6 RemovedInAirflow3Warning: This decorator is deprecated.
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the `default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-12-21T11:01:37.119+0000] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow_dbt/operators/__init__.py:1 RemovedInAirflow3Warning: This decorator is deprecated.
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the `default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-12-21T11:01:37.189+0000] {processor.py:753} INFO - DAG(s) dict_keys(['Can_I_change_name_to_this']) retrieved from /opt/airflow/dags/dags.py
+[2022-12-21T11:01:37.386+0000] {logging_mixin.py:137} INFO - [2022-12-21T11:01:37.386+0000] {dag.py:2676} INFO - Sync 1 DAGs
+[2022-12-21T11:01:37.562+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/dags.py took 0.600 seconds
+[2022-12-21T11:02:08.720+0000] {processor.py:153} INFO - Started process (PID=994) to work on /opt/airflow/dags/dags.py
+[2022-12-21T11:02:08.946+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2022-12-21T11:02:08.953+0000] {logging_mixin.py:137} INFO - [2022-12-21T11:02:08.952+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2022-12-21T11:02:09.161+0000] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow_dbt/hooks/dbt_hook.py:7 DeprecationWarning: The `airflow.hooks.base_hook.BaseHook` class is deprecated. Please use `'airflow.hooks.base.BaseHook'`.
+[2022-12-21T11:02:09.181+0000] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow_dbt/operators/dbt_operator.py:6 RemovedInAirflow3Warning: This decorator is deprecated.
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the `default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-12-21T11:02:09.192+0000] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow_dbt/operators/__init__.py:1 RemovedInAirflow3Warning: This decorator is deprecated.
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the `default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-12-21T11:02:09.599+0000] {processor.py:753} INFO - DAG(s) dict_keys(['Can_I_change_name_to_this']) retrieved from /opt/airflow/dags/dags.py
+[2022-12-21T11:02:10.406+0000] {logging_mixin.py:137} INFO - [2022-12-21T11:02:10.404+0000] {dag.py:2676} INFO - Sync 1 DAGs
+[2022-12-21T11:02:11.822+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/dags.py took 3.276 seconds
+[2022-12-21T11:02:44.299+0000] {processor.py:153} INFO - Started process (PID=1065) to work on /opt/airflow/dags/dags.py
+[2022-12-21T11:02:44.454+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2022-12-21T11:02:44.646+0000] {logging_mixin.py:137} INFO - [2022-12-21T11:02:44.646+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2022-12-21T11:02:44.930+0000] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow_dbt/hooks/dbt_hook.py:7 DeprecationWarning: The `airflow.hooks.base_hook.BaseHook` class is deprecated. Please use `'airflow.hooks.base.BaseHook'`.
+[2022-12-21T11:02:44.975+0000] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow_dbt/operators/dbt_operator.py:6 RemovedInAirflow3Warning: This decorator is deprecated.
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the `default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-12-21T11:02:44.997+0000] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow_dbt/operators/__init__.py:1 RemovedInAirflow3Warning: This decorator is deprecated.
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the `default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-12-21T11:02:45.229+0000] {processor.py:753} INFO - DAG(s) dict_keys(['Can_I_change_name_to_this']) retrieved from /opt/airflow/dags/dags.py
+[2022-12-21T11:02:45.448+0000] {logging_mixin.py:137} INFO - [2022-12-21T11:02:45.448+0000] {dag.py:2676} INFO - Sync 1 DAGs
+[2022-12-21T11:02:45.665+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/dags.py took 1.372 seconds
+[2022-12-21T11:03:17.419+0000] {processor.py:153} INFO - Started process (PID=1109) to work on /opt/airflow/dags/dags.py
+[2022-12-21T11:03:17.427+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2022-12-21T11:03:17.431+0000] {logging_mixin.py:137} INFO - [2022-12-21T11:03:17.430+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2022-12-21T11:03:17.513+0000] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow_dbt/hooks/dbt_hook.py:7 DeprecationWarning: The `airflow.hooks.base_hook.BaseHook` class is deprecated. Please use `'airflow.hooks.base.BaseHook'`.
+[2022-12-21T11:03:17.524+0000] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow_dbt/operators/dbt_operator.py:6 RemovedInAirflow3Warning: This decorator is deprecated.
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the `default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-12-21T11:03:17.534+0000] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow_dbt/operators/__init__.py:1 RemovedInAirflow3Warning: This decorator is deprecated.
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the `default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-12-21T11:03:17.600+0000] {processor.py:753} INFO - DAG(s) dict_keys(['Can_I_change_name_to_this']) retrieved from /opt/airflow/dags/dags.py
+[2022-12-21T11:03:18.313+0000] {logging_mixin.py:137} INFO - [2022-12-21T11:03:18.312+0000] {dag.py:2676} INFO - Sync 1 DAGs
+[2022-12-21T11:03:18.499+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/dags.py took 1.107 seconds
+[2022-12-21T11:03:48.705+0000] {processor.py:153} INFO - Started process (PID=1176) to work on /opt/airflow/dags/dags.py
+[2022-12-21T11:03:48.710+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2022-12-21T11:03:48.714+0000] {logging_mixin.py:137} INFO - [2022-12-21T11:03:48.714+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2022-12-21T11:03:48.813+0000] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow_dbt/hooks/dbt_hook.py:7 DeprecationWarning: The `airflow.hooks.base_hook.BaseHook` class is deprecated. Please use `'airflow.hooks.base.BaseHook'`.
+[2022-12-21T11:03:48.816+0000] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow_dbt/operators/dbt_operator.py:6 RemovedInAirflow3Warning: This decorator is deprecated.
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the `default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-12-21T11:03:48.819+0000] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow_dbt/operators/__init__.py:1 RemovedInAirflow3Warning: This decorator is deprecated.
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the `default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-12-21T11:03:48.842+0000] {processor.py:753} INFO - DAG(s) dict_keys(['Can_I_change_name_to_this']) retrieved from /opt/airflow/dags/dags.py
+[2022-12-21T11:03:48.901+0000] {logging_mixin.py:137} INFO - [2022-12-21T11:03:48.901+0000] {dag.py:2676} INFO - Sync 1 DAGs
+[2022-12-21T11:03:48.929+0000] {logging_mixin.py:137} INFO - [2022-12-21T11:03:48.929+0000] {dag.py:3427} INFO - Setting next_dagrun for Can_I_change_name_to_this to 2022-12-21T10:00:00+00:00, run_after=2022-12-22T10:00:00+00:00
+[2022-12-21T11:03:48.942+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/dags.py took 0.243 seconds
+[2022-12-21T11:04:19.198+0000] {processor.py:153} INFO - Started process (PID=1237) to work on /opt/airflow/dags/dags.py
+[2022-12-21T11:04:19.205+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2022-12-21T11:04:19.207+0000] {logging_mixin.py:137} INFO - [2022-12-21T11:04:19.207+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2022-12-21T11:04:19.255+0000] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow_dbt/hooks/dbt_hook.py:7 DeprecationWarning: The `airflow.hooks.base_hook.BaseHook` class is deprecated. Please use `'airflow.hooks.base.BaseHook'`.
+[2022-12-21T11:04:19.267+0000] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow_dbt/operators/dbt_operator.py:6 RemovedInAirflow3Warning: This decorator is deprecated.
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the `default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-12-21T11:04:19.272+0000] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow_dbt/operators/__init__.py:1 RemovedInAirflow3Warning: This decorator is deprecated.
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the `default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-12-21T11:04:19.306+0000] {processor.py:753} INFO - DAG(s) dict_keys(['Can_I_change_name_to_this']) retrieved from /opt/airflow/dags/dags.py
+[2022-12-21T11:04:19.405+0000] {logging_mixin.py:137} INFO - [2022-12-21T11:04:19.405+0000] {dag.py:2676} INFO - Sync 1 DAGs
+[2022-12-21T11:04:19.475+0000] {logging_mixin.py:137} INFO - [2022-12-21T11:04:19.474+0000] {dag.py:3427} INFO - Setting next_dagrun for Can_I_change_name_to_this to 2022-12-21T10:00:00+00:00, run_after=2022-12-22T10:00:00+00:00
+[2022-12-21T11:04:19.534+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/dags.py took 0.346 seconds
+[2022-12-21T11:04:49.850+0000] {processor.py:153} INFO - Started process (PID=1299) to work on /opt/airflow/dags/dags.py
+[2022-12-21T11:04:49.859+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2022-12-21T11:04:49.866+0000] {logging_mixin.py:137} INFO - [2022-12-21T11:04:49.865+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2022-12-21T11:04:49.943+0000] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow_dbt/hooks/dbt_hook.py:7 DeprecationWarning: The `airflow.hooks.base_hook.BaseHook` class is deprecated. Please use `'airflow.hooks.base.BaseHook'`.
+[2022-12-21T11:04:49.948+0000] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow_dbt/operators/dbt_operator.py:6 RemovedInAirflow3Warning: This decorator is deprecated.
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the `default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-12-21T11:04:49.951+0000] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow_dbt/operators/__init__.py:1 RemovedInAirflow3Warning: This decorator is deprecated.
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the `default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-12-21T11:04:50.009+0000] {processor.py:753} INFO - DAG(s) dict_keys(['Can_I_change_name_to_this']) retrieved from /opt/airflow/dags/dags.py
+[2022-12-21T11:04:50.232+0000] {logging_mixin.py:137} INFO - [2022-12-21T11:04:50.232+0000] {dag.py:2676} INFO - Sync 1 DAGs
+[2022-12-21T11:04:50.275+0000] {logging_mixin.py:137} INFO - [2022-12-21T11:04:50.275+0000] {dag.py:3427} INFO - Setting next_dagrun for Can_I_change_name_to_this to 2022-12-21T10:00:00+00:00, run_after=2022-12-22T10:00:00+00:00
+[2022-12-21T11:04:50.305+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/dags.py took 0.472 seconds
+[2022-12-21T11:05:20.646+0000] {processor.py:153} INFO - Started process (PID=1371) to work on /opt/airflow/dags/dags.py
+[2022-12-21T11:05:20.651+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2022-12-21T11:05:20.654+0000] {logging_mixin.py:137} INFO - [2022-12-21T11:05:20.654+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2022-12-21T11:05:20.683+0000] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow_dbt/hooks/dbt_hook.py:7 DeprecationWarning: The `airflow.hooks.base_hook.BaseHook` class is deprecated. Please use `'airflow.hooks.base.BaseHook'`.
+[2022-12-21T11:05:20.687+0000] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow_dbt/operators/dbt_operator.py:6 RemovedInAirflow3Warning: This decorator is deprecated.
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the `default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-12-21T11:05:20.692+0000] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow_dbt/operators/__init__.py:1 RemovedInAirflow3Warning: This decorator is deprecated.
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the `default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-12-21T11:05:20.714+0000] {processor.py:753} INFO - DAG(s) dict_keys(['Can_I_change_name_to_this']) retrieved from /opt/airflow/dags/dags.py
+[2022-12-21T11:05:20.782+0000] {logging_mixin.py:137} INFO - [2022-12-21T11:05:20.782+0000] {dag.py:2676} INFO - Sync 1 DAGs
+[2022-12-21T11:05:20.839+0000] {logging_mixin.py:137} INFO - [2022-12-21T11:05:20.839+0000] {dag.py:3427} INFO - Setting next_dagrun for Can_I_change_name_to_this to 2022-12-21T10:00:00+00:00, run_after=2022-12-22T10:00:00+00:00
+[2022-12-21T11:05:20.884+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/dags.py took 0.243 seconds
+[2022-12-21T11:05:51.327+0000] {processor.py:153} INFO - Started process (PID=1435) to work on /opt/airflow/dags/dags.py
+[2022-12-21T11:05:51.332+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2022-12-21T11:05:51.335+0000] {logging_mixin.py:137} INFO - [2022-12-21T11:05:51.335+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2022-12-21T11:05:51.373+0000] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow_dbt/hooks/dbt_hook.py:7 DeprecationWarning: The `airflow.hooks.base_hook.BaseHook` class is deprecated. Please use `'airflow.hooks.base.BaseHook'`.
+[2022-12-21T11:05:51.380+0000] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow_dbt/operators/dbt_operator.py:6 RemovedInAirflow3Warning: This decorator is deprecated.
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the `default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-12-21T11:05:51.383+0000] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow_dbt/operators/__init__.py:1 RemovedInAirflow3Warning: This decorator is deprecated.
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the `default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-12-21T11:05:51.399+0000] {processor.py:753} INFO - DAG(s) dict_keys(['Can_I_change_name_to_this']) retrieved from /opt/airflow/dags/dags.py
+[2022-12-21T11:05:51.436+0000] {logging_mixin.py:137} INFO - [2022-12-21T11:05:51.436+0000] {dag.py:2676} INFO - Sync 1 DAGs
+[2022-12-21T11:05:51.462+0000] {logging_mixin.py:137} INFO - [2022-12-21T11:05:51.461+0000] {dag.py:3427} INFO - Setting next_dagrun for Can_I_change_name_to_this to 2022-12-21T10:00:00+00:00, run_after=2022-12-22T10:00:00+00:00
+[2022-12-21T11:05:51.477+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/dags.py took 0.156 seconds
+[2022-12-21T11:06:22.136+0000] {processor.py:153} INFO - Started process (PID=1508) to work on /opt/airflow/dags/dags.py
+[2022-12-21T11:06:22.140+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2022-12-21T11:06:22.144+0000] {logging_mixin.py:137} INFO - [2022-12-21T11:06:22.144+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2022-12-21T11:06:22.174+0000] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow_dbt/hooks/dbt_hook.py:7 DeprecationWarning: The `airflow.hooks.base_hook.BaseHook` class is deprecated. Please use `'airflow.hooks.base.BaseHook'`.
+[2022-12-21T11:06:22.179+0000] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow_dbt/operators/dbt_operator.py:6 RemovedInAirflow3Warning: This decorator is deprecated.
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the `default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-12-21T11:06:22.182+0000] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow_dbt/operators/__init__.py:1 RemovedInAirflow3Warning: This decorator is deprecated.
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the `default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-12-21T11:06:22.201+0000] {processor.py:753} INFO - DAG(s) dict_keys(['Can_I_change_name_to_this']) retrieved from /opt/airflow/dags/dags.py
+[2022-12-21T11:06:22.246+0000] {logging_mixin.py:137} INFO - [2022-12-21T11:06:22.246+0000] {dag.py:2676} INFO - Sync 1 DAGs
+[2022-12-21T11:06:22.287+0000] {logging_mixin.py:137} INFO - [2022-12-21T11:06:22.287+0000] {dag.py:3427} INFO - Setting next_dagrun for Can_I_change_name_to_this to 2022-12-21T10:00:00+00:00, run_after=2022-12-22T10:00:00+00:00
+[2022-12-21T11:06:22.320+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/dags.py took 0.189 seconds
+[2022-12-21T11:06:52.436+0000] {processor.py:153} INFO - Started process (PID=1571) to work on /opt/airflow/dags/dags.py
+[2022-12-21T11:06:52.444+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2022-12-21T11:06:52.449+0000] {logging_mixin.py:137} INFO - [2022-12-21T11:06:52.449+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2022-12-21T11:06:52.502+0000] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow_dbt/hooks/dbt_hook.py:7 DeprecationWarning: The `airflow.hooks.base_hook.BaseHook` class is deprecated. Please use `'airflow.hooks.base.BaseHook'`.
+[2022-12-21T11:06:52.509+0000] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow_dbt/operators/dbt_operator.py:6 RemovedInAirflow3Warning: This decorator is deprecated.
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the `default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-12-21T11:06:52.515+0000] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow_dbt/operators/__init__.py:1 RemovedInAirflow3Warning: This decorator is deprecated.
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the `default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-12-21T11:06:52.547+0000] {processor.py:753} INFO - DAG(s) dict_keys(['Can_I_change_name_to_this']) retrieved from /opt/airflow/dags/dags.py
+[2022-12-21T11:06:52.625+0000] {logging_mixin.py:137} INFO - [2022-12-21T11:06:52.625+0000] {dag.py:2676} INFO - Sync 1 DAGs
+[2022-12-21T11:06:52.659+0000] {logging_mixin.py:137} INFO - [2022-12-21T11:06:52.659+0000] {dag.py:3427} INFO - Setting next_dagrun for Can_I_change_name_to_this to 2022-12-21T10:00:00+00:00, run_after=2022-12-22T10:00:00+00:00
+[2022-12-21T11:06:52.689+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/dags.py took 0.261 seconds
+[2022-12-21T11:07:23.250+0000] {processor.py:153} INFO - Started process (PID=1644) to work on /opt/airflow/dags/dags.py
+[2022-12-21T11:07:23.257+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2022-12-21T11:07:23.266+0000] {logging_mixin.py:137} INFO - [2022-12-21T11:07:23.266+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2022-12-21T11:07:23.316+0000] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow_dbt/hooks/dbt_hook.py:7 DeprecationWarning: The `airflow.hooks.base_hook.BaseHook` class is deprecated. Please use `'airflow.hooks.base.BaseHook'`.
+[2022-12-21T11:07:23.321+0000] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow_dbt/operators/dbt_operator.py:6 RemovedInAirflow3Warning: This decorator is deprecated.
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the `default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-12-21T11:07:23.326+0000] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow_dbt/operators/__init__.py:1 RemovedInAirflow3Warning: This decorator is deprecated.
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the `default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-12-21T11:07:23.357+0000] {processor.py:753} INFO - DAG(s) dict_keys(['Can_I_change_name_to_this']) retrieved from /opt/airflow/dags/dags.py
+[2022-12-21T11:07:23.431+0000] {logging_mixin.py:137} INFO - [2022-12-21T11:07:23.431+0000] {dag.py:2676} INFO - Sync 1 DAGs
+[2022-12-21T11:07:23.474+0000] {logging_mixin.py:137} INFO - [2022-12-21T11:07:23.473+0000] {dag.py:3427} INFO - Setting next_dagrun for Can_I_change_name_to_this to 2022-12-21T10:00:00+00:00, run_after=2022-12-22T10:00:00+00:00
+[2022-12-21T11:07:23.496+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/dags.py took 0.266 seconds
+[2022-12-21T11:07:54.545+0000] {processor.py:153} INFO - Started process (PID=1707) to work on /opt/airflow/dags/dags.py
+[2022-12-21T11:07:54.548+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2022-12-21T11:07:54.550+0000] {logging_mixin.py:137} INFO - [2022-12-21T11:07:54.550+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2022-12-21T11:07:54.578+0000] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow_dbt/hooks/dbt_hook.py:7 DeprecationWarning: The `airflow.hooks.base_hook.BaseHook` class is deprecated. Please use `'airflow.hooks.base.BaseHook'`.
+[2022-12-21T11:07:54.581+0000] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow_dbt/operators/dbt_operator.py:6 RemovedInAirflow3Warning: This decorator is deprecated.
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the `default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-12-21T11:07:54.583+0000] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow_dbt/operators/__init__.py:1 RemovedInAirflow3Warning: This decorator is deprecated.
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the `default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-12-21T11:07:54.599+0000] {processor.py:753} INFO - DAG(s) dict_keys(['Can_I_change_name_to_this']) retrieved from /opt/airflow/dags/dags.py
+[2022-12-21T11:07:54.635+0000] {logging_mixin.py:137} INFO - [2022-12-21T11:07:54.635+0000] {dag.py:2676} INFO - Sync 1 DAGs
+[2022-12-21T11:07:54.655+0000] {logging_mixin.py:137} INFO - [2022-12-21T11:07:54.655+0000] {dag.py:3427} INFO - Setting next_dagrun for Can_I_change_name_to_this to 2022-12-21T10:00:00+00:00, run_after=2022-12-22T10:00:00+00:00
+[2022-12-21T11:07:54.668+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/dags.py took 0.131 seconds
+[2022-12-21T11:08:25.231+0000] {processor.py:153} INFO - Started process (PID=1782) to work on /opt/airflow/dags/dags.py
+[2022-12-21T11:08:25.233+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2022-12-21T11:08:25.240+0000] {logging_mixin.py:137} INFO - [2022-12-21T11:08:25.239+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2022-12-21T11:08:25.275+0000] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow_dbt/hooks/dbt_hook.py:7 DeprecationWarning: The `airflow.hooks.base_hook.BaseHook` class is deprecated. Please use `'airflow.hooks.base.BaseHook'`.
+[2022-12-21T11:08:25.281+0000] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow_dbt/operators/dbt_operator.py:6 RemovedInAirflow3Warning: This decorator is deprecated.
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the `default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-12-21T11:08:25.284+0000] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow_dbt/operators/__init__.py:1 RemovedInAirflow3Warning: This decorator is deprecated.
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the `default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-12-21T11:08:25.304+0000] {processor.py:753} INFO - DAG(s) dict_keys(['Can_I_change_name_to_this']) retrieved from /opt/airflow/dags/dags.py
+[2022-12-21T11:08:25.358+0000] {logging_mixin.py:137} INFO - [2022-12-21T11:08:25.358+0000] {dag.py:2676} INFO - Sync 1 DAGs
+[2022-12-21T11:08:25.389+0000] {logging_mixin.py:137} INFO - [2022-12-21T11:08:25.388+0000] {dag.py:3427} INFO - Setting next_dagrun for Can_I_change_name_to_this to 2022-12-21T10:00:00+00:00, run_after=2022-12-22T10:00:00+00:00
+[2022-12-21T11:08:25.404+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/dags.py took 0.186 seconds
+[2022-12-21T11:08:55.620+0000] {processor.py:153} INFO - Started process (PID=1845) to work on /opt/airflow/dags/dags.py
+[2022-12-21T11:08:55.624+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2022-12-21T11:08:55.626+0000] {logging_mixin.py:137} INFO - [2022-12-21T11:08:55.626+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2022-12-21T11:08:55.699+0000] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow_dbt/hooks/dbt_hook.py:7 DeprecationWarning: The `airflow.hooks.base_hook.BaseHook` class is deprecated. Please use `'airflow.hooks.base.BaseHook'`.
+[2022-12-21T11:08:55.703+0000] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow_dbt/operators/dbt_operator.py:6 RemovedInAirflow3Warning: This decorator is deprecated.
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the `default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-12-21T11:08:55.708+0000] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow_dbt/operators/__init__.py:1 RemovedInAirflow3Warning: This decorator is deprecated.
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the `default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-12-21T11:08:55.720+0000] {processor.py:753} INFO - DAG(s) dict_keys(['Can_I_change_name_to_this']) retrieved from /opt/airflow/dags/dags.py
+[2022-12-21T11:08:55.751+0000] {logging_mixin.py:137} INFO - [2022-12-21T11:08:55.751+0000] {dag.py:2676} INFO - Sync 1 DAGs
+[2022-12-21T11:08:55.774+0000] {logging_mixin.py:137} INFO - [2022-12-21T11:08:55.773+0000] {dag.py:3427} INFO - Setting next_dagrun for Can_I_change_name_to_this to 2022-12-21T10:00:00+00:00, run_after=2022-12-22T10:00:00+00:00
+[2022-12-21T11:08:55.806+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/dags.py took 0.192 seconds
+[2022-12-21T11:09:26.341+0000] {processor.py:153} INFO - Started process (PID=1918) to work on /opt/airflow/dags/dags.py
+[2022-12-21T11:09:26.346+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2022-12-21T11:09:26.349+0000] {logging_mixin.py:137} INFO - [2022-12-21T11:09:26.349+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2022-12-21T11:09:26.386+0000] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow_dbt/hooks/dbt_hook.py:7 DeprecationWarning: The `airflow.hooks.base_hook.BaseHook` class is deprecated. Please use `'airflow.hooks.base.BaseHook'`.
+[2022-12-21T11:09:26.391+0000] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow_dbt/operators/dbt_operator.py:6 RemovedInAirflow3Warning: This decorator is deprecated.
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the `default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-12-21T11:09:26.395+0000] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow_dbt/operators/__init__.py:1 RemovedInAirflow3Warning: This decorator is deprecated.
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the `default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-12-21T11:09:26.421+0000] {processor.py:753} INFO - DAG(s) dict_keys(['Can_I_change_name_to_this']) retrieved from /opt/airflow/dags/dags.py
+[2022-12-21T11:09:26.484+0000] {logging_mixin.py:137} INFO - [2022-12-21T11:09:26.483+0000] {dag.py:2676} INFO - Sync 1 DAGs
+[2022-12-21T11:09:26.511+0000] {logging_mixin.py:137} INFO - [2022-12-21T11:09:26.510+0000] {dag.py:3427} INFO - Setting next_dagrun for Can_I_change_name_to_this to 2022-12-21T10:00:00+00:00, run_after=2022-12-22T10:00:00+00:00
+[2022-12-21T11:09:26.527+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/dags.py took 0.193 seconds
+[2022-12-21T11:09:57.625+0000] {processor.py:153} INFO - Started process (PID=1984) to work on /opt/airflow/dags/dags.py
+[2022-12-21T11:09:57.634+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2022-12-21T11:09:57.641+0000] {logging_mixin.py:137} INFO - [2022-12-21T11:09:57.640+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2022-12-21T11:09:57.684+0000] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow_dbt/hooks/dbt_hook.py:7 DeprecationWarning: The `airflow.hooks.base_hook.BaseHook` class is deprecated. Please use `'airflow.hooks.base.BaseHook'`.
+[2022-12-21T11:09:57.689+0000] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow_dbt/operators/dbt_operator.py:6 RemovedInAirflow3Warning: This decorator is deprecated.
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the `default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-12-21T11:09:57.696+0000] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow_dbt/operators/__init__.py:1 RemovedInAirflow3Warning: This decorator is deprecated.
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the `default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-12-21T11:09:57.726+0000] {processor.py:753} INFO - DAG(s) dict_keys(['Can_I_change_name_to_this']) retrieved from /opt/airflow/dags/dags.py
+[2022-12-21T11:09:57.774+0000] {logging_mixin.py:137} INFO - [2022-12-21T11:09:57.774+0000] {dag.py:2676} INFO - Sync 1 DAGs
+[2022-12-21T11:09:57.796+0000] {logging_mixin.py:137} INFO - [2022-12-21T11:09:57.796+0000] {dag.py:3427} INFO - Setting next_dagrun for Can_I_change_name_to_this to 2022-12-21T10:00:00+00:00, run_after=2022-12-22T10:00:00+00:00
+[2022-12-21T11:09:57.812+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/dags.py took 0.195 seconds
+[2022-12-21T11:10:28.607+0000] {processor.py:153} INFO - Started process (PID=2048) to work on /opt/airflow/dags/dags.py
+[2022-12-21T11:10:28.611+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2022-12-21T11:10:28.614+0000] {logging_mixin.py:137} INFO - [2022-12-21T11:10:28.614+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2022-12-21T11:10:28.651+0000] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow_dbt/hooks/dbt_hook.py:7 DeprecationWarning: The `airflow.hooks.base_hook.BaseHook` class is deprecated. Please use `'airflow.hooks.base.BaseHook'`.
+[2022-12-21T11:10:28.654+0000] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow_dbt/operators/dbt_operator.py:6 RemovedInAirflow3Warning: This decorator is deprecated.
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the `default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-12-21T11:10:28.656+0000] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow_dbt/operators/__init__.py:1 RemovedInAirflow3Warning: This decorator is deprecated.
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the `default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-12-21T11:10:28.672+0000] {processor.py:753} INFO - DAG(s) dict_keys(['Can_I_change_name_to_this']) retrieved from /opt/airflow/dags/dags.py
+[2022-12-21T11:10:28.711+0000] {logging_mixin.py:137} INFO - [2022-12-21T11:10:28.710+0000] {dag.py:2676} INFO - Sync 1 DAGs
+[2022-12-21T11:10:28.743+0000] {logging_mixin.py:137} INFO - [2022-12-21T11:10:28.743+0000] {dag.py:3427} INFO - Setting next_dagrun for Can_I_change_name_to_this to 2022-12-21T10:00:00+00:00, run_after=2022-12-22T10:00:00+00:00
+[2022-12-21T11:10:28.764+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/dags.py took 0.161 seconds
+[2022-12-21T11:10:59.370+0000] {processor.py:153} INFO - Started process (PID=2122) to work on /opt/airflow/dags/dags.py
+[2022-12-21T11:10:59.377+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/dags.py for tasks to queue
+[2022-12-21T11:10:59.383+0000] {logging_mixin.py:137} INFO - [2022-12-21T11:10:59.383+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/dags.py
+[2022-12-21T11:10:59.448+0000] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow_dbt/hooks/dbt_hook.py:7 DeprecationWarning: The `airflow.hooks.base_hook.BaseHook` class is deprecated. Please use `'airflow.hooks.base.BaseHook'`.
+[2022-12-21T11:10:59.452+0000] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow_dbt/operators/dbt_operator.py:6 RemovedInAirflow3Warning: This decorator is deprecated.
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the `default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-12-21T11:10:59.458+0000] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow_dbt/operators/__init__.py:1 RemovedInAirflow3Warning: This decorator is deprecated.
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the `default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-12-21T11:10:59.486+0000] {processor.py:753} INFO - DAG(s) dict_keys(['Can_I_change_name_to_this']) retrieved from /opt/airflow/dags/dags.py
+[2022-12-21T11:10:59.563+0000] {logging_mixin.py:137} INFO - [2022-12-21T11:10:59.563+0000] {dag.py:2676} INFO - Sync 1 DAGs
+[2022-12-21T11:10:59.608+0000] {logging_mixin.py:137} INFO - [2022-12-21T11:10:59.608+0000] {dag.py:3427} INFO - Setting next_dagrun for Can_I_change_name_to_this to 2022-12-21T10:00:00+00:00, run_after=2022-12-22T10:00:00+00:00
+[2022-12-21T11:10:59.644+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/dags.py took 0.303 seconds

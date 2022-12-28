@@ -1,0 +1,134 @@
+[2022-12-17T10:04:51.538+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: Can_I_change_name_to_this.task_5 scheduled__2022-12-16T10:00:00+00:00 [queued]>
+[2022-12-17T10:04:51.554+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: Can_I_change_name_to_this.task_5 scheduled__2022-12-16T10:00:00+00:00 [queued]>
+[2022-12-17T10:04:51.555+0000] {taskinstance.py:1283} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-17T10:04:51.556+0000] {taskinstance.py:1284} INFO - Starting attempt 1 of 1
+[2022-12-17T10:04:51.557+0000] {taskinstance.py:1285} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-17T10:04:51.575+0000] {taskinstance.py:1304} INFO - Executing <Task(BashOperator): task_5> on 2022-12-16 10:00:00+00:00
+[2022-12-17T10:04:51.586+0000] {standard_task_runner.py:55} INFO - Started process 2327 to run task
+[2022-12-17T10:04:51.597+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'Can_I_change_name_to_this', 'task_5', 'scheduled__2022-12-16T10:00:00+00:00', '--job-id', '126', '--raw', '--subdir', 'DAGS_FOLDER/dags.py', '--cfg-path', '/tmp/tmpd0r094ch']
+[2022-12-17T10:04:51.599+0000] {standard_task_runner.py:83} INFO - Job 126: Subtask task_5
+[2022-12-17T10:04:52.083+0000] {task_command.py:389} INFO - Running <TaskInstance: Can_I_change_name_to_this.task_5 scheduled__2022-12-16T10:00:00+00:00 [running]> on host 502390ac5559
+[2022-12-17T10:04:52.515+0000] {taskinstance.py:1513} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=Can_I_change_name_to_this
+AIRFLOW_CTX_TASK_ID=task_5
+AIRFLOW_CTX_EXECUTION_DATE=2022-12-16T10:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-12-16T10:00:00+00:00
+[2022-12-17T10:04:52.535+0000] {subprocess.py:63} INFO - Tmp dir root location: 
+ /tmp
+[2022-12-17T10:04:52.542+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'python /opt/***/tasks/raw_put_to_s3.py ']
+[2022-12-17T10:04:52.589+0000] {subprocess.py:86} INFO - Output:
+[2022-12-17T10:04:59.097+0000] {subprocess.py:93} INFO - {"message": "now putting raw file to s3", "time": "2022-12-17T10:04:59.095204"}
+[2022-12-17T10:04:59.574+0000] {subprocess.py:93} INFO - {"message": "now putting /opt/***/zone1/lol_basic_stat.json to raw_zone", "time": "2022-12-17T10:04:59.573196"}
+[2022-12-17T10:04:59.602+0000] {subprocess.py:93} INFO - {"message": "now putting /opt/***/zone1/lol_counter_stat.json to raw_zone", "time": "2022-12-17T10:04:59.573690"}
+[2022-12-17T10:05:07.180+0000] {subprocess.py:93} INFO - Traceback (most recent call last):
+[2022-12-17T10:05:07.201+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/urllib3/connection.py", line 175, in _new_conn
+[2022-12-17T10:05:07.204+0000] {subprocess.py:93} INFO -     (self._dns_host, self.port), self.timeout, **extra_kw
+[2022-12-17T10:05:07.208+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/urllib3/util/connection.py", line 72, in create_connection
+[2022-12-17T10:05:07.211+0000] {subprocess.py:93} INFO -     for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+[2022-12-17T10:05:07.212+0000] {subprocess.py:93} INFO -   File "/usr/local/lib/python3.7/socket.py", line 752, in getaddrinfo
+[2022-12-17T10:05:07.213+0000] {subprocess.py:93} INFO -     for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+[2022-12-17T10:05:07.225+0000] {subprocess.py:93} INFO - socket.gaierror: [Errno -2] Name or service not known
+[2022-12-17T10:05:07.226+0000] {subprocess.py:93} INFO - 
+[2022-12-17T10:05:07.229+0000] {subprocess.py:93} INFO - During handling of the above exception, another exception occurred:
+[2022-12-17T10:05:07.239+0000] {subprocess.py:93} INFO - 
+[2022-12-17T10:05:07.243+0000] {subprocess.py:93} INFO - Traceback (most recent call last):
+[2022-12-17T10:05:07.245+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/botocore/httpsession.py", line 464, in send
+[2022-12-17T10:05:07.249+0000] {subprocess.py:93} INFO -     chunked=self._chunked(request.headers),
+[2022-12-17T10:05:07.251+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 788, in urlopen
+[2022-12-17T10:05:07.255+0000] {subprocess.py:93} INFO -     method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+[2022-12-17T10:05:07.257+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/urllib3/util/retry.py", line 525, in increment
+[2022-12-17T10:05:07.261+0000] {subprocess.py:93} INFO -     raise six.reraise(type(error), error, _stacktrace)
+[2022-12-17T10:05:07.267+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/urllib3/packages/six.py", line 770, in reraise
+[2022-12-17T10:05:07.269+0000] {subprocess.py:93} INFO -     raise value
+[2022-12-17T10:05:07.271+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 710, in urlopen
+[2022-12-17T10:05:07.273+0000] {subprocess.py:93} INFO -     chunked=chunked,
+[2022-12-17T10:05:07.277+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 386, in _make_request
+[2022-12-17T10:05:07.285+0000] {subprocess.py:93} INFO -     self._validate_conn(conn)
+[2022-12-17T10:05:07.287+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 1042, in _validate_conn
+[2022-12-17T10:05:07.289+0000] {subprocess.py:93} INFO -     conn.connect()
+[2022-12-17T10:05:07.291+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/urllib3/connection.py", line 358, in connect
+[2022-12-17T10:05:07.294+0000] {subprocess.py:93} INFO -     self.sock = conn = self._new_conn()
+[2022-12-17T10:05:07.296+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/urllib3/connection.py", line 187, in _new_conn
+[2022-12-17T10:05:07.297+0000] {subprocess.py:93} INFO -     self, "Failed to establish a new connection: %s" % e
+[2022-12-17T10:05:07.304+0000] {subprocess.py:93} INFO - urllib3.exceptions.NewConnectionError: <botocore.awsrequest.AWSHTTPSConnection object at 0xffff7c58ad10>: Failed to establish a new connection: [Errno -2] Name or service not known
+[2022-12-17T10:05:07.308+0000] {subprocess.py:93} INFO - 
+[2022-12-17T10:05:07.309+0000] {subprocess.py:93} INFO - During handling of the above exception, another exception occurred:
+[2022-12-17T10:05:07.312+0000] {subprocess.py:93} INFO - 
+[2022-12-17T10:05:07.316+0000] {subprocess.py:93} INFO - Traceback (most recent call last):
+[2022-12-17T10:05:07.319+0000] {subprocess.py:93} INFO -   File "/opt/***/tasks/raw_put_to_s3.py", line 34, in <module>
+[2022-12-17T10:05:07.329+0000] {subprocess.py:93} INFO -     pool.map(uploadig_file, raw_str_json)
+[2022-12-17T10:05:07.335+0000] {subprocess.py:93} INFO -   File "/usr/local/lib/python3.7/multiprocessing/pool.py", line 268, in map
+[2022-12-17T10:05:07.343+0000] {subprocess.py:93} INFO -     return self._map_async(func, iterable, mapstar, chunksize).get()
+[2022-12-17T10:05:07.346+0000] {subprocess.py:93} INFO -   File "/usr/local/lib/python3.7/multiprocessing/pool.py", line 657, in get
+[2022-12-17T10:05:07.353+0000] {subprocess.py:93} INFO -     raise self._value
+[2022-12-17T10:05:07.356+0000] {subprocess.py:93} INFO -   File "/usr/local/lib/python3.7/multiprocessing/pool.py", line 121, in worker
+[2022-12-17T10:05:07.357+0000] {subprocess.py:93} INFO -     result = (True, func(*args, **kwds))
+[2022-12-17T10:05:07.361+0000] {subprocess.py:93} INFO -   File "/usr/local/lib/python3.7/multiprocessing/pool.py", line 44, in mapstar
+[2022-12-17T10:05:07.376+0000] {subprocess.py:93} INFO -     return list(map(*args))
+[2022-12-17T10:05:07.398+0000] {subprocess.py:93} INFO -   File "/opt/***/tasks/raw_put_to_s3.py", line 25, in uploadig_file
+[2022-12-17T10:05:07.401+0000] {subprocess.py:93} INFO -     client.upload_file(myfile,config['bucket'],f'{Path(myfile).stem}_{datetime.now()}.json')
+[2022-12-17T10:05:07.406+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/boto3/s3/inject.py", line 148, in upload_file
+[2022-12-17T10:05:07.408+0000] {subprocess.py:93} INFO -     callback=Callback,
+[2022-12-17T10:05:07.415+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/boto3/s3/transfer.py", line 288, in upload_file
+[2022-12-17T10:05:07.418+0000] {subprocess.py:93} INFO -     future.result()
+[2022-12-17T10:05:07.419+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/s3transfer/futures.py", line 103, in result
+[2022-12-17T10:05:07.422+0000] {subprocess.py:93} INFO -     return self._coordinator.result()
+[2022-12-17T10:05:07.438+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/s3transfer/futures.py", line 266, in result
+[2022-12-17T10:05:07.440+0000] {subprocess.py:93} INFO -     raise self._exception
+[2022-12-17T10:05:07.441+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/s3transfer/tasks.py", line 139, in __call__
+[2022-12-17T10:05:07.450+0000] {subprocess.py:93} INFO -     return self._execute_main(kwargs)
+[2022-12-17T10:05:07.453+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/s3transfer/tasks.py", line 162, in _execute_main
+[2022-12-17T10:05:07.455+0000] {subprocess.py:93} INFO -     return_value = self._main(**kwargs)
+[2022-12-17T10:05:07.457+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/s3transfer/upload.py", line 758, in _main
+[2022-12-17T10:05:07.460+0000] {subprocess.py:93} INFO -     client.put_object(Bucket=bucket, Key=key, Body=body, **extra_args)
+[2022-12-17T10:05:07.461+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/botocore/client.py", line 530, in _api_call
+[2022-12-17T10:05:07.467+0000] {subprocess.py:93} INFO -     return self._make_api_call(operation_name, kwargs)
+[2022-12-17T10:05:07.468+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/botocore/client.py", line 944, in _make_api_call
+[2022-12-17T10:05:07.473+0000] {subprocess.py:93} INFO -     operation_model, request_dict, request_context
+[2022-12-17T10:05:07.476+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/botocore/client.py", line 966, in _make_request
+[2022-12-17T10:05:07.483+0000] {subprocess.py:93} INFO -     return self._endpoint.make_request(operation_model, request_dict)
+[2022-12-17T10:05:07.498+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/botocore/endpoint.py", line 119, in make_request
+[2022-12-17T10:05:07.504+0000] {subprocess.py:93} INFO -     return self._send_request(request_dict, operation_model)
+[2022-12-17T10:05:07.514+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/botocore/endpoint.py", line 207, in _send_request
+[2022-12-17T10:05:07.519+0000] {subprocess.py:93} INFO -     exception,
+[2022-12-17T10:05:07.523+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/botocore/endpoint.py", line 361, in _needs_retry
+[2022-12-17T10:05:07.527+0000] {subprocess.py:93} INFO -     request_dict=request_dict,
+[2022-12-17T10:05:07.530+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/botocore/hooks.py", line 412, in emit
+[2022-12-17T10:05:07.536+0000] {subprocess.py:93} INFO -     return self._emitter.emit(aliased_event_name, **kwargs)
+[2022-12-17T10:05:07.543+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/botocore/hooks.py", line 256, in emit
+[2022-12-17T10:05:07.545+0000] {subprocess.py:93} INFO -     return self._emit(event_name, kwargs)
+[2022-12-17T10:05:07.550+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/botocore/hooks.py", line 239, in _emit
+[2022-12-17T10:05:07.559+0000] {subprocess.py:93} INFO -     response = handler(**kwargs)
+[2022-12-17T10:05:07.580+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/botocore/retryhandler.py", line 207, in __call__
+[2022-12-17T10:05:07.581+0000] {subprocess.py:93} INFO -     if self._checker(**checker_kwargs):
+[2022-12-17T10:05:07.592+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/botocore/retryhandler.py", line 285, in __call__
+[2022-12-17T10:05:07.598+0000] {subprocess.py:93} INFO -     attempt_number, response, caught_exception
+[2022-12-17T10:05:07.604+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/botocore/retryhandler.py", line 320, in _should_retry
+[2022-12-17T10:05:07.610+0000] {subprocess.py:93} INFO -     return self._checker(attempt_number, response, caught_exception)
+[2022-12-17T10:05:07.611+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/botocore/retryhandler.py", line 364, in __call__
+[2022-12-17T10:05:07.621+0000] {subprocess.py:93} INFO -     attempt_number, response, caught_exception
+[2022-12-17T10:05:07.627+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/botocore/retryhandler.py", line 248, in __call__
+[2022-12-17T10:05:07.638+0000] {subprocess.py:93} INFO -     attempt_number, caught_exception
+[2022-12-17T10:05:07.642+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/botocore/retryhandler.py", line 416, in _check_caught_exception
+[2022-12-17T10:05:07.643+0000] {subprocess.py:93} INFO -     raise caught_exception
+[2022-12-17T10:05:07.650+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/botocore/endpoint.py", line 281, in _do_get_response
+[2022-12-17T10:05:07.660+0000] {subprocess.py:93} INFO -     http_response = self._send(request)
+[2022-12-17T10:05:07.669+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/botocore/endpoint.py", line 377, in _send
+[2022-12-17T10:05:07.671+0000] {subprocess.py:93} INFO -     return self.http_session.send(request)
+[2022-12-17T10:05:07.683+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.7/site-packages/botocore/httpsession.py", line 484, in send
+[2022-12-17T10:05:07.703+0000] {subprocess.py:93} INFO -     raise EndpointConnectionError(endpoint_url=request.url, error=e)
+[2022-12-17T10:05:07.744+0000] {subprocess.py:93} INFO - botocore.exceptions.EndpointConnectionError: Could not connect to the endpoint URL: "https://raw-zone-lol.s3.amazonaws.com/lol_counter_stat_2022-12-17%2010%3A04%3A59.603355.json"
+[2022-12-17T10:05:09.530+0000] {subprocess.py:97} INFO - Command exited with return code 1
+[2022-12-17T10:05:10.544+0000] {taskinstance.py:1772} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py", line 197, in execute
+    f"Bash command failed. The command returned a non-zero exit code {result.exit_code}."
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2022-12-17T10:05:10.813+0000] {taskinstance.py:1327} INFO - Marking task as FAILED. dag_id=Can_I_change_name_to_this, task_id=task_5, execution_date=20221216T100000, start_date=20221217T100451, end_date=20221217T100510
+[2022-12-17T10:05:11.444+0000] {standard_task_runner.py:105} ERROR - Failed to execute job 126 for task task_5 (Bash command failed. The command returned a non-zero exit code 1.; 2327)
+[2022-12-17T10:05:12.731+0000] {local_task_job.py:159} INFO - Task exited with return code 1
+[2022-12-17T10:05:15.544+0000] {taskinstance.py:2582} INFO - 0 downstream tasks scheduled from follow-on schedule check

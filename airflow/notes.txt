@@ -1,0 +1,5 @@
+to enable for dbt -> redshift 
+-> need to add my ip on security group
+
+sqlachdelmy not suitable for adding df to redshift table
+---too slow
